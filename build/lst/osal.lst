@@ -1,0 +1,94 @@
+ARM GAS  /tmp/cc2mY2dh.s 			page 1
+
+
+   1              		.cpu cortex-m0
+   2              		.fpu softvfp
+   3              		.eabi_attribute 20, 1
+   4              		.eabi_attribute 21, 1
+   5              		.eabi_attribute 23, 3
+   6              		.eabi_attribute 24, 1
+   7              		.eabi_attribute 25, 1
+   8              		.eabi_attribute 26, 1
+   9              		.eabi_attribute 30, 2
+  10              		.eabi_attribute 34, 0
+  11              		.eabi_attribute 18, 4
+  12              		.code	16
+  13              		.file	"osal.c"
+  14              		.text
+  15              	.Ltext0:
+  16              		.section	.gnu.lto_.profile.5ef7a79adca0821c,"",%progbits
+  17 0000 789C6366 		.ascii	"x\234cf```d\200\002\000\000=\000\005"
+  17      60606064 
+  17      80020000 
+  17      3D0005
+  18              		.text
+  19              		.section	.gnu.lto_.inline.5ef7a79adca0821c,"",%progbits
+  20 0000 789C6366 		.ascii	"x\234cf\300\016\230\340,\000\000\234\000\006"
+  20      C00E98E0 
+  20      2C00009C 
+  20      0006
+  21              		.text
+  22              		.section	.gnu.lto_.pureconst.5ef7a79adca0821c,"",%progbits
+  23 0000 789C6366 		.ascii	"x\234cf```d\200\002\000\000=\000\005"
+  23      60606064 
+  23      80020000 
+  23      3D0005
+  24              		.text
+  25              		.section	.gnu.lto_.symbol_nodes.5ef7a79adca0821c,"",%progbits
+  26 0000 789C6366 		.ascii	"x\234cf```b\200\001\000\000L\000\006"
+  26      60606062 
+  26      80010000 
+  26      4C0006
+  27              		.text
+  28              		.section	.gnu.lto_.refs.5ef7a79adca0821c,"",%progbits
+  29 0000 789C6366 		.ascii	"x\234cf```d\200\002\000\000=\000\005"
+  29      60606064 
+  29      80020000 
+  29      3D0005
+  30              		.text
+  31              		.section	.gnu.lto_.decls.5ef7a79adca0821c,"",%progbits
+  32 0000 789C6366 		.ascii	"x\234cf``P\001\342\377@\000\244\030\030\2418\200\201"
+  32      60605001 
+  32      E2FF4000 
+  32      A41818A1 
+  32      388081
+  33 0013 000000D0 		.ascii	"\000\000\000\3208\004v"
+  33      380476
+  34              		.text
+  35              		.section	.gnu.lto_.symtab.5ef7a79adca0821c,"",%progbits
+  36              		.text
+  37              		.section	.gnu.lto_.opts,"",%progbits
+ARM GAS  /tmp/cc2mY2dh.s 			page 2
+
+
+  38 0000 272D666E 		.ascii	"'-fno-trapv' '-mcpu=cortex-m0' '-mthumb' '-ggdb' '-"
+  38      6F2D7472 
+  38      61707627 
+  38      20272D6D 
+  38      6370753D 
+  39 0033 4F332720 		.ascii	"O3' '-fomit-frame-pointer' '-falign-functions=16' '"
+  39      272D666F 
+  39      6D69742D 
+  39      6672616D 
+  39      652D706F 
+  40 0066 2D666675 		.ascii	"-ffunction-sections' '-fdata-sections' '-fno-common"
+  40      6E637469 
+  40      6F6E2D73 
+  40      65637469 
+  40      6F6E7327 
+  41 0099 2720272D 		.ascii	"' '-flto'\000"
+  41      666C746F 
+  41      2700
+  42              		.text
+  43              		.comm	__gnu_lto_v1,1,1
+  44              		.comm	__gnu_lto_slim,1,1
+  45              		.ident	"GCC: (15:4.9.3+svn231177-1) 4.9.3 20150529 (prerelease)"
+ARM GAS  /tmp/cc2mY2dh.s 			page 3
+
+
+DEFINED SYMBOLS
+                            *ABS*:0000000000000000 osal.c
+                            *COM*:0000000000000001 __gnu_lto_v1
+                            *COM*:0000000000000001 __gnu_lto_slim
+
+NO UNDEFINED SYMBOLS

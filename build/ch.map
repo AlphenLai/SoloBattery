@@ -1,0 +1,1949 @@
+Archive member included to satisfy reference by file (symbol)
+
+/usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv6-m/libg.a(lib_a-memset.o)
+                              /tmp/ccpwIpvt.ltrans4.ltrans.o (memset)
+
+Discarded input sections
+
+ .data          0x0000000000000000        0x0 build/obj/crt0_v6m.o
+ .bss           0x0000000000000000        0x0 build/obj/crt0_v6m.o
+ .data          0x0000000000000000        0x0 build/obj/vectors.o
+ .bss           0x0000000000000000        0x0 build/obj/vectors.o
+ .data          0x0000000000000000        0x0 build/obj/chcoreasm_v6m.o
+ .bss           0x0000000000000000        0x0 build/obj/chcoreasm_v6m.o
+ .text          0x0000000000000000        0x0 build/obj/crt1.o (symbol from plugin)
+ .text          0x0000000000000000        0x0 /tmp/ccpwIpvt.ltrans0.ltrans.o
+ .data          0x0000000000000000        0x0 /tmp/ccpwIpvt.ltrans0.ltrans.o
+ .bss           0x0000000000000000        0x0 /tmp/ccpwIpvt.ltrans0.ltrans.o
+ .rodata.__func__.5275.lto_priv.62
+                0x0000000000000000        0xc /tmp/ccpwIpvt.ltrans0.ltrans.o
+ .rodata.__func__.6091.lto_priv.68
+                0x0000000000000000        0xd /tmp/ccpwIpvt.ltrans0.ltrans.o
+ .text          0x0000000000000000        0x0 /tmp/ccpwIpvt.ltrans1.ltrans.o
+ .data          0x0000000000000000        0x0 /tmp/ccpwIpvt.ltrans1.ltrans.o
+ .bss           0x0000000000000000        0x0 /tmp/ccpwIpvt.ltrans1.ltrans.o
+ .text          0x0000000000000000        0x0 /tmp/ccpwIpvt.ltrans2.ltrans.o
+ .data          0x0000000000000000        0x0 /tmp/ccpwIpvt.ltrans2.ltrans.o
+ .bss           0x0000000000000000        0x0 /tmp/ccpwIpvt.ltrans2.ltrans.o
+ .text          0x0000000000000000        0x0 /tmp/ccpwIpvt.ltrans3.ltrans.o
+ .data          0x0000000000000000        0x0 /tmp/ccpwIpvt.ltrans3.ltrans.o
+ .bss           0x0000000000000000        0x0 /tmp/ccpwIpvt.ltrans3.ltrans.o
+ .text          0x0000000000000000        0x0 /tmp/ccpwIpvt.ltrans4.ltrans.o
+ .data          0x0000000000000000        0x0 /tmp/ccpwIpvt.ltrans4.ltrans.o
+ .bss           0x0000000000000000        0x0 /tmp/ccpwIpvt.ltrans4.ltrans.o
+ .bss.BatLeft   0x0000000000000000        0x4 /tmp/ccpwIpvt.ltrans4.ltrans.o
+ .text          0x0000000000000000        0x0 /tmp/ccpwIpvt.ltrans5.ltrans.o
+ .data          0x0000000000000000        0x0 /tmp/ccpwIpvt.ltrans5.ltrans.o
+ .bss           0x0000000000000000        0x0 /tmp/ccpwIpvt.ltrans5.ltrans.o
+ .rodata.__func__.6869.lto_priv.47
+                0x0000000000000000        0xe /tmp/ccpwIpvt.ltrans5.ltrans.o
+ .rodata.__func__.6845.lto_priv.55
+                0x0000000000000000        0xd /tmp/ccpwIpvt.ltrans5.ltrans.o
+ .rodata.__func__.6873.lto_priv.54
+                0x0000000000000000        0xe /tmp/ccpwIpvt.ltrans5.ltrans.o
+ .text          0x0000000000000000        0x0 build/obj/hal.o (symbol from plugin)
+ .text          0x0000000000000000        0x0 build/obj/hal_st.o (symbol from plugin)
+ .text          0x0000000000000000        0x0 build/obj/hal_buffers.o (symbol from plugin)
+ .text          0x0000000000000000        0x0 build/obj/hal_queues.o (symbol from plugin)
+ .text          0x0000000000000000        0x0 build/obj/hal_mmcsd.o (symbol from plugin)
+ .text          0x0000000000000000        0x0 build/obj/hal_adc.o (symbol from plugin)
+ .text          0x0000000000000000        0x0 build/obj/hal_i2c.o (symbol from plugin)
+ .text          0x0000000000000000        0x0 build/obj/hal_pal.o (symbol from plugin)
+ .text          0x0000000000000000        0x0 build/obj/nvic.o (symbol from plugin)
+ .text          0x0000000000000000        0x0 build/obj/stm32_isr.o (symbol from plugin)
+ .text          0x0000000000000000        0x0 build/obj/hal_lld.o (symbol from plugin)
+ .text          0x0000000000000000        0x0 build/obj/hal_adc_lld.o (symbol from plugin)
+ .text          0x0000000000000000        0x0 build/obj/stm32_dma.o (symbol from plugin)
+ .text          0x0000000000000000        0x0 build/obj/stm32_exti.o (symbol from plugin)
+ .text          0x0000000000000000        0x0 build/obj/hal_pal_lld.o (symbol from plugin)
+ .text          0x0000000000000000        0x0 build/obj/hal_i2c_lld.o (symbol from plugin)
+ .text          0x0000000000000000        0x0 build/obj/hal_st_lld.o (symbol from plugin)
+ .text          0x0000000000000000        0x0 build/obj/board.o (symbol from plugin)
+ .text          0x0000000000000000        0x0 build/obj/osal.o (symbol from plugin)
+ .text          0x0000000000000000        0x0 build/obj/chsys.o (symbol from plugin)
+ .text          0x0000000000000000        0x0 build/obj/chdebug.o (symbol from plugin)
+ .text          0x0000000000000000        0x0 build/obj/chtrace.o (symbol from plugin)
+ .text          0x0000000000000000        0x0 build/obj/chvt.o (symbol from plugin)
+ .text          0x0000000000000000        0x0 build/obj/chschd.o (symbol from plugin)
+ .text          0x0000000000000000        0x0 build/obj/chthreads.o (symbol from plugin)
+ .text          0x0000000000000000        0x0 build/obj/chregistry.o (symbol from plugin)
+ .text          0x0000000000000000        0x0 build/obj/chsem.o (symbol from plugin)
+ .text          0x0000000000000000        0x0 build/obj/chmtx.o (symbol from plugin)
+ .text          0x0000000000000000        0x0 build/obj/chcond.o (symbol from plugin)
+ .text          0x0000000000000000        0x0 build/obj/chevents.o (symbol from plugin)
+ .text          0x0000000000000000        0x0 build/obj/chmsg.o (symbol from plugin)
+ .text          0x0000000000000000        0x0 build/obj/chdynamic.o (symbol from plugin)
+ .text          0x0000000000000000        0x0 build/obj/chmboxes.o (symbol from plugin)
+ .text          0x0000000000000000        0x0 build/obj/chmemcore.o (symbol from plugin)
+ .text          0x0000000000000000        0x0 build/obj/chmemheaps.o (symbol from plugin)
+ .text          0x0000000000000000        0x0 build/obj/chmempools.o (symbol from plugin)
+ .text          0x0000000000000000        0x0 build/obj/chpipes.o (symbol from plugin)
+ .text          0x0000000000000000        0x0 build/obj/chfactory.o (symbol from plugin)
+ .text          0x0000000000000000        0x0 build/obj/chcore.o (symbol from plugin)
+ .text          0x0000000000000000        0x0 build/obj/chcore_v6m.o (symbol from plugin)
+ .text          0x0000000000000000        0x0 build/obj/main.o (symbol from plugin)
+ .text          0x0000000000000000        0x0 build/obj/bq76920_driver.o (symbol from plugin)
+ .text          0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv6-m/libg.a(lib_a-memset.o)
+ .data          0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv6-m/libg.a(lib_a-memset.o)
+ .bss           0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv6-m/libg.a(lib_a-memset.o)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+flash0           0x0000000008000000 0x0000000000008000
+flash1           0x0000000000000000 0x0000000000000000
+flash2           0x0000000000000000 0x0000000000000000
+flash3           0x0000000000000000 0x0000000000000000
+flash4           0x0000000000000000 0x0000000000000000
+flash5           0x0000000000000000 0x0000000000000000
+flash6           0x0000000000000000 0x0000000000000000
+flash7           0x0000000000000000 0x0000000000000000
+ram0             0x0000000020000000 0x0000000000001000
+ram1             0x0000000000000000 0x0000000000000000
+ram2             0x0000000000000000 0x0000000000000000
+ram3             0x0000000000000000 0x0000000000000000
+ram4             0x0000000000000000 0x0000000000000000
+ram5             0x0000000000000000 0x0000000000000000
+ram6             0x0000000000000000 0x0000000000000000
+ram7             0x0000000000000000 0x0000000000000000
+*default*        0x0000000000000000 0xffffffffffffffff
+
+Linker script and memory map
+
+LOAD build/obj/crt0_v6m.o
+LOAD build/obj/vectors.o
+LOAD build/obj/chcoreasm_v6m.o
+LOAD build/obj/crt1.o
+LOAD /tmp/ccpwIpvt.ltrans0.ltrans.o
+LOAD /tmp/ccpwIpvt.ltrans1.ltrans.o
+LOAD /tmp/ccpwIpvt.ltrans2.ltrans.o
+LOAD /tmp/ccpwIpvt.ltrans3.ltrans.o
+LOAD /tmp/ccpwIpvt.ltrans4.ltrans.o
+LOAD /tmp/ccpwIpvt.ltrans5.ltrans.o
+LOAD build/obj/hal.o
+LOAD build/obj/hal_st.o
+LOAD build/obj/hal_buffers.o
+LOAD build/obj/hal_queues.o
+LOAD build/obj/hal_mmcsd.o
+LOAD build/obj/hal_adc.o
+LOAD build/obj/hal_i2c.o
+LOAD build/obj/hal_pal.o
+LOAD build/obj/nvic.o
+LOAD build/obj/stm32_isr.o
+LOAD build/obj/hal_lld.o
+LOAD build/obj/hal_adc_lld.o
+LOAD build/obj/stm32_dma.o
+LOAD build/obj/stm32_exti.o
+LOAD build/obj/hal_pal_lld.o
+LOAD build/obj/hal_i2c_lld.o
+LOAD build/obj/hal_st_lld.o
+LOAD build/obj/board.o
+LOAD build/obj/osal.o
+LOAD build/obj/chsys.o
+LOAD build/obj/chdebug.o
+LOAD build/obj/chtrace.o
+LOAD build/obj/chvt.o
+LOAD build/obj/chschd.o
+LOAD build/obj/chthreads.o
+LOAD build/obj/chregistry.o
+LOAD build/obj/chsem.o
+LOAD build/obj/chmtx.o
+LOAD build/obj/chcond.o
+LOAD build/obj/chevents.o
+LOAD build/obj/chmsg.o
+LOAD build/obj/chdynamic.o
+LOAD build/obj/chmboxes.o
+LOAD build/obj/chmemcore.o
+LOAD build/obj/chmemheaps.o
+LOAD build/obj/chmempools.o
+LOAD build/obj/chpipes.o
+LOAD build/obj/chfactory.o
+LOAD build/obj/chcore.o
+LOAD build/obj/chcore_v6m.o
+LOAD build/obj/main.o
+LOAD build/obj/bq76920_driver.o
+
+.mstack         0x0000000020000000      0x200
+                0x0000000020000000                . = ALIGN (0x8)
+                0x0000000020000000                __main_stack_base__ = .
+                0x0000000020000200                . = (. + __main_stack_size__)
+ *fill*         0x0000000020000000      0x200 
+                0x0000000020000200                . = ALIGN (0x8)
+                0x0000000020000200                __main_stack_end__ = .
+
+.pstack         0x0000000020000200      0x200
+                0x0000000020000200                . = ALIGN (0x8)
+                0x0000000020000200                __process_stack_base__ = .
+                0x0000000020000200                __main_thread_stack_base__ = .
+                0x0000000020000400                . = (. + __process_stack_size__)
+ *fill*         0x0000000020000200      0x200 
+                0x0000000020000400                . = ALIGN (0x8)
+                0x0000000020000400                __process_stack_end__ = .
+                0x0000000020000400                __main_thread_stack_end__ = .
+
+.vectors        0x0000000008000000       0xc0
+ *(.vectors)
+ .vectors       0x0000000008000000       0xc0 build/obj/vectors.o
+                0x0000000008000000                _vectors
+
+.xtors          0x00000000080000c0        0x0
+                0x00000000080000c0                __init_array_start = .
+ *(SORT(.init_array.*))
+ *(.init_array)
+                0x00000000080000c0                __init_array_end = .
+                0x00000000080000c0                __fini_array_start = .
+ *(.fini_array)
+ *(SORT(.fini_array.*))
+                0x00000000080000c0                __fini_array_end = .
+
+.text           0x00000000080000c0     0x3548
+                0x00000000080000c0                __text_base = .
+ *(.text)
+ .text          0x00000000080000c0       0xd0 build/obj/crt0_v6m.o
+                0x00000000080000c0                _crt0_entry
+ .text          0x0000000008000190        0x8 build/obj/vectors.o
+                0x0000000008000190                Reset_Handler
+                0x0000000008000192                Vector58
+                0x0000000008000192                VectorAC
+                0x0000000008000192                DebugMon_Handler
+                0x0000000008000192                Vector5C
+                0x0000000008000192                HardFault_Handler
+                0x0000000008000192                Vector8C
+                0x0000000008000192                SysTick_Handler
+                0x0000000008000192                PendSV_Handler
+                0x0000000008000192                Vector94
+                0x0000000008000192                VectorA8
+                0x0000000008000192                VectorB4
+                0x0000000008000192                Vector74
+                0x0000000008000192                UsageFault_Handler
+                0x0000000008000192                Vector40
+                0x0000000008000192                VectorBC
+                0x0000000008000192                Vector54
+                0x0000000008000192                Vector98
+                0x0000000008000192                Vector24
+                0x0000000008000192                Vector84
+                0x0000000008000192                MemManage_Handler
+                0x0000000008000192                VectorA0
+                0x0000000008000192                SVC_Handler
+                0x0000000008000192                Vector7C
+                0x0000000008000192                VectorB0
+                0x0000000008000192                Vector90
+                0x0000000008000192                Vector60
+                0x0000000008000192                Vector1C
+                0x0000000008000192                Vector48
+                0x0000000008000192                Vector4C
+                0x0000000008000192                Vector78
+                0x0000000008000192                Vector88
+                0x0000000008000192                BusFault_Handler
+                0x0000000008000192                Vector50
+                0x0000000008000192                Vector44
+                0x0000000008000192                Vector28
+                0x0000000008000192                VectorB8
+                0x0000000008000192                Vector34
+                0x0000000008000192                VectorA4
+                0x0000000008000192                Vector20
+                0x0000000008000196                _unhandled_exception
+ .text          0x0000000008000198       0x4c build/obj/chcoreasm_v6m.o
+                0x0000000008000198                _port_switch
+                0x00000000080001b8                _port_thread_start
+                0x00000000080001c8                _port_switch_from_isr
+                0x00000000080001d4                _port_exit_from_isr
+ *(.text.*)
+ *fill*         0x00000000080001e4        0xc 
+ .text.startup.main
+                0x00000000080001f0      0xf4c /tmp/ccpwIpvt.ltrans0.ltrans.o
+                0x00000000080001f0                main
+ *fill*         0x000000000800113c        0x4 
+ .text.trace_next.lto_priv.45
+                0x0000000008001140       0x2c /tmp/ccpwIpvt.ltrans1.ltrans.o
+                0x0000000008001140                trace_next.lto_priv.45
+ *fill*         0x000000000800116c        0x4 
+ .text.chSysHalt
+                0x0000000008001170       0x30 /tmp/ccpwIpvt.ltrans1.ltrans.o
+                0x0000000008001170                chSysHalt
+ .text._dbg_check_unlock
+                0x00000000080011a0       0x24 /tmp/ccpwIpvt.ltrans1.ltrans.o
+                0x00000000080011a0                _dbg_check_unlock
+ *fill*         0x00000000080011c4        0xc 
+ .text._dbg_check_lock
+                0x00000000080011d0       0x24 /tmp/ccpwIpvt.ltrans1.ltrans.o
+                0x00000000080011d0                _dbg_check_lock
+ *fill*         0x00000000080011f4        0xc 
+ .text.chMtxLock
+                0x0000000008001200       0x60 /tmp/ccpwIpvt.ltrans1.ltrans.o
+                0x0000000008001200                chMtxLock
+ .text.chDbgCheckClassI
+                0x0000000008001260       0x20 /tmp/ccpwIpvt.ltrans1.ltrans.o
+                0x0000000008001260                chDbgCheckClassI
+ .text.chSysUnlock.lto_priv.49
+                0x0000000008001280       0x40 /tmp/ccpwIpvt.ltrans1.ltrans.o
+                0x0000000008001280                chSysUnlock.lto_priv.49
+ .text.chRegFindThreadByWorkingArea
+                0x00000000080012c0      0x28c /tmp/ccpwIpvt.ltrans1.ltrans.o
+                0x00000000080012c0                chRegFindThreadByWorkingArea
+ *fill*         0x000000000800154c        0x4 
+ .text.chThdExit
+                0x0000000008001550      0x100 /tmp/ccpwIpvt.ltrans1.ltrans.o
+                0x0000000008001550                chThdExit
+ .text.chSchDoReschedule
+                0x0000000008001650       0xbc /tmp/ccpwIpvt.ltrans1.ltrans.o
+                0x0000000008001650                chSchDoReschedule
+ *fill*         0x000000000800170c        0x4 
+ .text.chSchGoSleepTimeoutS
+                0x0000000008001710      0x2ac /tmp/ccpwIpvt.ltrans1.ltrans.o
+                0x0000000008001710                chSchGoSleepTimeoutS
+ *fill*         0x00000000080019bc        0x4 
+ .text.wakeup.lto_priv.56
+                0x00000000080019c0       0xbc /tmp/ccpwIpvt.ltrans1.ltrans.o
+                0x00000000080019c0                wakeup.lto_priv.56
+ *fill*         0x0000000008001a7c        0x4 
+ .text._idle_thread.lto_priv.61
+                0x0000000008001a80        0x4 /tmp/ccpwIpvt.ltrans2.ltrans.o
+                0x0000000008001a80                _idle_thread.lto_priv.61
+ *fill*         0x0000000008001a84        0xc 
+ .text.__early_init
+                0x0000000008001a90      0x150 /tmp/ccpwIpvt.ltrans2.ltrans.o
+                0x0000000008001a90                __early_init
+ .text.Vector80
+                0x0000000008001be0      0x1d0 /tmp/ccpwIpvt.ltrans2.ltrans.o
+                0x0000000008001be0                Vector80
+ .text.Vector9C
+                0x0000000008001db0      0x39c /tmp/ccpwIpvt.ltrans2.ltrans.o
+                0x0000000008001db0                Vector9C
+ *fill*         0x000000000800214c        0x4 
+ .text.dmaStreamAllocI
+                0x0000000008002150       0xc4 /tmp/ccpwIpvt.ltrans2.ltrans.o
+                0x0000000008002150                dmaStreamAllocI
+ *fill*         0x0000000008002214        0xc 
+ .text.Vector64
+                0x0000000008002220       0xf0 /tmp/ccpwIpvt.ltrans2.ltrans.o
+                0x0000000008002220                Vector64
+ .text.chCoreAllocAlignedI.lto_priv.60
+                0x0000000008002310       0x5c /tmp/ccpwIpvt.ltrans3.ltrans.o
+                0x0000000008002310                chCoreAllocAlignedI.lto_priv.60
+ *fill*         0x000000000800236c        0x4 
+ .text.chCoreAllocAlignedWithOffset
+                0x0000000008002370       0x84 /tmp/ccpwIpvt.ltrans3.ltrans.o
+                0x0000000008002370                chCoreAllocAlignedWithOffset
+ *fill*         0x00000000080023f4        0xc 
+ .text.Thread1.lto_priv.46
+                0x0000000008002400      0x2f4 /tmp/ccpwIpvt.ltrans3.ltrans.o
+                0x0000000008002400                Thread1.lto_priv.46
+ *fill*         0x00000000080026f4        0xc 
+ .text.NMI_Handler
+                0x0000000008002700       0x10 /tmp/ccpwIpvt.ltrans3.ltrans.o
+                0x0000000008002700                NMI_Handler
+ .text.chMtxUnlock
+                0x0000000008002710      0x174 /tmp/ccpwIpvt.ltrans3.ltrans.o
+                0x0000000008002710                chMtxUnlock
+ *fill*         0x0000000008002884        0xc 
+ .text.chMtxLockS
+                0x0000000008002890      0x160 /tmp/ccpwIpvt.ltrans3.ltrans.o
+                0x0000000008002890                chMtxLockS
+ .text.adc_lld_serve_rx_interrupt.lto_priv.59
+                0x00000000080029f0      0x1a0 /tmp/ccpwIpvt.ltrans4.ltrans.o
+                0x00000000080029f0                adc_lld_serve_rx_interrupt.lto_priv.59
+ .text.Vector70
+                0x0000000008002b90      0x274 /tmp/ccpwIpvt.ltrans4.ltrans.o
+                0x0000000008002b90                Vector70
+ *fill*         0x0000000008002e04        0xc 
+ .text.Vector6C
+                0x0000000008002e10      0x118 /tmp/ccpwIpvt.ltrans4.ltrans.o
+                0x0000000008002e10                Vector6C
+ *fill*         0x0000000008002f28        0x8 
+ .text.Vector68
+                0x0000000008002f30      0x118 /tmp/ccpwIpvt.ltrans4.ltrans.o
+                0x0000000008002f30                Vector68
+ *fill*         0x0000000008003048        0x8 
+ .text.nvicEnableVector
+                0x0000000008003050       0x48 /tmp/ccpwIpvt.ltrans4.ltrans.o
+                0x0000000008003050                nvicEnableVector
+ *fill*         0x0000000008003098        0x8 
+ .text.__init_ram_areas
+                0x00000000080030a0       0x4c /tmp/ccpwIpvt.ltrans4.ltrans.o
+                0x00000000080030a0                __init_ram_areas
+ *fill*         0x00000000080030ec        0x4 
+ .text.__default_exit
+                0x00000000080030f0        0x4 /tmp/ccpwIpvt.ltrans4.ltrans.o
+                0x00000000080030f0                __default_exit
+ *fill*         0x00000000080030f4        0xc 
+ .text.__late_init
+                0x0000000008003100        0x4 /tmp/ccpwIpvt.ltrans4.ltrans.o
+                0x0000000008003100                __late_init
+ *fill*         0x0000000008003104        0xc 
+ .text.__core_init
+                0x0000000008003110        0x4 /tmp/ccpwIpvt.ltrans4.ltrans.o
+                0x0000000008003110                __core_init
+ *fill*         0x0000000008003114        0xc 
+ .text.i2cMasterTransmitTimeout.constprop.28
+                0x0000000008003120      0x1f0 /tmp/ccpwIpvt.ltrans5.ltrans.o
+                0x0000000008003120                i2cMasterTransmitTimeout.constprop.28
+ .text.chSchWakeupS.constprop.20
+                0x0000000008003310       0xf0 /tmp/ccpwIpvt.ltrans5.ltrans.o
+                0x0000000008003310                chSchWakeupS.constprop.20
+ .text.I2CReadRegisterByteWithCRC.constprop.3
+                0x0000000008003400      0x17c /tmp/ccpwIpvt.ltrans5.ltrans.o
+                0x0000000008003400                I2CReadRegisterByteWithCRC.constprop.3
+ .text.memset   0x000000000800357c       0x8c /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv6-m/libg.a(lib_a-memset.o)
+                0x000000000800357c                memset
+ *(.glue_7t)
+ .glue_7t       0x0000000008003608        0x0 linker stubs
+ *(.glue_7)
+ .glue_7        0x0000000008003608        0x0 linker stubs
+ *(.gcc*)
+                0x0000000008003608                __text_end = .
+
+.vfp11_veneer   0x0000000008003608        0x0
+ .vfp11_veneer  0x0000000008003608        0x0 linker stubs
+
+.v4_bx          0x0000000008003608        0x0
+ .v4_bx         0x0000000008003608        0x0 linker stubs
+
+.iplt           0x0000000008003608        0x0
+ .iplt          0x0000000008003608        0x0 build/obj/crt0_v6m.o
+
+.rodata         0x0000000008003608      0x3cc
+                0x0000000008003608                __rodata_base__ = .
+ *(.rodata)
+ *(.rodata.*)
+ .rodata.__func__.6846
+                0x0000000008003608        0xd /tmp/ccpwIpvt.ltrans0.ltrans.o
+ *fill*         0x0000000008003615        0x3 
+ .rodata.__func__.5086.lto_priv.52
+                0x0000000008003618        0xc /tmp/ccpwIpvt.ltrans0.ltrans.o
+                0x0000000008003618                __func__.5086.lto_priv.52
+ .rodata.__func__.4221.lto_priv.65
+                0x0000000008003624        0xb /tmp/ccpwIpvt.ltrans0.ltrans.o
+                0x0000000008003624                __func__.4221.lto_priv.65
+ *fill*         0x000000000800362f        0x1 
+ .rodata._stm32_dma_streams
+                0x0000000008003630       0x50 /tmp/ccpwIpvt.ltrans0.ltrans.o
+                0x0000000008003630                _stm32_dma_streams
+ .rodata.__func__.6853
+                0x0000000008003680        0xe /tmp/ccpwIpvt.ltrans0.ltrans.o
+ *fill*         0x000000000800368e        0x2 
+ .rodata.__func__.6833.lto_priv.67
+                0x0000000008003690        0xd /tmp/ccpwIpvt.ltrans0.ltrans.o
+                0x0000000008003690                __func__.6833.lto_priv.67
+ *fill*         0x000000000800369d        0x3 
+ .rodata.ch_debug
+                0x00000000080036a0       0x16 /tmp/ccpwIpvt.ltrans0.ltrans.o
+ *fill*         0x00000000080036b6        0x2 
+ .rodata.str1.4
+                0x00000000080036b8       0x3d /tmp/ccpwIpvt.ltrans0.ltrans.o
+ *fill*         0x00000000080036f5        0x3 
+ .rodata.__func__.5086.lto_priv.53
+                0x00000000080036f8        0xc /tmp/ccpwIpvt.ltrans0.ltrans.o
+                0x00000000080036f8                __func__.5086.lto_priv.53
+ .rodata.__func__.6874
+                0x0000000008003704        0xe /tmp/ccpwIpvt.ltrans0.ltrans.o
+ *fill*         0x0000000008003712        0x2 
+ .rodata.__func__.6840.lto_priv.66
+                0x0000000008003714        0xb /tmp/ccpwIpvt.ltrans0.ltrans.o
+                0x0000000008003714                __func__.6840.lto_priv.66
+ *fill*         0x000000000800371f        0x1 
+ .rodata.__func__.6101
+                0x0000000008003720        0xc /tmp/ccpwIpvt.ltrans0.ltrans.o
+ .rodata.__func__.5086.lto_priv.51
+                0x000000000800372c        0xc /tmp/ccpwIpvt.ltrans0.ltrans.o
+ .rodata.__func__.6837.lto_priv.58
+                0x0000000008003738        0x9 /tmp/ccpwIpvt.ltrans0.ltrans.o
+ *fill*         0x0000000008003741        0x3 
+ .rodata.__func__.6110
+                0x0000000008003744       0x12 /tmp/ccpwIpvt.ltrans0.ltrans.o
+ *fill*         0x0000000008003756        0x2 
+ .rodata.__func__.6082.lto_priv.63
+                0x0000000008003758        0xb /tmp/ccpwIpvt.ltrans0.ltrans.o
+                0x0000000008003758                __func__.6082.lto_priv.63
+ *fill*         0x0000000008003763        0x1 
+ .rodata.__func__.6837.lto_priv.57
+                0x0000000008003764        0x9 /tmp/ccpwIpvt.ltrans0.ltrans.o
+ *fill*         0x000000000800376d        0x3 
+ .rodata.i2cfg1
+                0x0000000008003770        0xc /tmp/ccpwIpvt.ltrans0.ltrans.o
+ .rodata.wakeup.lto_priv.56
+                0x000000000800377c       0x20 /tmp/ccpwIpvt.ltrans1.ltrans.o
+ .rodata.__func__.6122
+                0x000000000800379c        0xd /tmp/ccpwIpvt.ltrans1.ltrans.o
+ *fill*         0x00000000080037a9        0x3 
+ .rodata.__func__.6101
+                0x00000000080037ac        0xc /tmp/ccpwIpvt.ltrans1.ltrans.o
+ .rodata.__func__.6104
+                0x00000000080037b8        0xb /tmp/ccpwIpvt.ltrans1.ltrans.o
+ *fill*         0x00000000080037c3        0x1 
+ .rodata.__func__.6394
+                0x00000000080037c4       0x10 /tmp/ccpwIpvt.ltrans1.ltrans.o
+ .rodata.__func__.5400
+                0x00000000080037d4        0xc /tmp/ccpwIpvt.ltrans1.ltrans.o
+ .rodata.str1.4
+                0x00000000080037e0        0xd /tmp/ccpwIpvt.ltrans1.ltrans.o
+                                         0x3d (size before relaxing)
+ *fill*         0x00000000080037ed        0x3 
+ .rodata.__func__.5086
+                0x00000000080037f0        0xc /tmp/ccpwIpvt.ltrans1.ltrans.o
+ .rodata.__func__.6137
+                0x00000000080037fc        0xb /tmp/ccpwIpvt.ltrans1.ltrans.o
+ *fill*         0x0000000008003807        0x1 
+ .rodata.__func__.5172
+                0x0000000008003808        0xc /tmp/ccpwIpvt.ltrans2.ltrans.o
+ .rodata.__func__.6831
+                0x0000000008003814        0x9 /tmp/ccpwIpvt.ltrans2.ltrans.o
+ *fill*         0x000000000800381d        0x3 
+ .rodata.__func__.6840
+                0x0000000008003820        0x9 /tmp/ccpwIpvt.ltrans2.ltrans.o
+ *fill*         0x0000000008003829        0x3 
+ .rodata.str1.4
+                0x000000000800382c        0xd /tmp/ccpwIpvt.ltrans2.ltrans.o
+                                         0x15 (size before relaxing)
+ *fill*         0x0000000008003839        0x3 
+ .rodata.__func__.6857
+                0x000000000800383c       0x10 /tmp/ccpwIpvt.ltrans2.ltrans.o
+ .rodata.__func__.6182.lto_priv.75
+                0x000000000800384c        0xd /tmp/ccpwIpvt.ltrans2.ltrans.o
+                0x000000000800384c                __func__.6182.lto_priv.75
+ *fill*         0x0000000008003859        0x3 
+ .rodata.__func__.6866
+                0x000000000800385c        0x9 /tmp/ccpwIpvt.ltrans2.ltrans.o
+ *fill*         0x0000000008003865        0x3 
+ .rodata.__func__.6105
+                0x0000000008003868        0xc /tmp/ccpwIpvt.ltrans3.ltrans.o
+ .rodata.str1.4
+                0x0000000008003874        0x8 /tmp/ccpwIpvt.ltrans3.ltrans.o
+                                         0x35 (size before relaxing)
+ .rodata.__func__.6082.lto_priv.64
+                0x000000000800387c        0xb /tmp/ccpwIpvt.ltrans3.ltrans.o
+ *fill*         0x0000000008003887        0x1 
+ .rodata.__func__.5086
+                0x0000000008003888        0xc /tmp/ccpwIpvt.ltrans3.ltrans.o
+ .rodata.__func__.6086.lto_priv.70
+                0x0000000008003894       0x1e /tmp/ccpwIpvt.ltrans3.ltrans.o
+ *fill*         0x00000000080038b2        0x2 
+ .rodata.__func__.6840
+                0x00000000080038b4        0x9 /tmp/ccpwIpvt.ltrans4.ltrans.o
+ *fill*         0x00000000080038bd        0x3 
+ .rodata.__func__.6842
+                0x00000000080038c0        0x9 /tmp/ccpwIpvt.ltrans4.ltrans.o
+ .rodata.str1.4
+                0x00000000080038c9       0x15 /tmp/ccpwIpvt.ltrans4.ltrans.o
+ *fill*         0x00000000080038c9        0x3 
+ .rodata.ram_areas
+                0x00000000080038cc       0x80 /tmp/ccpwIpvt.ltrans4.ltrans.o
+ .rodata.__func__.6835
+                0x000000000800394c        0x9 /tmp/ccpwIpvt.ltrans4.ltrans.o
+ *fill*         0x0000000008003955        0x3 
+ .rodata.__func__.5086.lto_priv.44
+                0x0000000008003958        0xc /tmp/ccpwIpvt.ltrans5.ltrans.o
+ .rodata.__func__.6086.lto_priv.69
+                0x0000000008003964       0x11 /tmp/ccpwIpvt.ltrans5.ltrans.o
+                0x0000000008003964                __func__.6086.lto_priv.69
+ *fill*         0x0000000008003975        0x3 
+ .rodata.__func__.6079.lto_priv.71
+                0x0000000008003978        0xc /tmp/ccpwIpvt.ltrans5.ltrans.o
+                0x0000000008003978                __func__.6079.lto_priv.71
+ .rodata.__func__.6176
+                0x0000000008003984       0x15 /tmp/ccpwIpvt.ltrans5.ltrans.o
+ .rodata.str1.4
+                0x0000000008003999       0x27 /tmp/ccpwIpvt.ltrans5.ltrans.o
+ *fill*         0x0000000008003999        0x3 
+ .rodata.__func__.5086.lto_priv.43
+                0x000000000800399c        0xc /tmp/ccpwIpvt.ltrans5.ltrans.o
+                0x000000000800399c                __func__.5086.lto_priv.43
+ .rodata.__func__.6856
+                0x00000000080039a8       0x19 /tmp/ccpwIpvt.ltrans5.ltrans.o
+ *fill*         0x00000000080039c1        0x3 
+ .rodata.__func__.6115
+                0x00000000080039c4        0xd /tmp/ccpwIpvt.ltrans5.ltrans.o
+                0x00000000080039d4                . = ALIGN (0x4)
+ *fill*         0x00000000080039d1        0x3 
+                0x00000000080039d4                __rodata_end__ = .
+
+.rel.dyn        0x00000000080039d4        0x0
+ .rel.iplt      0x00000000080039d4        0x0 build/obj/crt0_v6m.o
+
+.ARM.extab
+ *(.ARM.extab* .gnu.linkonce.armextab.*)
+
+.ARM.exidx      0x00000000080039d4        0x0
+                0x00000000080039d4                __exidx_start = .
+ *(.ARM.exidx* .gnu.linkonce.armexidx.*)
+                0x00000000080039d4                __exidx_end = .
+
+.eh_frame_hdr
+ *(.eh_frame_hdr)
+
+.eh_frame
+ *(.eh_frame)
+
+.data           0x0000000020000400        0x0 load address 0x00000000080039d4
+                0x00000000080039d4                PROVIDE (_textdata, LOADADDR (.data))
+                0x0000000020000400                PROVIDE (_data, .)
+                0x00000000080039d4                _textdata_start = LOADADDR (.data)
+                0x0000000020000400                _data_start = .
+ *(.data)
+ *(.data.*)
+ *(.ramtext)
+                0x0000000020000400                . = ALIGN (0x4)
+                0x0000000020000400                PROVIDE (_edata, .)
+                0x0000000020000400                _data_end = .
+
+.igot.plt       0x0000000020000400        0x0 load address 0x00000000080039d4
+ .igot.plt      0x0000000020000400        0x0 build/obj/crt0_v6m.o
+
+.bss            0x0000000020000400      0xbb8 load address 0x00000000080039d4
+                0x0000000020000400                _bss_start = .
+ *(.bss)
+ *(.bss.*)
+ .bss.ch_factory
+                0x0000000020000400       0x48 /tmp/ccpwIpvt.ltrans0.ltrans.o
+ .bss.default_heap
+                0x0000000020000448       0x1c /tmp/ccpwIpvt.ltrans0.ltrans.o
+ .bss.ch_memcore
+                0x0000000020000464        0x8 /tmp/ccpwIpvt.ltrans0.ltrans.o
+                0x0000000020000464                ch_memcore
+ .bss.dma.lto_priv.74
+                0x000000002000046c       0x30 /tmp/ccpwIpvt.ltrans0.ltrans.o
+                0x000000002000046c                dma.lto_priv.74
+ .bss.ADCGAIN_value
+                0x000000002000049c        0x1 /tmp/ccpwIpvt.ltrans0.ltrans.o
+ *fill*         0x000000002000049d        0x3 
+ .bss.ch_idle_thread_wa
+                0x00000000200004a0       0xd8 /tmp/ccpwIpvt.ltrans0.ltrans.o
+ .bss.ADCD1     0x0000000020000578       0x34 /tmp/ccpwIpvt.ltrans0.ltrans.o
+                0x0000000020000578                ADCD1
+ .bss.ADCOFFSET_value
+                0x00000000200005ac        0x1 /tmp/ccpwIpvt.ltrans0.ltrans.o
+ *fill*         0x00000000200005ad        0x3 
+ .bss.GAIN      0x00000000200005b0        0x4 /tmp/ccpwIpvt.ltrans0.ltrans.o
+ *fill*         0x00000000200005b4        0x4 
+ .bss.waThread1
+                0x00000000200005b8      0x148 /tmp/ccpwIpvt.ltrans0.ltrans.o
+ .bss.ch        0x0000000020000700      0x884 /tmp/ccpwIpvt.ltrans5.ltrans.o
+                0x0000000020000700                ch
+ .bss.I2CD1     0x0000000020000f84       0x34 /tmp/ccpwIpvt.ltrans5.ltrans.o
+                0x0000000020000f84                I2CD1
+ *(COMMON)
+                0x0000000020000fb8                . = ALIGN (0x4)
+                0x0000000020000fb8                _bss_end = .
+                [!provide]                        PROVIDE (end, .)
+                0x0000000020000000                __ram0_start__ = ORIGIN (ram0)
+                0x0000000000001000                __ram0_size__ = LENGTH (ram0)
+                0x0000000020001000                __ram0_end__ = (__ram0_start__ + __ram0_size__)
+                0x0000000000000000                __ram1_start__ = ORIGIN (ram1)
+                0x0000000000000000                __ram1_size__ = LENGTH (ram1)
+                0x0000000000000000                __ram1_end__ = (__ram1_start__ + __ram1_size__)
+                0x0000000000000000                __ram2_start__ = ORIGIN (ram2)
+                0x0000000000000000                __ram2_size__ = LENGTH (ram2)
+                0x0000000000000000                __ram2_end__ = (__ram2_start__ + __ram2_size__)
+                0x0000000000000000                __ram3_start__ = ORIGIN (ram3)
+                0x0000000000000000                __ram3_size__ = LENGTH (ram3)
+                0x0000000000000000                __ram3_end__ = (__ram3_start__ + __ram3_size__)
+                0x0000000000000000                __ram4_start__ = ORIGIN (ram4)
+                0x0000000000000000                __ram4_size__ = LENGTH (ram4)
+                0x0000000000000000                __ram4_end__ = (__ram4_start__ + __ram4_size__)
+                0x0000000000000000                __ram5_start__ = ORIGIN (ram5)
+                0x0000000000000000                __ram5_size__ = LENGTH (ram5)
+                0x0000000000000000                __ram5_end__ = (__ram5_start__ + __ram5_size__)
+                0x0000000000000000                __ram6_start__ = ORIGIN (ram6)
+                0x0000000000000000                __ram6_size__ = LENGTH (ram6)
+                0x0000000000000000                __ram6_end__ = (__ram6_start__ + __ram6_size__)
+                0x0000000000000000                __ram7_start__ = ORIGIN (ram7)
+                0x0000000000000000                __ram7_size__ = LENGTH (ram7)
+                0x0000000000000000                __ram7_end__ = (__ram7_start__ + __ram7_size__)
+                0x0000000008000000                __flash0_start__ = ORIGIN (flash0)
+                0x0000000000008000                __flash0_size__ = LENGTH (flash0)
+                0x0000000008008000                __flash0_end__ = (__flash0_start__ + __flash0_size__)
+                0x0000000000000000                __flash1_start__ = ORIGIN (flash1)
+                0x0000000000000000                __flash1_size__ = LENGTH (flash1)
+                0x0000000000000000                __flash1_end__ = (__flash1_start__ + __flash1_size__)
+                0x0000000000000000                __flash2_start__ = ORIGIN (flash2)
+                0x0000000000000000                __flash2_size__ = LENGTH (flash2)
+                0x0000000000000000                __flash2_end__ = (__flash2_start__ + __flash2_size__)
+                0x0000000000000000                __flash3_start__ = ORIGIN (flash3)
+                0x0000000000000000                __flash3_size__ = LENGTH (flash3)
+                0x0000000000000000                __flash3_end__ = (__flash3_start__ + __flash3_size__)
+                0x0000000000000000                __flash4_start__ = ORIGIN (flash4)
+                0x0000000000000000                __flash4_size__ = LENGTH (flash4)
+                0x0000000000000000                __flash4_end__ = (__flash4_start__ + __flash4_size__)
+                0x0000000000000000                __flash5_start__ = ORIGIN (flash5)
+                0x0000000000000000                __flash5_size__ = LENGTH (flash5)
+                0x0000000000000000                __flash5_end__ = (__flash5_start__ + __flash5_size__)
+                0x0000000000000000                __flash6_start__ = ORIGIN (flash6)
+                0x0000000000000000                __flash6_size__ = LENGTH (flash6)
+                0x0000000000000000                __flash6_end__ = (__flash6_start__ + __flash6_size__)
+                0x0000000000000000                __flash7_start__ = ORIGIN (flash7)
+                0x0000000000000000                __flash7_size__ = LENGTH (flash7)
+                0x0000000000000000                __flash7_end__ = (__flash7_start__ + __flash7_size__)
+
+.ram0_init      0x0000000020000fb8        0x0 load address 0x00000000080039d4
+                0x00000000080039d4                __ram0_init_text__ = LOADADDR (.ram0_init)
+                0x0000000020000fb8                __ram0_init__ = .
+ *(.ram0_init)
+ *(.ram0_init.*)
+                0x0000000020000fb8                . = ALIGN (0x4)
+
+.ram0           0x0000000020000fb8        0x0 load address 0x00000000080039d4
+                0x0000000020000fb8                __ram0_clear__ = .
+ *(.ram0_clear)
+ *(.ram0_clear.*)
+                0x0000000020000fb8                . = ALIGN (0x4)
+                0x0000000020000fb8                __ram0_noinit__ = .
+ *(.ram0)
+ *(.ram0.*)
+                0x0000000020000fb8                . = ALIGN (0x4)
+                0x0000000020000fb8                __ram0_free__ = .
+
+.ram1_init      0x0000000000000000        0x0 load address 0x00000000080039d4
+                0x00000000080039d4                __ram1_init_text__ = LOADADDR (.ram1_init)
+                0x0000000000000000                __ram1_init__ = .
+ *(.ram1_init)
+ *(.ram1_init.*)
+                0x0000000000000000                . = ALIGN (0x4)
+
+.ram1           0x0000000000000000        0x0 load address 0x00000000080039d4
+                0x0000000000000000                __ram1_clear__ = .
+ *(.ram1_clear)
+ *(.ram1_clear.*)
+                0x0000000000000000                . = ALIGN (0x4)
+                0x0000000000000000                __ram1_noinit__ = .
+ *(.ram1)
+ *(.ram1.*)
+                0x0000000000000000                . = ALIGN (0x4)
+                0x0000000000000000                __ram1_free__ = .
+
+.ram2_init      0x0000000000000000        0x0 load address 0x00000000080039d4
+                0x00000000080039d4                __ram2_init_text__ = LOADADDR (.ram2_init)
+                0x0000000000000000                __ram2_init__ = .
+ *(.ram2_init)
+ *(.ram2_init.*)
+                0x0000000000000000                . = ALIGN (0x4)
+
+.ram2           0x0000000000000000        0x0 load address 0x00000000080039d4
+                0x0000000000000000                __ram2_clear__ = .
+ *(.ram2_clear)
+ *(.ram2_clear.*)
+                0x0000000000000000                . = ALIGN (0x4)
+                0x0000000000000000                __ram2_noinit__ = .
+ *(.ram2)
+ *(.ram2.*)
+                0x0000000000000000                . = ALIGN (0x4)
+                0x0000000000000000                __ram2_free__ = .
+
+.ram3_init      0x0000000000000000        0x0 load address 0x00000000080039d4
+                0x00000000080039d4                __ram3_init_text__ = LOADADDR (.ram3_init)
+                0x0000000000000000                __ram3_init__ = .
+ *(.ram3_init)
+ *(.ram3_init.*)
+                0x0000000000000000                . = ALIGN (0x4)
+
+.ram3           0x0000000000000000        0x0 load address 0x00000000080039d4
+                0x0000000000000000                __ram3_clear__ = .
+ *(.ram3_clear)
+ *(.ram3_clear.*)
+                0x0000000000000000                . = ALIGN (0x4)
+                0x0000000000000000                __ram3_noinit__ = .
+ *(.ram3)
+ *(.ram3.*)
+                0x0000000000000000                . = ALIGN (0x4)
+                0x0000000000000000                __ram3_free__ = .
+
+.ram4_init      0x0000000000000000        0x0 load address 0x00000000080039d4
+                0x00000000080039d4                __ram4_init_text__ = LOADADDR (.ram4_init)
+                0x0000000000000000                __ram4_init__ = .
+ *(.ram4_init)
+ *(.ram4_init.*)
+                0x0000000000000000                . = ALIGN (0x4)
+
+.ram4           0x0000000000000000        0x0 load address 0x00000000080039d4
+                0x0000000000000000                __ram4_clear__ = .
+ *(.ram4_clear)
+ *(.ram4_clear.*)
+                0x0000000000000000                . = ALIGN (0x4)
+                0x0000000000000000                __ram4_noinit__ = .
+ *(.ram4)
+ *(.ram4.*)
+                0x0000000000000000                . = ALIGN (0x4)
+                0x0000000000000000                __ram4_free__ = .
+
+.ram5_init      0x0000000000000000        0x0 load address 0x00000000080039d4
+                0x00000000080039d4                __ram5_init_text__ = LOADADDR (.ram5_init)
+                0x0000000000000000                __ram5_init__ = .
+ *(.ram5_init)
+ *(.ram5_init.*)
+                0x0000000000000000                . = ALIGN (0x4)
+
+.ram5           0x0000000000000000        0x0 load address 0x00000000080039d4
+                0x0000000000000000                __ram5_clear__ = .
+ *(.ram5_clear)
+ *(.ram5_clear.*)
+                0x0000000000000000                . = ALIGN (0x4)
+                0x0000000000000000                __ram5_noinit__ = .
+ *(.ram5)
+ *(.ram5.*)
+                0x0000000000000000                . = ALIGN (0x4)
+                0x0000000000000000                __ram5_free__ = .
+
+.ram6_init      0x0000000000000000        0x0 load address 0x00000000080039d4
+                0x00000000080039d4                __ram6_init_text__ = LOADADDR (.ram6_init)
+                0x0000000000000000                __ram6_init__ = .
+ *(.ram6_init)
+ *(.ram6_init.*)
+                0x0000000000000000                . = ALIGN (0x4)
+
+.ram6           0x0000000000000000        0x0 load address 0x00000000080039d4
+                0x0000000000000000                __ram6_clear__ = .
+ *(.ram6_clear)
+ *(.ram6_clear.*)
+                0x0000000000000000                . = ALIGN (0x4)
+                0x0000000000000000                __ram6_noinit__ = .
+ *(.ram6)
+ *(.ram6.*)
+                0x0000000000000000                . = ALIGN (0x4)
+                0x0000000000000000                __ram6_free__ = .
+
+.ram7_init      0x0000000000000000        0x0 load address 0x00000000080039d4
+                0x00000000080039d4                __ram7_init_text__ = LOADADDR (.ram7_init)
+                0x0000000000000000                __ram7_init__ = .
+ *(.ram7_init)
+ *(.ram7_init.*)
+                0x0000000000000000                . = ALIGN (0x4)
+
+.ram7           0x0000000000000000        0x0 load address 0x00000000080039d4
+                0x0000000000000000                __ram7_clear__ = .
+ *(.ram7_clear)
+ *(.ram7_clear.*)
+                0x0000000000000000                . = ALIGN (0x4)
+                0x0000000000000000                __ram7_noinit__ = .
+ *(.ram7)
+ *(.ram7.*)
+                0x0000000000000000                . = ALIGN (0x4)
+                0x0000000000000000                __ram7_free__ = .
+
+.flash0         0x00000000080039d4        0x0
+                0x00000000080039d4                __flash0_init__ = .
+ *(.flash0_init)
+ *(.flash0_init.*)
+                0x00000000080039d4                __flash0_free__ = .
+
+.flash1         0x0000000000000000        0x0
+                0x0000000000000000                __flash1_init__ = .
+ *(.flash1_init)
+ *(.flash1_init.*)
+                0x0000000000000000                __flash1_free__ = .
+
+.flash2         0x0000000000000000        0x0
+                0x0000000000000000                __flash2_init__ = .
+ *(.flash2_init)
+ *(.flash2_init.*)
+                0x0000000000000000                __flash2_free__ = .
+
+.flash3         0x0000000000000000        0x0
+                0x0000000000000000                __flash3_init__ = .
+ *(.flash3_init)
+ *(.flash3_init.*)
+                0x0000000000000000                __flash3_free__ = .
+
+.flash4         0x0000000000000000        0x0
+                0x0000000000000000                __flash4_init__ = .
+ *(.flash4_init)
+ *(.flash4_init.*)
+                0x0000000000000000                __flash4_free__ = .
+
+.flash5         0x0000000000000000        0x0
+                0x0000000000000000                __flash5_init__ = .
+ *(.flash5_init)
+ *(.flash5_init.*)
+                0x0000000000000000                __flash5_free__ = .
+
+.flash6         0x0000000000000000        0x0
+                0x0000000000000000                __flash6_init__ = .
+ *(.flash6_init)
+ *(.flash6_init.*)
+                0x0000000000000000                __flash6_free__ = .
+
+.flash7         0x0000000000000000        0x0
+                0x0000000000000000                __flash7_init__ = .
+ *(.flash7_init)
+ *(.flash7_init.*)
+                0x0000000000000000                __flash7_free__ = .
+
+.heap           0x0000000020000fb8       0x48
+                0x0000000020000fb8                . = ALIGN (0x8)
+                0x0000000020000fb8                __heap_base__ = .
+                0x0000000020001000                . = (ORIGIN (HEAP_RAM) + LENGTH (HEAP_RAM))
+ *fill*         0x0000000020000fb8       0x48 
+                0x0000000020001000                __heap_end__ = .
+                0x0000000000000200                __process_stack_size__ = 0x200
+                0x0000000000000200                __main_stack_size__ = 0x200
+START GROUP
+LOAD /usr/lib/gcc/arm-none-eabi/4.9.3/armv6-m/libgcc.a
+LOAD /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv6-m/libg.a
+LOAD /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv6-m/libc.a
+END GROUP
+OUTPUT(build/ch.elf elf32-littlearm)
+
+.ARM.attributes
+                0x0000000000000000       0x2d
+ .ARM.attributes
+                0x0000000000000000       0x21 build/obj/crt0_v6m.o
+ .ARM.attributes
+                0x0000000000000021       0x21 build/obj/vectors.o
+ .ARM.attributes
+                0x0000000000000042       0x21 build/obj/chcoreasm_v6m.o
+ .ARM.attributes
+                0x0000000000000063       0x2f /tmp/ccpwIpvt.ltrans0.ltrans.o
+ .ARM.attributes
+                0x0000000000000092       0x2f /tmp/ccpwIpvt.ltrans1.ltrans.o
+ .ARM.attributes
+                0x00000000000000c1       0x2f /tmp/ccpwIpvt.ltrans2.ltrans.o
+ .ARM.attributes
+                0x00000000000000f0       0x2f /tmp/ccpwIpvt.ltrans3.ltrans.o
+ .ARM.attributes
+                0x000000000000011f       0x2f /tmp/ccpwIpvt.ltrans4.ltrans.o
+ .ARM.attributes
+                0x000000000000014e       0x2f /tmp/ccpwIpvt.ltrans5.ltrans.o
+ .ARM.attributes
+                0x000000000000017d       0x2c /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv6-m/libg.a(lib_a-memset.o)
+
+.comment        0x0000000000000000       0x70
+ .comment       0x0000000000000000       0x38 /tmp/ccpwIpvt.ltrans0.ltrans.o
+                                         0x39 (size before relaxing)
+ .comment       0x0000000000000038       0x39 /tmp/ccpwIpvt.ltrans1.ltrans.o
+ .comment       0x0000000000000038       0x39 /tmp/ccpwIpvt.ltrans2.ltrans.o
+ .comment       0x0000000000000038       0x39 /tmp/ccpwIpvt.ltrans3.ltrans.o
+ .comment       0x0000000000000038       0x39 /tmp/ccpwIpvt.ltrans4.ltrans.o
+ .comment       0x0000000000000038       0x39 /tmp/ccpwIpvt.ltrans5.ltrans.o
+ .comment       0x0000000000000038       0x38 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv6-m/libg.a(lib_a-memset.o)
+                                         0x39 (size before relaxing)
+
+.debug_line     0x0000000000000000     0x3a1a
+ .debug_line    0x0000000000000000       0xcf build/obj/crt0_v6m.o
+ .debug_line    0x00000000000000cf       0x72 build/obj/vectors.o
+ .debug_line    0x0000000000000141       0x91 build/obj/chcoreasm_v6m.o
+ .debug_line    0x00000000000001d2      0xebd /tmp/ccpwIpvt.ltrans0.ltrans.o
+ .debug_line    0x000000000000108f      0x982 /tmp/ccpwIpvt.ltrans1.ltrans.o
+ .debug_line    0x0000000000001a11      0x8e4 /tmp/ccpwIpvt.ltrans2.ltrans.o
+ .debug_line    0x00000000000022f5      0x82e /tmp/ccpwIpvt.ltrans3.ltrans.o
+ .debug_line    0x0000000000002b23      0x7bd /tmp/ccpwIpvt.ltrans4.ltrans.o
+ .debug_line    0x00000000000032e0      0x62b /tmp/ccpwIpvt.ltrans5.ltrans.o
+ .debug_line    0x000000000000390b      0x10f /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv6-m/libg.a(lib_a-memset.o)
+
+.debug_info     0x0000000000000000     0xd839
+ .debug_info    0x0000000000000000       0x73 build/obj/crt0_v6m.o
+ .debug_info    0x0000000000000073       0x72 build/obj/vectors.o
+ .debug_info    0x00000000000000e5       0x76 build/obj/chcoreasm_v6m.o
+ .debug_info    0x000000000000015b     0x3f3e /tmp/ccpwIpvt.ltrans0.ltrans.o
+ .debug_info    0x0000000000004099     0x213e /tmp/ccpwIpvt.ltrans1.ltrans.o
+ .debug_info    0x00000000000061d7     0x21c4 /tmp/ccpwIpvt.ltrans2.ltrans.o
+ .debug_info    0x000000000000839b     0x1bc0 /tmp/ccpwIpvt.ltrans3.ltrans.o
+ .debug_info    0x0000000000009f5b     0x1f14 /tmp/ccpwIpvt.ltrans4.ltrans.o
+ .debug_info    0x000000000000be6f     0x18b3 /tmp/ccpwIpvt.ltrans5.ltrans.o
+ .debug_info    0x000000000000d722      0x117 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv6-m/libg.a(lib_a-memset.o)
+
+.debug_abbrev   0x0000000000000000     0x1df5
+ .debug_abbrev  0x0000000000000000       0x14 build/obj/crt0_v6m.o
+ .debug_abbrev  0x0000000000000014       0x14 build/obj/vectors.o
+ .debug_abbrev  0x0000000000000028       0x14 build/obj/chcoreasm_v6m.o
+ .debug_abbrev  0x000000000000003c      0x54b /tmp/ccpwIpvt.ltrans0.ltrans.o
+ .debug_abbrev  0x0000000000000587      0x517 /tmp/ccpwIpvt.ltrans1.ltrans.o
+ .debug_abbrev  0x0000000000000a9e      0x501 /tmp/ccpwIpvt.ltrans2.ltrans.o
+ .debug_abbrev  0x0000000000000f9f      0x4e0 /tmp/ccpwIpvt.ltrans3.ltrans.o
+ .debug_abbrev  0x000000000000147f      0x466 /tmp/ccpwIpvt.ltrans4.ltrans.o
+ .debug_abbrev  0x00000000000018e5      0x471 /tmp/ccpwIpvt.ltrans5.ltrans.o
+ .debug_abbrev  0x0000000000001d56       0x9f /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv6-m/libg.a(lib_a-memset.o)
+
+.debug_aranges  0x0000000000000000      0x238
+ .debug_aranges
+                0x0000000000000000       0x20 build/obj/crt0_v6m.o
+ .debug_aranges
+                0x0000000000000020       0x20 build/obj/vectors.o
+ .debug_aranges
+                0x0000000000000040       0x20 build/obj/chcoreasm_v6m.o
+ .debug_aranges
+                0x0000000000000060       0x20 /tmp/ccpwIpvt.ltrans0.ltrans.o
+ .debug_aranges
+                0x0000000000000080       0x78 /tmp/ccpwIpvt.ltrans1.ltrans.o
+ .debug_aranges
+                0x00000000000000f8       0x48 /tmp/ccpwIpvt.ltrans2.ltrans.o
+ .debug_aranges
+                0x0000000000000140       0x48 /tmp/ccpwIpvt.ltrans3.ltrans.o
+ .debug_aranges
+                0x0000000000000188       0x60 /tmp/ccpwIpvt.ltrans4.ltrans.o
+ .debug_aranges
+                0x00000000000001e8       0x30 /tmp/ccpwIpvt.ltrans5.ltrans.o
+ .debug_aranges
+                0x0000000000000218       0x20 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv6-m/libg.a(lib_a-memset.o)
+
+.debug_loc      0x0000000000000000     0x534a
+ .debug_loc     0x0000000000000000     0x16d8 /tmp/ccpwIpvt.ltrans0.ltrans.o
+ .debug_loc     0x00000000000016d8     0x104b /tmp/ccpwIpvt.ltrans1.ltrans.o
+ .debug_loc     0x0000000000002723      0xa69 /tmp/ccpwIpvt.ltrans2.ltrans.o
+ .debug_loc     0x000000000000318c     0x1024 /tmp/ccpwIpvt.ltrans3.ltrans.o
+ .debug_loc     0x00000000000041b0      0x859 /tmp/ccpwIpvt.ltrans4.ltrans.o
+ .debug_loc     0x0000000000004a09      0x771 /tmp/ccpwIpvt.ltrans5.ltrans.o
+ .debug_loc     0x000000000000517a      0x1d0 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv6-m/libg.a(lib_a-memset.o)
+
+.debug_ranges   0x0000000000000000     0x2610
+ .debug_ranges  0x0000000000000000      0xbd0 /tmp/ccpwIpvt.ltrans0.ltrans.o
+ .debug_ranges  0x0000000000000bd0      0x7a0 /tmp/ccpwIpvt.ltrans1.ltrans.o
+ .debug_ranges  0x0000000000001370      0x538 /tmp/ccpwIpvt.ltrans2.ltrans.o
+ .debug_ranges  0x00000000000018a8      0x680 /tmp/ccpwIpvt.ltrans3.ltrans.o
+ .debug_ranges  0x0000000000001f28      0x438 /tmp/ccpwIpvt.ltrans4.ltrans.o
+ .debug_ranges  0x0000000000002360      0x2a0 /tmp/ccpwIpvt.ltrans5.ltrans.o
+ .debug_ranges  0x0000000000002600       0x10 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv6-m/libg.a(lib_a-memset.o)
+
+.debug_str      0x0000000000000000     0x1d2d
+ .debug_str     0x0000000000000000     0x11fd /tmp/ccpwIpvt.ltrans0.ltrans.o
+                                       0x1306 (size before relaxing)
+ .debug_str     0x00000000000011fd      0x2af /tmp/ccpwIpvt.ltrans1.ltrans.o
+                                        0x9c1 (size before relaxing)
+ .debug_str     0x00000000000014ac      0x254 /tmp/ccpwIpvt.ltrans2.ltrans.o
+                                        0x9a8 (size before relaxing)
+ .debug_str     0x0000000000001700      0x14c /tmp/ccpwIpvt.ltrans3.ltrans.o
+                                        0x900 (size before relaxing)
+ .debug_str     0x000000000000184c      0x154 /tmp/ccpwIpvt.ltrans4.ltrans.o
+                                        0x94c (size before relaxing)
+ .debug_str     0x00000000000019a0      0x22b /tmp/ccpwIpvt.ltrans5.ltrans.o
+                                        0x9d8 (size before relaxing)
+ .debug_str     0x0000000000001bcb      0x162 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv6-m/libg.a(lib_a-memset.o)
+                                        0x1d1 (size before relaxing)
+
+.debug_frame    0x0000000000000000      0x4cc
+ .debug_frame   0x0000000000000000       0x3c /tmp/ccpwIpvt.ltrans0.ltrans.o
+ .debug_frame   0x000000000000003c      0x164 /tmp/ccpwIpvt.ltrans1.ltrans.o
+ .debug_frame   0x00000000000001a0       0xd4 /tmp/ccpwIpvt.ltrans2.ltrans.o
+ .debug_frame   0x0000000000000274       0xc0 /tmp/ccpwIpvt.ltrans3.ltrans.o
+ .debug_frame   0x0000000000000334       0xf8 /tmp/ccpwIpvt.ltrans4.ltrans.o
+ .debug_frame   0x000000000000042c       0x74 /tmp/ccpwIpvt.ltrans5.ltrans.o
+ .debug_frame   0x00000000000004a0       0x2c /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv6-m/libg.a(lib_a-memset.o)
+
+Cross Reference Table
+
+Symbol                                            File
+ADCD1                                             /tmp/ccpwIpvt.ltrans0.ltrans.o
+                                                  build/obj/hal_adc_lld.o (symbol from plugin)
+                                                  /tmp/ccpwIpvt.ltrans4.ltrans.o
+                                                  build/obj/main.o (symbol from plugin)
+ADCGAIN_value                                     build/obj/bq76920_driver.o (symbol from plugin)
+ADCGAINtoDec                                      build/obj/bq76920_driver.o (symbol from plugin)
+ADCOFFSET_value                                   build/obj/bq76920_driver.o (symbol from plugin)
+ADCtoVolt                                         build/obj/bq76920_driver.o (symbol from plugin)
+BATtoVolt                                         build/obj/bq76920_driver.o (symbol from plugin)
+BatLeft                                           build/obj/bq76920_driver.o (symbol from plugin)
+BatMax                                            build/obj/bq76920_driver.o (symbol from plugin)
+BusFault_Handler                                  build/obj/vectors.o
+CCtoVolt                                          build/obj/bq76920_driver.o (symbol from plugin)
+CRC8                                              build/obj/bq76920_driver.o (symbol from plugin)
+DebugMon_Handler                                  build/obj/vectors.o
+GAIN                                              build/obj/bq76920_driver.o (symbol from plugin)
+GetBatPercentage                                  build/obj/bq76920_driver.o (symbol from plugin)
+HardFault_Handler                                 build/obj/vectors.o
+I2CD1                                             /tmp/ccpwIpvt.ltrans5.ltrans.o
+                                                  build/obj/hal_i2c_lld.o (symbol from plugin)
+                                                  /tmp/ccpwIpvt.ltrans2.ltrans.o
+                                                  /tmp/ccpwIpvt.ltrans0.ltrans.o
+                                                  build/obj/bq76920_driver.o (symbol from plugin)
+                                                  build/obj/main.o (symbol from plugin)
+I2CReadRegisterByteWithCRC                        build/obj/bq76920_driver.o (symbol from plugin)
+                                                  build/obj/main.o (symbol from plugin)
+I2CReadRegisterByteWithCRC.constprop.3            /tmp/ccpwIpvt.ltrans5.ltrans.o
+                                                  /tmp/ccpwIpvt.ltrans0.ltrans.o
+I2CReadRegisterWordWithCRC                        build/obj/bq76920_driver.o (symbol from plugin)
+                                                  build/obj/main.o (symbol from plugin)
+I2CWriteRegisterByteWithCRC                       build/obj/bq76920_driver.o (symbol from plugin)
+                                                  build/obj/main.o (symbol from plugin)
+MemManage_Handler                                 build/obj/vectors.o
+NMI_Handler                                       /tmp/ccpwIpvt.ltrans3.ltrans.o
+                                                  build/obj/chcore_v6m.o (symbol from plugin)
+                                                  build/obj/vectors.o
+PendSV_Handler                                    build/obj/vectors.o
+Reset_Handler                                     build/obj/vectors.o
+SVC_Handler                                       build/obj/vectors.o
+SysTick_Handler                                   build/obj/vectors.o
+SystemCoreClock                                   build/obj/hal_lld.o (symbol from plugin)
+Thread1.lto_priv.46                               /tmp/ccpwIpvt.ltrans3.ltrans.o
+                                                  /tmp/ccpwIpvt.ltrans0.ltrans.o
+UsageFault_Handler                                build/obj/vectors.o
+Vector1C                                          build/obj/vectors.o
+Vector20                                          build/obj/vectors.o
+Vector24                                          build/obj/vectors.o
+Vector28                                          build/obj/vectors.o
+Vector34                                          build/obj/vectors.o
+Vector40                                          build/obj/vectors.o
+Vector44                                          build/obj/vectors.o
+Vector48                                          build/obj/vectors.o
+Vector4C                                          build/obj/vectors.o
+Vector50                                          build/obj/vectors.o
+Vector54                                          build/obj/vectors.o
+Vector58                                          build/obj/vectors.o
+Vector5C                                          build/obj/vectors.o
+Vector60                                          build/obj/vectors.o
+Vector64                                          /tmp/ccpwIpvt.ltrans2.ltrans.o
+                                                  build/obj/stm32_dma.o (symbol from plugin)
+                                                  build/obj/vectors.o
+Vector68                                          /tmp/ccpwIpvt.ltrans4.ltrans.o
+                                                  build/obj/hal_lld.o (symbol from plugin)
+                                                  build/obj/vectors.o
+Vector6C                                          /tmp/ccpwIpvt.ltrans4.ltrans.o
+                                                  build/obj/hal_lld.o (symbol from plugin)
+                                                  build/obj/vectors.o
+Vector70                                          /tmp/ccpwIpvt.ltrans4.ltrans.o
+                                                  build/obj/hal_adc_lld.o (symbol from plugin)
+                                                  build/obj/vectors.o
+Vector74                                          build/obj/vectors.o
+Vector78                                          build/obj/vectors.o
+Vector7C                                          build/obj/vectors.o
+Vector80                                          /tmp/ccpwIpvt.ltrans2.ltrans.o
+                                                  build/obj/hal_st_lld.o (symbol from plugin)
+                                                  build/obj/vectors.o
+Vector84                                          build/obj/vectors.o
+Vector88                                          build/obj/vectors.o
+Vector8C                                          build/obj/vectors.o
+Vector90                                          build/obj/vectors.o
+Vector94                                          build/obj/vectors.o
+Vector98                                          build/obj/vectors.o
+Vector9C                                          /tmp/ccpwIpvt.ltrans2.ltrans.o
+                                                  build/obj/hal_i2c_lld.o (symbol from plugin)
+                                                  build/obj/vectors.o
+VectorA0                                          build/obj/vectors.o
+VectorA4                                          build/obj/vectors.o
+VectorA8                                          build/obj/vectors.o
+VectorAC                                          build/obj/vectors.o
+VectorB0                                          build/obj/vectors.o
+VectorB4                                          build/obj/vectors.o
+VectorB8                                          build/obj/vectors.o
+VectorBC                                          build/obj/vectors.o
+__core_init                                       /tmp/ccpwIpvt.ltrans4.ltrans.o
+                                                  build/obj/crt1.o (symbol from plugin)
+                                                  build/obj/crt0_v6m.o
+__default_exit                                    /tmp/ccpwIpvt.ltrans4.ltrans.o
+                                                  build/obj/crt1.o (symbol from plugin)
+                                                  build/obj/crt0_v6m.o
+__early_init                                      /tmp/ccpwIpvt.ltrans2.ltrans.o
+                                                  build/obj/board.o (symbol from plugin)
+                                                  build/obj/crt1.o (symbol from plugin)
+                                                  build/obj/crt0_v6m.o
+__fini_array_end                                  build/obj/crt0_v6m.o
+__fini_array_start                                build/obj/crt0_v6m.o
+__func__.4221.lto_priv.65                         /tmp/ccpwIpvt.ltrans0.ltrans.o
+                                                  /tmp/ccpwIpvt.ltrans3.ltrans.o
+                                                  /tmp/ccpwIpvt.ltrans1.ltrans.o
+__func__.5086.lto_priv.43                         /tmp/ccpwIpvt.ltrans5.ltrans.o
+                                                  /tmp/ccpwIpvt.ltrans0.ltrans.o
+__func__.5086.lto_priv.52                         /tmp/ccpwIpvt.ltrans0.ltrans.o
+                                                  /tmp/ccpwIpvt.ltrans3.ltrans.o
+                                                  /tmp/ccpwIpvt.ltrans1.ltrans.o
+__func__.5086.lto_priv.53                         /tmp/ccpwIpvt.ltrans0.ltrans.o
+                                                  /tmp/ccpwIpvt.ltrans3.ltrans.o
+                                                  /tmp/ccpwIpvt.ltrans1.ltrans.o
+__func__.5275.lto_priv.62                         /tmp/ccpwIpvt.ltrans0.ltrans.o
+__func__.6079.lto_priv.71                         /tmp/ccpwIpvt.ltrans5.ltrans.o
+                                                  /tmp/ccpwIpvt.ltrans4.ltrans.o
+                                                  /tmp/ccpwIpvt.ltrans3.ltrans.o
+                                                  /tmp/ccpwIpvt.ltrans1.ltrans.o
+__func__.6082.lto_priv.63                         /tmp/ccpwIpvt.ltrans0.ltrans.o
+                                                  /tmp/ccpwIpvt.ltrans3.ltrans.o
+                                                  /tmp/ccpwIpvt.ltrans1.ltrans.o
+__func__.6086.lto_priv.69                         /tmp/ccpwIpvt.ltrans5.ltrans.o
+                                                  /tmp/ccpwIpvt.ltrans3.ltrans.o
+                                                  /tmp/ccpwIpvt.ltrans1.ltrans.o
+__func__.6091.lto_priv.68                         /tmp/ccpwIpvt.ltrans0.ltrans.o
+__func__.6182.lto_priv.75                         /tmp/ccpwIpvt.ltrans2.ltrans.o
+                                                  /tmp/ccpwIpvt.ltrans4.ltrans.o
+__func__.6833.lto_priv.67                         /tmp/ccpwIpvt.ltrans0.ltrans.o
+                                                  /tmp/ccpwIpvt.ltrans3.ltrans.o
+                                                  /tmp/ccpwIpvt.ltrans1.ltrans.o
+__func__.6840.lto_priv.66                         /tmp/ccpwIpvt.ltrans0.ltrans.o
+                                                  /tmp/ccpwIpvt.ltrans3.ltrans.o
+                                                  /tmp/ccpwIpvt.ltrans2.ltrans.o
+                                                  /tmp/ccpwIpvt.ltrans1.ltrans.o
+__func__.6845.lto_priv.55                         /tmp/ccpwIpvt.ltrans5.ltrans.o
+__func__.6869.lto_priv.47                         /tmp/ccpwIpvt.ltrans5.ltrans.o
+__func__.6873.lto_priv.54                         /tmp/ccpwIpvt.ltrans5.ltrans.o
+__heap_base__                                     /tmp/ccpwIpvt.ltrans0.ltrans.o
+                                                  build/obj/chmemcore.o (symbol from plugin)
+__heap_end__                                      /tmp/ccpwIpvt.ltrans0.ltrans.o
+                                                  build/obj/chmemcore.o (symbol from plugin)
+__init_array_end                                  build/obj/crt0_v6m.o
+__init_array_start                                build/obj/crt0_v6m.o
+__init_ram_areas                                  /tmp/ccpwIpvt.ltrans4.ltrans.o
+                                                  build/obj/crt1.o (symbol from plugin)
+                                                  build/obj/crt0_v6m.o
+__late_init                                       /tmp/ccpwIpvt.ltrans4.ltrans.o
+                                                  build/obj/crt1.o (symbol from plugin)
+                                                  build/obj/crt0_v6m.o
+__main_stack_base__                               build/obj/crt0_v6m.o
+__main_stack_end__                                build/obj/vectors.o
+                                                  build/obj/crt0_v6m.o
+__main_thread_stack_base__                        /tmp/ccpwIpvt.ltrans0.ltrans.o
+                                                  build/obj/chsys.o (symbol from plugin)
+__process_stack_base__                            build/obj/crt0_v6m.o
+__process_stack_end__                             build/obj/crt0_v6m.o
+__ram0_clear__                                    /tmp/ccpwIpvt.ltrans4.ltrans.o
+                                                  build/obj/crt1.o (symbol from plugin)
+__ram0_init__                                     /tmp/ccpwIpvt.ltrans4.ltrans.o
+                                                  build/obj/crt1.o (symbol from plugin)
+__ram0_init_text__                                /tmp/ccpwIpvt.ltrans4.ltrans.o
+                                                  build/obj/crt1.o (symbol from plugin)
+__ram0_noinit__                                   /tmp/ccpwIpvt.ltrans4.ltrans.o
+                                                  build/obj/crt1.o (symbol from plugin)
+__ram1_clear__                                    /tmp/ccpwIpvt.ltrans4.ltrans.o
+                                                  build/obj/crt1.o (symbol from plugin)
+__ram1_init__                                     /tmp/ccpwIpvt.ltrans4.ltrans.o
+                                                  build/obj/crt1.o (symbol from plugin)
+__ram1_init_text__                                /tmp/ccpwIpvt.ltrans4.ltrans.o
+                                                  build/obj/crt1.o (symbol from plugin)
+__ram1_noinit__                                   /tmp/ccpwIpvt.ltrans4.ltrans.o
+                                                  build/obj/crt1.o (symbol from plugin)
+__ram2_clear__                                    /tmp/ccpwIpvt.ltrans4.ltrans.o
+                                                  build/obj/crt1.o (symbol from plugin)
+__ram2_init__                                     /tmp/ccpwIpvt.ltrans4.ltrans.o
+                                                  build/obj/crt1.o (symbol from plugin)
+__ram2_init_text__                                /tmp/ccpwIpvt.ltrans4.ltrans.o
+                                                  build/obj/crt1.o (symbol from plugin)
+__ram2_noinit__                                   /tmp/ccpwIpvt.ltrans4.ltrans.o
+                                                  build/obj/crt1.o (symbol from plugin)
+__ram3_clear__                                    /tmp/ccpwIpvt.ltrans4.ltrans.o
+                                                  build/obj/crt1.o (symbol from plugin)
+__ram3_init__                                     /tmp/ccpwIpvt.ltrans4.ltrans.o
+                                                  build/obj/crt1.o (symbol from plugin)
+__ram3_init_text__                                /tmp/ccpwIpvt.ltrans4.ltrans.o
+                                                  build/obj/crt1.o (symbol from plugin)
+__ram3_noinit__                                   /tmp/ccpwIpvt.ltrans4.ltrans.o
+                                                  build/obj/crt1.o (symbol from plugin)
+__ram4_clear__                                    /tmp/ccpwIpvt.ltrans4.ltrans.o
+                                                  build/obj/crt1.o (symbol from plugin)
+__ram4_init__                                     /tmp/ccpwIpvt.ltrans4.ltrans.o
+                                                  build/obj/crt1.o (symbol from plugin)
+__ram4_init_text__                                /tmp/ccpwIpvt.ltrans4.ltrans.o
+                                                  build/obj/crt1.o (symbol from plugin)
+__ram4_noinit__                                   /tmp/ccpwIpvt.ltrans4.ltrans.o
+                                                  build/obj/crt1.o (symbol from plugin)
+__ram5_clear__                                    /tmp/ccpwIpvt.ltrans4.ltrans.o
+                                                  build/obj/crt1.o (symbol from plugin)
+__ram5_init__                                     /tmp/ccpwIpvt.ltrans4.ltrans.o
+                                                  build/obj/crt1.o (symbol from plugin)
+__ram5_init_text__                                /tmp/ccpwIpvt.ltrans4.ltrans.o
+                                                  build/obj/crt1.o (symbol from plugin)
+__ram5_noinit__                                   /tmp/ccpwIpvt.ltrans4.ltrans.o
+                                                  build/obj/crt1.o (symbol from plugin)
+__ram6_clear__                                    /tmp/ccpwIpvt.ltrans4.ltrans.o
+                                                  build/obj/crt1.o (symbol from plugin)
+__ram6_init__                                     /tmp/ccpwIpvt.ltrans4.ltrans.o
+                                                  build/obj/crt1.o (symbol from plugin)
+__ram6_init_text__                                /tmp/ccpwIpvt.ltrans4.ltrans.o
+                                                  build/obj/crt1.o (symbol from plugin)
+__ram6_noinit__                                   /tmp/ccpwIpvt.ltrans4.ltrans.o
+                                                  build/obj/crt1.o (symbol from plugin)
+__ram7_clear__                                    /tmp/ccpwIpvt.ltrans4.ltrans.o
+                                                  build/obj/crt1.o (symbol from plugin)
+__ram7_init__                                     /tmp/ccpwIpvt.ltrans4.ltrans.o
+                                                  build/obj/crt1.o (symbol from plugin)
+__ram7_init_text__                                /tmp/ccpwIpvt.ltrans4.ltrans.o
+                                                  build/obj/crt1.o (symbol from plugin)
+__ram7_noinit__                                   /tmp/ccpwIpvt.ltrans4.ltrans.o
+                                                  build/obj/crt1.o (symbol from plugin)
+_bss_end                                          build/obj/crt0_v6m.o
+_bss_start                                        build/obj/crt0_v6m.o
+_core_init                                        build/obj/chmemcore.o (symbol from plugin)
+                                                  build/obj/chsys.o (symbol from plugin)
+_crt0_entry                                       build/obj/crt0_v6m.o
+                                                  build/obj/vectors.o
+_data                                             build/obj/crt0_v6m.o
+_dbg_check_disable                                build/obj/chdebug.o (symbol from plugin)
+_dbg_check_enable                                 build/obj/chdebug.o (symbol from plugin)
+                                                  build/obj/chsys.o (symbol from plugin)
+_dbg_check_enter_isr                              build/obj/chdebug.o (symbol from plugin)
+                                                  build/obj/hal_st_lld.o (symbol from plugin)
+                                                  build/obj/hal_i2c_lld.o (symbol from plugin)
+                                                  build/obj/stm32_dma.o (symbol from plugin)
+                                                  build/obj/hal_adc_lld.o (symbol from plugin)
+                                                  build/obj/hal_lld.o (symbol from plugin)
+_dbg_check_leave_isr                              build/obj/chdebug.o (symbol from plugin)
+                                                  build/obj/hal_st_lld.o (symbol from plugin)
+                                                  build/obj/hal_i2c_lld.o (symbol from plugin)
+                                                  build/obj/stm32_dma.o (symbol from plugin)
+                                                  build/obj/hal_adc_lld.o (symbol from plugin)
+                                                  build/obj/hal_lld.o (symbol from plugin)
+_dbg_check_lock                                   /tmp/ccpwIpvt.ltrans1.ltrans.o
+                                                  build/obj/chdebug.o (symbol from plugin)
+                                                  /tmp/ccpwIpvt.ltrans0.ltrans.o
+                                                  build/obj/chpipes.o (symbol from plugin)
+                                                  build/obj/chmempools.o (symbol from plugin)
+                                                  build/obj/chmemcore.o (symbol from plugin)
+                                                  build/obj/chmboxes.o (symbol from plugin)
+                                                  build/obj/chdynamic.o (symbol from plugin)
+                                                  build/obj/chmsg.o (symbol from plugin)
+                                                  build/obj/chevents.o (symbol from plugin)
+                                                  build/obj/chcond.o (symbol from plugin)
+                                                  build/obj/chmtx.o (symbol from plugin)
+                                                  build/obj/chsem.o (symbol from plugin)
+                                                  build/obj/chregistry.o (symbol from plugin)
+                                                  build/obj/chthreads.o (symbol from plugin)
+                                                  build/obj/chtrace.o (symbol from plugin)
+                                                  build/obj/chsys.o (symbol from plugin)
+                                                  build/obj/hal_i2c_lld.o (symbol from plugin)
+                                                  build/obj/stm32_dma.o (symbol from plugin)
+                                                  build/obj/hal_i2c.o (symbol from plugin)
+                                                  build/obj/hal_adc.o (symbol from plugin)
+                                                  build/obj/hal_queues.o (symbol from plugin)
+                                                  build/obj/hal_buffers.o (symbol from plugin)
+                                                  build/obj/chcoreasm_v6m.o
+_dbg_check_lock_from_isr                          build/obj/chdebug.o (symbol from plugin)
+                                                  build/obj/chschd.o (symbol from plugin)
+                                                  build/obj/chsys.o (symbol from plugin)
+                                                  build/obj/hal_st_lld.o (symbol from plugin)
+                                                  build/obj/hal_i2c_lld.o (symbol from plugin)
+                                                  build/obj/hal_adc_lld.o (symbol from plugin)
+_dbg_check_suspend                                build/obj/chdebug.o (symbol from plugin)
+_dbg_check_unlock                                 /tmp/ccpwIpvt.ltrans1.ltrans.o
+                                                  build/obj/chdebug.o (symbol from plugin)
+                                                  /tmp/ccpwIpvt.ltrans0.ltrans.o
+                                                  build/obj/chpipes.o (symbol from plugin)
+                                                  build/obj/chmempools.o (symbol from plugin)
+                                                  build/obj/chmemcore.o (symbol from plugin)
+                                                  build/obj/chmboxes.o (symbol from plugin)
+                                                  build/obj/chdynamic.o (symbol from plugin)
+                                                  build/obj/chmsg.o (symbol from plugin)
+                                                  build/obj/chevents.o (symbol from plugin)
+                                                  build/obj/chcond.o (symbol from plugin)
+                                                  build/obj/chmtx.o (symbol from plugin)
+                                                  build/obj/chsem.o (symbol from plugin)
+                                                  build/obj/chregistry.o (symbol from plugin)
+                                                  build/obj/chthreads.o (symbol from plugin)
+                                                  build/obj/chtrace.o (symbol from plugin)
+                                                  build/obj/chsys.o (symbol from plugin)
+                                                  build/obj/hal_i2c_lld.o (symbol from plugin)
+                                                  build/obj/stm32_dma.o (symbol from plugin)
+                                                  build/obj/hal_i2c.o (symbol from plugin)
+                                                  build/obj/hal_adc.o (symbol from plugin)
+                                                  build/obj/hal_queues.o (symbol from plugin)
+                                                  build/obj/hal_buffers.o (symbol from plugin)
+                                                  build/obj/chcoreasm_v6m.o
+_dbg_check_unlock_from_isr                        build/obj/chdebug.o (symbol from plugin)
+                                                  build/obj/chschd.o (symbol from plugin)
+                                                  build/obj/chsys.o (symbol from plugin)
+                                                  build/obj/hal_st_lld.o (symbol from plugin)
+                                                  build/obj/hal_i2c_lld.o (symbol from plugin)
+                                                  build/obj/hal_adc_lld.o (symbol from plugin)
+_edata                                            build/obj/crt0_v6m.o
+_factory_init                                     build/obj/chfactory.o (symbol from plugin)
+                                                  build/obj/chsys.o (symbol from plugin)
+_heap_init                                        build/obj/chmemheaps.o (symbol from plugin)
+                                                  build/obj/chsys.o (symbol from plugin)
+_idle_thread.lto_priv.61                          /tmp/ccpwIpvt.ltrans2.ltrans.o
+                                                  /tmp/ccpwIpvt.ltrans0.ltrans.o
+_pal_lld_init                                     build/obj/hal_pal_lld.o (symbol from plugin)
+                                                  build/obj/hal.o (symbol from plugin)
+_pal_lld_setgroupmode                             build/obj/hal_pal_lld.o (symbol from plugin)
+                                                  build/obj/hal_pal.o (symbol from plugin)
+_port_exit_from_isr                               build/obj/chcoreasm_v6m.o
+                                                  /tmp/ccpwIpvt.ltrans4.ltrans.o
+                                                  /tmp/ccpwIpvt.ltrans2.ltrans.o
+                                                  build/obj/chcore_v6m.o (symbol from plugin)
+_port_irq_epilogue                                build/obj/chcore_v6m.o (symbol from plugin)
+                                                  build/obj/hal_st_lld.o (symbol from plugin)
+                                                  build/obj/hal_i2c_lld.o (symbol from plugin)
+                                                  build/obj/stm32_dma.o (symbol from plugin)
+                                                  build/obj/hal_adc_lld.o (symbol from plugin)
+                                                  build/obj/hal_lld.o (symbol from plugin)
+_port_switch                                      build/obj/chcoreasm_v6m.o
+                                                  /tmp/ccpwIpvt.ltrans5.ltrans.o
+                                                  /tmp/ccpwIpvt.ltrans3.ltrans.o
+                                                  /tmp/ccpwIpvt.ltrans1.ltrans.o
+                                                  /tmp/ccpwIpvt.ltrans0.ltrans.o
+                                                  build/obj/chschd.o (symbol from plugin)
+_port_switch_from_isr                             build/obj/chcoreasm_v6m.o
+                                                  /tmp/ccpwIpvt.ltrans4.ltrans.o
+                                                  /tmp/ccpwIpvt.ltrans2.ltrans.o
+                                                  build/obj/chcore_v6m.o (symbol from plugin)
+_port_thread_start                                build/obj/chcoreasm_v6m.o
+                                                  /tmp/ccpwIpvt.ltrans0.ltrans.o
+                                                  build/obj/chthreads.o (symbol from plugin)
+_scheduler_init                                   build/obj/chschd.o (symbol from plugin)
+                                                  build/obj/chsys.o (symbol from plugin)
+_stm32_dma_streams                                /tmp/ccpwIpvt.ltrans0.ltrans.o
+                                                  build/obj/stm32_dma.o (symbol from plugin)
+                                                  /tmp/ccpwIpvt.ltrans2.ltrans.o
+                                                  build/obj/hal_lld.o (symbol from plugin)
+_textdata                                         build/obj/crt0_v6m.o
+_thread_init                                      build/obj/chthreads.o (symbol from plugin)
+                                                  build/obj/chsys.o (symbol from plugin)
+_thread_memfill                                   build/obj/chthreads.o (symbol from plugin)
+                                                  build/obj/chdynamic.o (symbol from plugin)
+_trace_halt                                       build/obj/chtrace.o (symbol from plugin)
+                                                  build/obj/chsys.o (symbol from plugin)
+_trace_init                                       build/obj/chtrace.o (symbol from plugin)
+                                                  build/obj/chsys.o (symbol from plugin)
+_trace_isr_enter                                  build/obj/chtrace.o (symbol from plugin)
+                                                  build/obj/hal_st_lld.o (symbol from plugin)
+                                                  build/obj/hal_i2c_lld.o (symbol from plugin)
+                                                  build/obj/stm32_dma.o (symbol from plugin)
+                                                  build/obj/hal_adc_lld.o (symbol from plugin)
+                                                  build/obj/hal_lld.o (symbol from plugin)
+_trace_isr_leave                                  build/obj/chtrace.o (symbol from plugin)
+                                                  build/obj/hal_st_lld.o (symbol from plugin)
+                                                  build/obj/hal_i2c_lld.o (symbol from plugin)
+                                                  build/obj/stm32_dma.o (symbol from plugin)
+                                                  build/obj/hal_adc_lld.o (symbol from plugin)
+                                                  build/obj/hal_lld.o (symbol from plugin)
+_trace_switch                                     build/obj/chtrace.o (symbol from plugin)
+                                                  build/obj/chschd.o (symbol from plugin)
+_unhandled_exception                              build/obj/vectors.o
+_vectors                                          build/obj/vectors.o
+_vt_init                                          build/obj/chvt.o (symbol from plugin)
+                                                  build/obj/chsys.o (symbol from plugin)
+adcAcquireBus                                     build/obj/hal_adc.o (symbol from plugin)
+adcConvert                                        build/obj/hal_adc.o (symbol from plugin)
+adcInit                                           build/obj/hal_adc.o (symbol from plugin)
+                                                  build/obj/hal.o (symbol from plugin)
+adcObjectInit                                     build/obj/hal_adc.o (symbol from plugin)
+                                                  build/obj/hal_adc_lld.o (symbol from plugin)
+adcReleaseBus                                     build/obj/hal_adc.o (symbol from plugin)
+adcSTM32DisableTS                                 build/obj/hal_adc_lld.o (symbol from plugin)
+adcSTM32DisableVREF                               build/obj/hal_adc_lld.o (symbol from plugin)
+adcSTM32EnableTS                                  build/obj/hal_adc_lld.o (symbol from plugin)
+adcSTM32EnableVREF                                build/obj/hal_adc_lld.o (symbol from plugin)
+adcStart                                          build/obj/hal_adc.o (symbol from plugin)
+                                                  build/obj/main.o (symbol from plugin)
+adcStartConversion                                build/obj/hal_adc.o (symbol from plugin)
+adcStartConversionI                               build/obj/hal_adc.o (symbol from plugin)
+adcStop                                           build/obj/hal_adc.o (symbol from plugin)
+adcStopConversion                                 build/obj/hal_adc.o (symbol from plugin)
+adcStopConversionI                                build/obj/hal_adc.o (symbol from plugin)
+adc_lld_init                                      build/obj/hal_adc_lld.o (symbol from plugin)
+                                                  build/obj/hal_adc.o (symbol from plugin)
+adc_lld_serve_interrupt                           build/obj/hal_adc_lld.o (symbol from plugin)
+adc_lld_serve_rx_interrupt.lto_priv.59            /tmp/ccpwIpvt.ltrans4.ltrans.o
+                                                  /tmp/ccpwIpvt.ltrans0.ltrans.o
+adc_lld_start                                     build/obj/hal_adc_lld.o (symbol from plugin)
+                                                  build/obj/hal_adc.o (symbol from plugin)
+adc_lld_start_conversion                          build/obj/hal_adc_lld.o (symbol from plugin)
+                                                  build/obj/hal_adc.o (symbol from plugin)
+adc_lld_stop                                      build/obj/hal_adc_lld.o (symbol from plugin)
+                                                  build/obj/hal_adc.o (symbol from plugin)
+adc_lld_stop_conversion                           build/obj/hal_adc_lld.o (symbol from plugin)
+                                                  build/obj/hal_adc.o (symbol from plugin)
+battery_init                                      build/obj/bq76920_driver.o (symbol from plugin)
+boardInit                                         build/obj/board.o (symbol from plugin)
+                                                  build/obj/hal.o (symbol from plugin)
+bq76920_init                                      build/obj/bq76920_driver.o (symbol from plugin)
+                                                  build/obj/main.o (symbol from plugin)
+ch                                                /tmp/ccpwIpvt.ltrans5.ltrans.o
+                                                  build/obj/chschd.o (symbol from plugin)
+                                                  /tmp/ccpwIpvt.ltrans4.ltrans.o
+                                                  /tmp/ccpwIpvt.ltrans3.ltrans.o
+                                                  /tmp/ccpwIpvt.ltrans2.ltrans.o
+                                                  /tmp/ccpwIpvt.ltrans1.ltrans.o
+                                                  /tmp/ccpwIpvt.ltrans0.ltrans.o
+                                                  build/obj/main.o (symbol from plugin)
+                                                  build/obj/chpipes.o (symbol from plugin)
+                                                  build/obj/chmempools.o (symbol from plugin)
+                                                  build/obj/chmemcore.o (symbol from plugin)
+                                                  build/obj/chmboxes.o (symbol from plugin)
+                                                  build/obj/chdynamic.o (symbol from plugin)
+                                                  build/obj/chmsg.o (symbol from plugin)
+                                                  build/obj/chevents.o (symbol from plugin)
+                                                  build/obj/chcond.o (symbol from plugin)
+                                                  build/obj/chmtx.o (symbol from plugin)
+                                                  build/obj/chsem.o (symbol from plugin)
+                                                  build/obj/chregistry.o (symbol from plugin)
+                                                  build/obj/chthreads.o (symbol from plugin)
+                                                  build/obj/chvt.o (symbol from plugin)
+                                                  build/obj/chtrace.o (symbol from plugin)
+                                                  build/obj/chdebug.o (symbol from plugin)
+                                                  build/obj/chsys.o (symbol from plugin)
+                                                  build/obj/hal_i2c_lld.o (symbol from plugin)
+                                                  build/obj/stm32_dma.o (symbol from plugin)
+                                                  build/obj/hal_i2c.o (symbol from plugin)
+                                                  build/obj/hal_adc.o (symbol from plugin)
+                                                  build/obj/hal_queues.o (symbol from plugin)
+                                                  build/obj/hal_buffers.o (symbol from plugin)
+chCondBroadcast                                   build/obj/chcond.o (symbol from plugin)
+chCondBroadcastI                                  build/obj/chcond.o (symbol from plugin)
+chCondObjectInit                                  build/obj/chcond.o (symbol from plugin)
+chCondSignal                                      build/obj/chcond.o (symbol from plugin)
+chCondSignalI                                     build/obj/chcond.o (symbol from plugin)
+chCondWait                                        build/obj/chcond.o (symbol from plugin)
+chCondWaitS                                       build/obj/chcond.o (symbol from plugin)
+chCondWaitTimeout                                 build/obj/chcond.o (symbol from plugin)
+chCondWaitTimeoutS                                build/obj/chcond.o (symbol from plugin)
+chCoreAllocAlignedI.lto_priv.60                   /tmp/ccpwIpvt.ltrans3.ltrans.o
+                                                  /tmp/ccpwIpvt.ltrans0.ltrans.o
+chCoreAllocAlignedWithOffset                      /tmp/ccpwIpvt.ltrans3.ltrans.o
+                                                  build/obj/chmemcore.o (symbol from plugin)
+                                                  /tmp/ccpwIpvt.ltrans0.ltrans.o
+                                                  build/obj/chmemheaps.o (symbol from plugin)
+chCoreAllocAlignedWithOffsetI                     build/obj/chmemcore.o (symbol from plugin)
+                                                  build/obj/chfactory.o (symbol from plugin)
+chCoreGetStatusX                                  build/obj/chmemcore.o (symbol from plugin)
+chDbgCheckClassI                                  /tmp/ccpwIpvt.ltrans1.ltrans.o
+                                                  build/obj/chdebug.o (symbol from plugin)
+                                                  /tmp/ccpwIpvt.ltrans2.ltrans.o
+                                                  /tmp/ccpwIpvt.ltrans0.ltrans.o
+                                                  build/obj/chmempools.o (symbol from plugin)
+                                                  build/obj/chmemcore.o (symbol from plugin)
+                                                  build/obj/chmboxes.o (symbol from plugin)
+                                                  build/obj/chmsg.o (symbol from plugin)
+                                                  build/obj/chevents.o (symbol from plugin)
+                                                  build/obj/chcond.o (symbol from plugin)
+                                                  build/obj/chsem.o (symbol from plugin)
+                                                  build/obj/chthreads.o (symbol from plugin)
+                                                  build/obj/chschd.o (symbol from plugin)
+                                                  build/obj/chvt.o (symbol from plugin)
+                                                  build/obj/chtrace.o (symbol from plugin)
+                                                  build/obj/chsys.o (symbol from plugin)
+                                                  build/obj/stm32_dma.o (symbol from plugin)
+                                                  build/obj/hal_adc.o (symbol from plugin)
+                                                  build/obj/hal_queues.o (symbol from plugin)
+                                                  build/obj/hal_buffers.o (symbol from plugin)
+chDbgCheckClassS                                  build/obj/chdebug.o (symbol from plugin)
+                                                  build/obj/chmboxes.o (symbol from plugin)
+                                                  build/obj/chmsg.o (symbol from plugin)
+                                                  build/obj/chcond.o (symbol from plugin)
+                                                  build/obj/chmtx.o (symbol from plugin)
+                                                  build/obj/chsem.o (symbol from plugin)
+                                                  build/obj/chthreads.o (symbol from plugin)
+                                                  build/obj/chschd.o (symbol from plugin)
+                                                  build/obj/hal_buffers.o (symbol from plugin)
+chDbgResumeTrace                                  build/obj/chtrace.o (symbol from plugin)
+chDbgResumeTraceI                                 build/obj/chtrace.o (symbol from plugin)
+chDbgSuspendTrace                                 build/obj/chtrace.o (symbol from plugin)
+chDbgSuspendTraceI                                build/obj/chtrace.o (symbol from plugin)
+chDbgWriteTrace                                   build/obj/chtrace.o (symbol from plugin)
+chDbgWriteTraceI                                  build/obj/chtrace.o (symbol from plugin)
+chEvtAddEvents                                    build/obj/chevents.o (symbol from plugin)
+chEvtBroadcastFlags                               build/obj/chevents.o (symbol from plugin)
+chEvtBroadcastFlagsI                              build/obj/chevents.o (symbol from plugin)
+chEvtDispatch                                     build/obj/chevents.o (symbol from plugin)
+chEvtGetAndClearEvents                            build/obj/chevents.o (symbol from plugin)
+chEvtGetAndClearEventsI                           build/obj/chevents.o (symbol from plugin)
+chEvtGetAndClearFlags                             build/obj/chevents.o (symbol from plugin)
+chEvtGetAndClearFlagsI                            build/obj/chevents.o (symbol from plugin)
+chEvtRegisterMaskWithFlags                        build/obj/chevents.o (symbol from plugin)
+chEvtSignal                                       build/obj/chevents.o (symbol from plugin)
+chEvtSignalI                                      build/obj/chevents.o (symbol from plugin)
+chEvtUnregister                                   build/obj/chevents.o (symbol from plugin)
+chEvtWaitAll                                      build/obj/chevents.o (symbol from plugin)
+chEvtWaitAllTimeout                               build/obj/chevents.o (symbol from plugin)
+chEvtWaitAny                                      build/obj/chevents.o (symbol from plugin)
+chEvtWaitAnyTimeout                               build/obj/chevents.o (symbol from plugin)
+chEvtWaitOne                                      build/obj/chevents.o (symbol from plugin)
+chEvtWaitOneTimeout                               build/obj/chevents.o (symbol from plugin)
+chFactoryCreateBuffer                             build/obj/chfactory.o (symbol from plugin)
+chFactoryCreateMailbox                            build/obj/chfactory.o (symbol from plugin)
+chFactoryCreateObjectsFIFO                        build/obj/chfactory.o (symbol from plugin)
+chFactoryCreatePipe                               build/obj/chfactory.o (symbol from plugin)
+chFactoryCreateSemaphore                          build/obj/chfactory.o (symbol from plugin)
+chFactoryFindBuffer                               build/obj/chfactory.o (symbol from plugin)
+chFactoryFindMailbox                              build/obj/chfactory.o (symbol from plugin)
+chFactoryFindObject                               build/obj/chfactory.o (symbol from plugin)
+chFactoryFindObjectByPointer                      build/obj/chfactory.o (symbol from plugin)
+chFactoryFindObjectsFIFO                          build/obj/chfactory.o (symbol from plugin)
+chFactoryFindPipe                                 build/obj/chfactory.o (symbol from plugin)
+chFactoryFindSemaphore                            build/obj/chfactory.o (symbol from plugin)
+chFactoryRegisterObject                           build/obj/chfactory.o (symbol from plugin)
+chFactoryReleaseBuffer                            build/obj/chfactory.o (symbol from plugin)
+chFactoryReleaseMailbox                           build/obj/chfactory.o (symbol from plugin)
+chFactoryReleaseObject                            build/obj/chfactory.o (symbol from plugin)
+chFactoryReleaseObjectsFIFO                       build/obj/chfactory.o (symbol from plugin)
+chFactoryReleasePipe                              build/obj/chfactory.o (symbol from plugin)
+chFactoryReleaseSemaphore                         build/obj/chfactory.o (symbol from plugin)
+chGuardedPoolAllocTimeout                         build/obj/chmempools.o (symbol from plugin)
+chGuardedPoolAllocTimeoutS                        build/obj/chmempools.o (symbol from plugin)
+chGuardedPoolFree                                 build/obj/chmempools.o (symbol from plugin)
+chGuardedPoolLoadArray                            build/obj/chmempools.o (symbol from plugin)
+                                                  build/obj/chfactory.o (symbol from plugin)
+chGuardedPoolObjectInitAligned                    build/obj/chmempools.o (symbol from plugin)
+                                                  build/obj/chfactory.o (symbol from plugin)
+chHeapAllocAligned                                build/obj/chmemheaps.o (symbol from plugin)
+                                                  build/obj/chfactory.o (symbol from plugin)
+                                                  build/obj/chdynamic.o (symbol from plugin)
+chHeapFree                                        build/obj/chmemheaps.o (symbol from plugin)
+                                                  build/obj/chfactory.o (symbol from plugin)
+                                                  build/obj/chthreads.o (symbol from plugin)
+chHeapObjectInit                                  build/obj/chmemheaps.o (symbol from plugin)
+chHeapStatus                                      build/obj/chmemheaps.o (symbol from plugin)
+chMBFetchI                                        build/obj/chmboxes.o (symbol from plugin)
+chMBFetchTimeout                                  build/obj/chmboxes.o (symbol from plugin)
+chMBFetchTimeoutS                                 build/obj/chmboxes.o (symbol from plugin)
+chMBObjectInit                                    build/obj/chmboxes.o (symbol from plugin)
+                                                  build/obj/chfactory.o (symbol from plugin)
+chMBPostAheadI                                    build/obj/chmboxes.o (symbol from plugin)
+chMBPostAheadTimeout                              build/obj/chmboxes.o (symbol from plugin)
+chMBPostAheadTimeoutS                             build/obj/chmboxes.o (symbol from plugin)
+chMBPostI                                         build/obj/chmboxes.o (symbol from plugin)
+chMBPostTimeout                                   build/obj/chmboxes.o (symbol from plugin)
+chMBPostTimeoutS                                  build/obj/chmboxes.o (symbol from plugin)
+chMBReset                                         build/obj/chmboxes.o (symbol from plugin)
+chMBResetI                                        build/obj/chmboxes.o (symbol from plugin)
+chMsgRelease                                      build/obj/chmsg.o (symbol from plugin)
+chMsgSend                                         build/obj/chmsg.o (symbol from plugin)
+chMsgWait                                         build/obj/chmsg.o (symbol from plugin)
+chMtxLock                                         /tmp/ccpwIpvt.ltrans1.ltrans.o
+                                                  build/obj/chmtx.o (symbol from plugin)
+                                                  /tmp/ccpwIpvt.ltrans5.ltrans.o
+                                                  /tmp/ccpwIpvt.ltrans0.ltrans.o
+                                                  build/obj/chfactory.o (symbol from plugin)
+                                                  build/obj/chpipes.o (symbol from plugin)
+                                                  build/obj/chmemheaps.o (symbol from plugin)
+                                                  build/obj/hal_i2c.o (symbol from plugin)
+                                                  build/obj/hal_adc.o (symbol from plugin)
+chMtxLockS                                        /tmp/ccpwIpvt.ltrans3.ltrans.o
+                                                  build/obj/chmtx.o (symbol from plugin)
+                                                  /tmp/ccpwIpvt.ltrans1.ltrans.o
+                                                  /tmp/ccpwIpvt.ltrans0.ltrans.o
+                                                  build/obj/chcond.o (symbol from plugin)
+chMtxObjectInit                                   build/obj/chmtx.o (symbol from plugin)
+                                                  build/obj/chfactory.o (symbol from plugin)
+                                                  build/obj/chpipes.o (symbol from plugin)
+                                                  build/obj/chmemheaps.o (symbol from plugin)
+                                                  build/obj/hal_i2c.o (symbol from plugin)
+                                                  build/obj/hal_adc.o (symbol from plugin)
+chMtxTryLock                                      build/obj/chmtx.o (symbol from plugin)
+chMtxTryLockS                                     build/obj/chmtx.o (symbol from plugin)
+chMtxUnlock                                       /tmp/ccpwIpvt.ltrans3.ltrans.o
+                                                  build/obj/chmtx.o (symbol from plugin)
+                                                  /tmp/ccpwIpvt.ltrans5.ltrans.o
+                                                  /tmp/ccpwIpvt.ltrans1.ltrans.o
+                                                  /tmp/ccpwIpvt.ltrans0.ltrans.o
+                                                  build/obj/chfactory.o (symbol from plugin)
+                                                  build/obj/chpipes.o (symbol from plugin)
+                                                  build/obj/chmemheaps.o (symbol from plugin)
+                                                  build/obj/hal_i2c.o (symbol from plugin)
+                                                  build/obj/hal_adc.o (symbol from plugin)
+chMtxUnlockAll                                    build/obj/chmtx.o (symbol from plugin)
+chMtxUnlockAllS                                   build/obj/chmtx.o (symbol from plugin)
+chMtxUnlockS                                      build/obj/chmtx.o (symbol from plugin)
+                                                  build/obj/chcond.o (symbol from plugin)
+chPipeObjectInit                                  build/obj/chpipes.o (symbol from plugin)
+                                                  build/obj/chfactory.o (symbol from plugin)
+chPipeReadTimeout                                 build/obj/chpipes.o (symbol from plugin)
+chPipeReset                                       build/obj/chpipes.o (symbol from plugin)
+chPipeWriteTimeout                                build/obj/chpipes.o (symbol from plugin)
+chPoolAlloc                                       build/obj/chmempools.o (symbol from plugin)
+                                                  build/obj/chfactory.o (symbol from plugin)
+                                                  build/obj/chdynamic.o (symbol from plugin)
+chPoolAllocI                                      build/obj/chmempools.o (symbol from plugin)
+chPoolFree                                        build/obj/chmempools.o (symbol from plugin)
+                                                  build/obj/chfactory.o (symbol from plugin)
+                                                  build/obj/chthreads.o (symbol from plugin)
+chPoolFreeI                                       build/obj/chmempools.o (symbol from plugin)
+chPoolLoadArray                                   build/obj/chmempools.o (symbol from plugin)
+chPoolObjectInitAligned                           build/obj/chmempools.o (symbol from plugin)
+                                                  build/obj/chfactory.o (symbol from plugin)
+chRegFindThreadByName                             build/obj/chregistry.o (symbol from plugin)
+chRegFindThreadByPointer                          build/obj/chregistry.o (symbol from plugin)
+chRegFindThreadByWorkingArea                      /tmp/ccpwIpvt.ltrans1.ltrans.o
+                                                  build/obj/chregistry.o (symbol from plugin)
+                                                  /tmp/ccpwIpvt.ltrans0.ltrans.o
+                                                  build/obj/chthreads.o (symbol from plugin)
+chRegFirstThread                                  build/obj/chregistry.o (symbol from plugin)
+chRegNextThread                                   build/obj/chregistry.o (symbol from plugin)
+chSchDoReschedule                                 /tmp/ccpwIpvt.ltrans1.ltrans.o
+                                                  build/obj/chschd.o (symbol from plugin)
+                                                  build/obj/chcoreasm_v6m.o
+chSchDoRescheduleAhead                            build/obj/chschd.o (symbol from plugin)
+chSchDoRescheduleBehind                           build/obj/chschd.o (symbol from plugin)
+                                                  build/obj/chthreads.o (symbol from plugin)
+chSchGoSleepS                                     build/obj/chschd.o (symbol from plugin)
+                                                  build/obj/chmsg.o (symbol from plugin)
+                                                  build/obj/chevents.o (symbol from plugin)
+                                                  build/obj/chcond.o (symbol from plugin)
+                                                  build/obj/chmtx.o (symbol from plugin)
+                                                  build/obj/chsem.o (symbol from plugin)
+                                                  build/obj/chthreads.o (symbol from plugin)
+chSchGoSleepTimeoutS                              /tmp/ccpwIpvt.ltrans1.ltrans.o
+                                                  build/obj/chschd.o (symbol from plugin)
+                                                  /tmp/ccpwIpvt.ltrans5.ltrans.o
+                                                  /tmp/ccpwIpvt.ltrans3.ltrans.o
+                                                  /tmp/ccpwIpvt.ltrans0.ltrans.o
+                                                  build/obj/chevents.o (symbol from plugin)
+                                                  build/obj/chcond.o (symbol from plugin)
+                                                  build/obj/chsem.o (symbol from plugin)
+                                                  build/obj/chthreads.o (symbol from plugin)
+chSchIsPreemptionRequired                         build/obj/chschd.o (symbol from plugin)
+                                                  build/obj/chcore_v6m.o (symbol from plugin)
+chSchReadyAheadI                                  build/obj/chschd.o (symbol from plugin)
+chSchReadyI                                       build/obj/chschd.o (symbol from plugin)
+                                                  build/obj/chmsg.o (symbol from plugin)
+                                                  build/obj/chevents.o (symbol from plugin)
+                                                  build/obj/chcond.o (symbol from plugin)
+                                                  build/obj/chmtx.o (symbol from plugin)
+                                                  build/obj/chsem.o (symbol from plugin)
+                                                  build/obj/chthreads.o (symbol from plugin)
+chSchRescheduleS                                  build/obj/chschd.o (symbol from plugin)
+                                                  build/obj/chpipes.o (symbol from plugin)
+                                                  build/obj/chmempools.o (symbol from plugin)
+                                                  build/obj/chmboxes.o (symbol from plugin)
+                                                  build/obj/chevents.o (symbol from plugin)
+                                                  build/obj/chcond.o (symbol from plugin)
+                                                  build/obj/chmtx.o (symbol from plugin)
+                                                  build/obj/chsem.o (symbol from plugin)
+                                                  build/obj/chthreads.o (symbol from plugin)
+                                                  build/obj/chsys.o (symbol from plugin)
+chSchWakeupS                                      build/obj/chschd.o (symbol from plugin)
+                                                  build/obj/chdynamic.o (symbol from plugin)
+                                                  build/obj/chmsg.o (symbol from plugin)
+                                                  build/obj/chcond.o (symbol from plugin)
+                                                  build/obj/chsem.o (symbol from plugin)
+                                                  build/obj/chthreads.o (symbol from plugin)
+chSchWakeupS.constprop.20                         /tmp/ccpwIpvt.ltrans5.ltrans.o
+                                                  /tmp/ccpwIpvt.ltrans0.ltrans.o
+chSemAddCounterI                                  build/obj/chsem.o (symbol from plugin)
+chSemObjectInit                                   build/obj/chsem.o (symbol from plugin)
+                                                  build/obj/chfactory.o (symbol from plugin)
+                                                  build/obj/chmempools.o (symbol from plugin)
+chSemReset                                        build/obj/chsem.o (symbol from plugin)
+chSemResetI                                       build/obj/chsem.o (symbol from plugin)
+chSemSignal                                       build/obj/chsem.o (symbol from plugin)
+chSemSignalI                                      build/obj/chsem.o (symbol from plugin)
+                                                  build/obj/chmempools.o (symbol from plugin)
+chSemSignalWait                                   build/obj/chsem.o (symbol from plugin)
+chSemWait                                         build/obj/chsem.o (symbol from plugin)
+chSemWaitS                                        build/obj/chsem.o (symbol from plugin)
+chSemWaitTimeout                                  build/obj/chsem.o (symbol from plugin)
+chSemWaitTimeoutS                                 build/obj/chsem.o (symbol from plugin)
+                                                  build/obj/chmempools.o (symbol from plugin)
+chSysGetStatusAndLockX                            build/obj/chsys.o (symbol from plugin)
+chSysHalt                                         /tmp/ccpwIpvt.ltrans1.ltrans.o
+                                                  build/obj/chsys.o (symbol from plugin)
+                                                  /tmp/ccpwIpvt.ltrans5.ltrans.o
+                                                  /tmp/ccpwIpvt.ltrans4.ltrans.o
+                                                  /tmp/ccpwIpvt.ltrans3.ltrans.o
+                                                  /tmp/ccpwIpvt.ltrans2.ltrans.o
+                                                  /tmp/ccpwIpvt.ltrans0.ltrans.o
+                                                  build/obj/chfactory.o (symbol from plugin)
+                                                  build/obj/chpipes.o (symbol from plugin)
+                                                  build/obj/chmempools.o (symbol from plugin)
+                                                  build/obj/chmemheaps.o (symbol from plugin)
+                                                  build/obj/chmemcore.o (symbol from plugin)
+                                                  build/obj/chmboxes.o (symbol from plugin)
+                                                  build/obj/chdynamic.o (symbol from plugin)
+                                                  build/obj/chmsg.o (symbol from plugin)
+                                                  build/obj/chevents.o (symbol from plugin)
+                                                  build/obj/chcond.o (symbol from plugin)
+                                                  build/obj/chmtx.o (symbol from plugin)
+                                                  build/obj/chsem.o (symbol from plugin)
+                                                  build/obj/chregistry.o (symbol from plugin)
+                                                  build/obj/chthreads.o (symbol from plugin)
+                                                  build/obj/chschd.o (symbol from plugin)
+                                                  build/obj/chvt.o (symbol from plugin)
+                                                  build/obj/chtrace.o (symbol from plugin)
+                                                  build/obj/chdebug.o (symbol from plugin)
+                                                  build/obj/hal_i2c_lld.o (symbol from plugin)
+                                                  build/obj/stm32_dma.o (symbol from plugin)
+                                                  build/obj/hal_adc_lld.o (symbol from plugin)
+                                                  build/obj/nvic.o (symbol from plugin)
+                                                  build/obj/hal_pal.o (symbol from plugin)
+                                                  build/obj/hal_i2c.o (symbol from plugin)
+                                                  build/obj/hal_adc.o (symbol from plugin)
+                                                  build/obj/hal_queues.o (symbol from plugin)
+                                                  build/obj/hal_buffers.o (symbol from plugin)
+                                                  build/obj/hal_st.o (symbol from plugin)
+chSysInit                                         build/obj/chsys.o (symbol from plugin)
+                                                  build/obj/main.o (symbol from plugin)
+chSysIntegrityCheckI                              build/obj/chsys.o (symbol from plugin)
+chSysRestoreStatusX                               build/obj/chsys.o (symbol from plugin)
+chSysTimerHandlerI                                build/obj/chsys.o (symbol from plugin)
+                                                  build/obj/hal_st_lld.o (symbol from plugin)
+chSysUnlock.lto_priv.49                           /tmp/ccpwIpvt.ltrans1.ltrans.o
+                                                  /tmp/ccpwIpvt.ltrans0.ltrans.o
+chThdAddRef                                       build/obj/chthreads.o (symbol from plugin)
+chThdCreate                                       build/obj/chthreads.o (symbol from plugin)
+                                                  build/obj/chsys.o (symbol from plugin)
+chThdCreateFromHeap                               build/obj/chdynamic.o (symbol from plugin)
+chThdCreateFromMemoryPool                         build/obj/chdynamic.o (symbol from plugin)
+chThdCreateI                                      build/obj/chthreads.o (symbol from plugin)
+chThdCreateStatic                                 build/obj/chthreads.o (symbol from plugin)
+                                                  build/obj/main.o (symbol from plugin)
+chThdCreateSuspended                              build/obj/chthreads.o (symbol from plugin)
+chThdCreateSuspendedI                             build/obj/chthreads.o (symbol from plugin)
+                                                  build/obj/chdynamic.o (symbol from plugin)
+chThdDequeueAllI                                  build/obj/chthreads.o (symbol from plugin)
+                                                  build/obj/chmboxes.o (symbol from plugin)
+                                                  build/obj/hal_queues.o (symbol from plugin)
+                                                  build/obj/hal_buffers.o (symbol from plugin)
+chThdDequeueNextI                                 build/obj/chthreads.o (symbol from plugin)
+                                                  build/obj/chmboxes.o (symbol from plugin)
+                                                  build/obj/hal_queues.o (symbol from plugin)
+                                                  build/obj/hal_buffers.o (symbol from plugin)
+chThdEnqueueTimeoutS                              build/obj/chthreads.o (symbol from plugin)
+                                                  build/obj/chmboxes.o (symbol from plugin)
+                                                  build/obj/hal_queues.o (symbol from plugin)
+                                                  build/obj/hal_buffers.o (symbol from plugin)
+chThdExit                                         /tmp/ccpwIpvt.ltrans1.ltrans.o
+                                                  build/obj/chthreads.o (symbol from plugin)
+                                                  build/obj/chcoreasm_v6m.o
+chThdExitS                                        build/obj/chthreads.o (symbol from plugin)
+chThdRelease                                      build/obj/chthreads.o (symbol from plugin)
+                                                  build/obj/chregistry.o (symbol from plugin)
+chThdResume                                       build/obj/chthreads.o (symbol from plugin)
+                                                  build/obj/chpipes.o (symbol from plugin)
+chThdResumeI                                      build/obj/chthreads.o (symbol from plugin)
+                                                  build/obj/chpipes.o (symbol from plugin)
+                                                  build/obj/hal_i2c_lld.o (symbol from plugin)
+                                                  build/obj/hal_adc_lld.o (symbol from plugin)
+                                                  build/obj/hal_adc.o (symbol from plugin)
+chThdResumeS                                      build/obj/chthreads.o (symbol from plugin)
+                                                  build/obj/hal_adc.o (symbol from plugin)
+chThdSetPriority                                  build/obj/chthreads.o (symbol from plugin)
+chThdSleep                                        build/obj/chthreads.o (symbol from plugin)
+                                                  build/obj/main.o (symbol from plugin)
+chThdSleepUntil                                   build/obj/chthreads.o (symbol from plugin)
+chThdSleepUntilWindowed                           build/obj/chthreads.o (symbol from plugin)
+chThdStart                                        build/obj/chthreads.o (symbol from plugin)
+chThdSuspendS                                     build/obj/chthreads.o (symbol from plugin)
+chThdSuspendTimeoutS                              build/obj/chthreads.o (symbol from plugin)
+                                                  build/obj/chpipes.o (symbol from plugin)
+                                                  build/obj/hal_i2c_lld.o (symbol from plugin)
+                                                  build/obj/hal_adc.o (symbol from plugin)
+chThdTerminate                                    build/obj/chthreads.o (symbol from plugin)
+chThdWait                                         build/obj/chthreads.o (symbol from plugin)
+chThdYield                                        build/obj/chthreads.o (symbol from plugin)
+chVTDoResetI                                      build/obj/chvt.o (symbol from plugin)
+                                                  build/obj/chschd.o (symbol from plugin)
+chVTDoSetI                                        build/obj/chvt.o (symbol from plugin)
+                                                  build/obj/chschd.o (symbol from plugin)
+ch_debug                                          build/obj/chregistry.o (symbol from plugin)
+                                                  build/obj/chsys.o (symbol from plugin)
+ch_factory                                        build/obj/chfactory.o (symbol from plugin)
+ch_idle_thread_wa                                 build/obj/chsys.o (symbol from plugin)
+ch_memcore                                        /tmp/ccpwIpvt.ltrans0.ltrans.o
+                                                  build/obj/chmemcore.o (symbol from plugin)
+                                                  /tmp/ccpwIpvt.ltrans3.ltrans.o
+dma.lto_priv.74                                   /tmp/ccpwIpvt.ltrans0.ltrans.o
+                                                  /tmp/ccpwIpvt.ltrans4.ltrans.o
+                                                  /tmp/ccpwIpvt.ltrans2.ltrans.o
+dmaInit                                           build/obj/stm32_dma.o (symbol from plugin)
+                                                  build/obj/hal_lld.o (symbol from plugin)
+dmaServeInterrupt                                 build/obj/stm32_dma.o (symbol from plugin)
+                                                  build/obj/hal_lld.o (symbol from plugin)
+dmaStreamAlloc                                    build/obj/stm32_dma.o (symbol from plugin)
+dmaStreamAllocI                                   /tmp/ccpwIpvt.ltrans2.ltrans.o
+                                                  build/obj/stm32_dma.o (symbol from plugin)
+                                                  /tmp/ccpwIpvt.ltrans0.ltrans.o
+                                                  build/obj/hal_i2c_lld.o (symbol from plugin)
+                                                  build/obj/hal_adc_lld.o (symbol from plugin)
+dmaStreamFree                                     build/obj/stm32_dma.o (symbol from plugin)
+dmaStreamFreeI                                    build/obj/stm32_dma.o (symbol from plugin)
+                                                  build/obj/hal_i2c_lld.o (symbol from plugin)
+                                                  build/obj/hal_adc_lld.o (symbol from plugin)
+getCellsVolt                                      build/obj/bq76920_driver.o (symbol from plugin)
+halInit                                           build/obj/hal.o (symbol from plugin)
+                                                  build/obj/main.o (symbol from plugin)
+hal_lld_init                                      build/obj/hal_lld.o (symbol from plugin)
+                                                  build/obj/hal.o (symbol from plugin)
+i2cAcquireBus                                     build/obj/hal_i2c.o (symbol from plugin)
+                                                  build/obj/bq76920_driver.o (symbol from plugin)
+i2cGetErrors                                      build/obj/hal_i2c.o (symbol from plugin)
+                                                  build/obj/bq76920_driver.o (symbol from plugin)
+i2cInit                                           build/obj/hal_i2c.o (symbol from plugin)
+                                                  build/obj/hal.o (symbol from plugin)
+i2cMasterReceiveTimeout                           build/obj/hal_i2c.o (symbol from plugin)
+i2cMasterTransmitTimeout                          build/obj/hal_i2c.o (symbol from plugin)
+                                                  build/obj/bq76920_driver.o (symbol from plugin)
+i2cMasterTransmitTimeout.constprop.28             /tmp/ccpwIpvt.ltrans5.ltrans.o
+                                                  /tmp/ccpwIpvt.ltrans0.ltrans.o
+i2cObjectInit                                     build/obj/hal_i2c.o (symbol from plugin)
+                                                  build/obj/hal_i2c_lld.o (symbol from plugin)
+i2cReleaseBus                                     build/obj/hal_i2c.o (symbol from plugin)
+                                                  build/obj/bq76920_driver.o (symbol from plugin)
+i2cStart                                          build/obj/hal_i2c.o (symbol from plugin)
+                                                  build/obj/main.o (symbol from plugin)
+i2cStop                                           build/obj/hal_i2c.o (symbol from plugin)
+i2c_lld_init                                      build/obj/hal_i2c_lld.o (symbol from plugin)
+                                                  build/obj/hal_i2c.o (symbol from plugin)
+i2c_lld_master_receive_timeout                    build/obj/hal_i2c_lld.o (symbol from plugin)
+                                                  build/obj/hal_i2c.o (symbol from plugin)
+i2c_lld_master_transmit_timeout                   build/obj/hal_i2c_lld.o (symbol from plugin)
+                                                  build/obj/hal_i2c.o (symbol from plugin)
+i2c_lld_start                                     build/obj/hal_i2c_lld.o (symbol from plugin)
+                                                  build/obj/hal_i2c.o (symbol from plugin)
+i2c_lld_stop                                      build/obj/hal_i2c_lld.o (symbol from plugin)
+                                                  build/obj/hal_i2c.o (symbol from plugin)
+ibqGetEmptyBufferI                                build/obj/hal_buffers.o (symbol from plugin)
+ibqGetFullBufferTimeout                           build/obj/hal_buffers.o (symbol from plugin)
+ibqGetFullBufferTimeoutS                          build/obj/hal_buffers.o (symbol from plugin)
+ibqGetTimeout                                     build/obj/hal_buffers.o (symbol from plugin)
+ibqObjectInit                                     build/obj/hal_buffers.o (symbol from plugin)
+ibqPostFullBufferI                                build/obj/hal_buffers.o (symbol from plugin)
+ibqReadTimeout                                    build/obj/hal_buffers.o (symbol from plugin)
+ibqReleaseEmptyBuffer                             build/obj/hal_buffers.o (symbol from plugin)
+ibqReleaseEmptyBufferS                            build/obj/hal_buffers.o (symbol from plugin)
+ibqResetI                                         build/obj/hal_buffers.o (symbol from plugin)
+iqGetI                                            build/obj/hal_queues.o (symbol from plugin)
+iqGetTimeout                                      build/obj/hal_queues.o (symbol from plugin)
+iqObjectInit                                      build/obj/hal_queues.o (symbol from plugin)
+iqPutI                                            build/obj/hal_queues.o (symbol from plugin)
+iqReadI                                           build/obj/hal_queues.o (symbol from plugin)
+iqReadTimeout                                     build/obj/hal_queues.o (symbol from plugin)
+iqResetI                                          build/obj/hal_queues.o (symbol from plugin)
+irqDeinit                                         build/obj/stm32_isr.o (symbol from plugin)
+irqInit                                           build/obj/stm32_isr.o (symbol from plugin)
+                                                  build/obj/hal_lld.o (symbol from plugin)
+main                                              /tmp/ccpwIpvt.ltrans0.ltrans.o
+                                                  build/obj/main.o (symbol from plugin)
+                                                  build/obj/crt0_v6m.o
+memset                                            /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv6-m/libg.a(lib_a-memset.o)
+                                                  /tmp/ccpwIpvt.ltrans4.ltrans.o
+nvicClearPending                                  build/obj/nvic.o (symbol from plugin)
+nvicDisableVector                                 build/obj/nvic.o (symbol from plugin)
+                                                  build/obj/hal_i2c_lld.o (symbol from plugin)
+                                                  build/obj/stm32_dma.o (symbol from plugin)
+                                                  build/obj/stm32_isr.o (symbol from plugin)
+nvicEnableVector                                  /tmp/ccpwIpvt.ltrans4.ltrans.o
+                                                  build/obj/nvic.o (symbol from plugin)
+                                                  /tmp/ccpwIpvt.ltrans2.ltrans.o
+                                                  /tmp/ccpwIpvt.ltrans0.ltrans.o
+                                                  build/obj/hal_st_lld.o (symbol from plugin)
+                                                  build/obj/hal_i2c_lld.o (symbol from plugin)
+                                                  build/obj/stm32_dma.o (symbol from plugin)
+                                                  build/obj/hal_adc_lld.o (symbol from plugin)
+                                                  build/obj/stm32_isr.o (symbol from plugin)
+nvicSetSystemHandlerPriority                      build/obj/nvic.o (symbol from plugin)
+obqFlush                                          build/obj/hal_buffers.o (symbol from plugin)
+obqGetEmptyBufferTimeout                          build/obj/hal_buffers.o (symbol from plugin)
+obqGetEmptyBufferTimeoutS                         build/obj/hal_buffers.o (symbol from plugin)
+obqGetFullBufferI                                 build/obj/hal_buffers.o (symbol from plugin)
+obqObjectInit                                     build/obj/hal_buffers.o (symbol from plugin)
+obqPostFullBuffer                                 build/obj/hal_buffers.o (symbol from plugin)
+obqPostFullBufferS                                build/obj/hal_buffers.o (symbol from plugin)
+obqPutTimeout                                     build/obj/hal_buffers.o (symbol from plugin)
+obqReleaseEmptyBufferI                            build/obj/hal_buffers.o (symbol from plugin)
+obqResetI                                         build/obj/hal_buffers.o (symbol from plugin)
+obqTryFlushI                                      build/obj/hal_buffers.o (symbol from plugin)
+obqWriteTimeout                                   build/obj/hal_buffers.o (symbol from plugin)
+oqGetI                                            build/obj/hal_queues.o (symbol from plugin)
+oqObjectInit                                      build/obj/hal_queues.o (symbol from plugin)
+oqPutI                                            build/obj/hal_queues.o (symbol from plugin)
+oqPutTimeout                                      build/obj/hal_queues.o (symbol from plugin)
+oqResetI                                          build/obj/hal_queues.o (symbol from plugin)
+oqWriteI                                          build/obj/hal_queues.o (symbol from plugin)
+oqWriteTimeout                                    build/obj/hal_queues.o (symbol from plugin)
+palReadBus                                        build/obj/hal_pal.o (symbol from plugin)
+palSetBusMode                                     build/obj/hal_pal.o (symbol from plugin)
+palWriteBus                                       build/obj/hal_pal.o (symbol from plugin)
+stGetAlarm                                        build/obj/hal_st.o (symbol from plugin)
+stInit                                            build/obj/hal_st.o (symbol from plugin)
+                                                  build/obj/hal.o (symbol from plugin)
+stSetAlarm                                        build/obj/hal_st.o (symbol from plugin)
+                                                  build/obj/chvt.o (symbol from plugin)
+                                                  build/obj/chsys.o (symbol from plugin)
+stStartAlarm                                      build/obj/hal_st.o (symbol from plugin)
+                                                  build/obj/chvt.o (symbol from plugin)
+stStopAlarm                                       build/obj/hal_st.o (symbol from plugin)
+                                                  build/obj/chvt.o (symbol from plugin)
+                                                  build/obj/chsys.o (symbol from plugin)
+st_lld_init                                       build/obj/hal_st_lld.o (symbol from plugin)
+                                                  build/obj/hal_st.o (symbol from plugin)
+stm32_clock_init                                  build/obj/hal_lld.o (symbol from plugin)
+                                                  build/obj/board.o (symbol from plugin)
+trace_next.lto_priv.45                            /tmp/ccpwIpvt.ltrans1.ltrans.o
+                                                  /tmp/ccpwIpvt.ltrans5.ltrans.o
+                                                  /tmp/ccpwIpvt.ltrans4.ltrans.o
+                                                  /tmp/ccpwIpvt.ltrans3.ltrans.o
+                                                  /tmp/ccpwIpvt.ltrans2.ltrans.o
+                                                  /tmp/ccpwIpvt.ltrans0.ltrans.o
+wakeup.lto_priv.56                                /tmp/ccpwIpvt.ltrans1.ltrans.o
+                                                  /tmp/ccpwIpvt.ltrans3.ltrans.o
+                                                  /tmp/ccpwIpvt.ltrans0.ltrans.o
