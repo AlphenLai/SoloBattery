@@ -10,9 +10,16 @@
 
 int GAIN;               /* GAIN = 365 μV/LSB + (ADCGAIN<4:0>in decimal) × (1 μV/LSB) */
 uint8_t ADCGAIN_value;
-signed char ADCOFFSET_value;
+int8_t ADCOFFSET_value;
 volatile float BatLeft;
 float BatMax;
+
+int TwoSComplement(uint16_t raw) {
+  if(raw>>7)
+    return -(~raw + 1);
+  else
+    return raw;
+}
 
 int ADCGAINtoDec(uint8_t ADCGAIN_hex) {
   if (ADCGAIN_hex > 0x1F)
@@ -22,7 +29,7 @@ int ADCGAINtoDec(uint8_t ADCGAIN_hex) {
 }
 
 float CCtoVolt(int16_t ADC_cc) {
-  return (ADC_cc * 8.44) / 1000000.0;
+  return ADC_cc * (8.44 / 1000000.0);
 }
 
 // Sum of all cells
@@ -32,16 +39,23 @@ float BATtoVolt(uint16_t ADC_bat, int numOfCell) {
 }
 
 float ADCtoVolt(uint16_t ADC_cell) {
-  //V(cell) = (GAIN(μV/LSB) x ADC(cell) + OFFSET(mV)*1000)/1000000
+  //V(cell) = (GAIN[μV/LSB] x ADC(cell) + OFFSET[mV] * 1000) / 1000000
   return (GAIN * ADC_cell + ADCOFFSET_value * 1000.0) / 1000000.0;
 }
 
-// @ ADC_cc        raw value from register
 // @ RcurrSense    current sense resister (mOhm)
+float GetCurFlow_mA(float RcurrSense) {
+  msg_t msg;
+  int16_t cc_adc;
+  msg = I2CReadRegisterWordWithCRC(&I2CD1, addr_bq76920, CC_HI, &cc_adc);
+  // (((CC reading[V] / (RSNS[mohm] / 1000)[ohm]))[A] * 1000)[mA]
+  return (CCtoVolt(cc_adc) / (RcurrSense/1000.0)) * 1000.0;
+}
+
 // @ BatMax        maximum capacity of battery (mAh)
 // @ deltaT        time interval from last call (ms)
-float GetBatPercentage(int16_t ADC_cc, float RcurrSense, int deltaT) {
-  volatile float mA = (CCtoVolt(ADC_cc)*1000.0) / RcurrSense;
+float GetBatPercentage(int deltaT) {
+  volatile float mA = GetCurFlow_mA(0.25);
   BatLeft -= mA * (deltaT / 3600000.0);
   volatile float BatPercentage = (BatLeft / BatMax) * 100.0;
   return BatPercentage;
@@ -146,7 +160,6 @@ msg_t I2CReadRegisterWordWithCRC(I2CDriver *i2cp, uint8_t dev_address, uint8_t r
   uint8_t rx_buffer[4];
   volatile uint8_t CRCInput[2];
   volatile uint8_t crc[2];
-  volatile bool condition1 = false, condition2 = false;
 
   //read data from i2c bus
   i2cAcquireBus(i2cp);

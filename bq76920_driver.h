@@ -107,12 +107,13 @@
 #ifdef __cplusplus
 extern "C" {
 #endif
+  int TwoSComplement(uint16_t raw);
+  int ADCGAINtoDec(uint8_t ADCGAIN_hex);
   float CCtoVolt(int16_t ADC_cc);
   float BATtoVolt(uint16_t ADC_bat, int numOfCell);
   float ADCtoVolt(uint16_t ADC_cell);
-  float GetBatPercentage(int16_t ADC_cc, float RcurrSense, int deltaT);
-  int ADCGAINtoDec(uint8_t ADCGAIN_hex);
-  float ADCtoVolt(uint16_t ADC_cell);
+  float GetCurFlow_mA(float RcurrSense);
+  float GetBatPercentage(int deltaT);
   void GetCellsVolt(float cellsVolt[]);
   unsigned char CRC8(unsigned char *ptr, unsigned char len, unsigned char key);
   msg_t I2CWriteRegisterByteWithCRC(I2CDriver *i2cp, uint8_t dev_address, uint8_t reg_address, uint8_t data);
