@@ -1,7 +1,29 @@
 Archive member included to satisfy reference by file (symbol)
 
+/usr/lib/gcc/arm-none-eabi/4.9.3/armv6-m/libgcc.a(divsf3.o)
+                              /tmp/ccrVXNcp.ltrans0.ltrans.o (__aeabi_fdiv)
+/usr/lib/gcc/arm-none-eabi/4.9.3/armv6-m/libgcc.a(mulsf3.o)
+                              /tmp/ccrVXNcp.ltrans0.ltrans.o (__aeabi_fmul)
+/usr/lib/gcc/arm-none-eabi/4.9.3/armv6-m/libgcc.a(divdf3.o)
+                              /tmp/ccrVXNcp.ltrans0.ltrans.o (__aeabi_ddiv)
+/usr/lib/gcc/arm-none-eabi/4.9.3/armv6-m/libgcc.a(muldf3.o)
+                              /tmp/ccrVXNcp.ltrans0.ltrans.o (__aeabi_dmul)
+/usr/lib/gcc/arm-none-eabi/4.9.3/armv6-m/libgcc.a(subdf3.o)
+                              /tmp/ccrVXNcp.ltrans0.ltrans.o (__aeabi_dsub)
+/usr/lib/gcc/arm-none-eabi/4.9.3/armv6-m/libgcc.a(floatsidf.o)
+                              /tmp/ccrVXNcp.ltrans0.ltrans.o (__aeabi_i2d)
+/usr/lib/gcc/arm-none-eabi/4.9.3/armv6-m/libgcc.a(extendsfdf2.o)
+                              /tmp/ccrVXNcp.ltrans0.ltrans.o (__aeabi_f2d)
+/usr/lib/gcc/arm-none-eabi/4.9.3/armv6-m/libgcc.a(truncdfsf2.o)
+                              /tmp/ccrVXNcp.ltrans0.ltrans.o (__aeabi_d2f)
+/usr/lib/gcc/arm-none-eabi/4.9.3/armv6-m/libgcc.a(_udivsi3.o)
+                              /usr/lib/gcc/arm-none-eabi/4.9.3/armv6-m/libgcc.a(divdf3.o) (__aeabi_uidiv)
+/usr/lib/gcc/arm-none-eabi/4.9.3/armv6-m/libgcc.a(_dvmd_tls.o)
+                              /usr/lib/gcc/arm-none-eabi/4.9.3/armv6-m/libgcc.a(_udivsi3.o) (__aeabi_idiv0)
+/usr/lib/gcc/arm-none-eabi/4.9.3/armv6-m/libgcc.a(_clzsi2.o)
+                              /usr/lib/gcc/arm-none-eabi/4.9.3/armv6-m/libgcc.a(divsf3.o) (__clzsi2)
 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv6-m/libg.a(lib_a-memset.o)
-                              /tmp/ccpwIpvt.ltrans4.ltrans.o (memset)
+                              /tmp/ccrVXNcp.ltrans4.ltrans.o (memset)
 
 Discarded input sections
 
@@ -12,35 +34,37 @@ Discarded input sections
  .data          0x0000000000000000        0x0 build/obj/chcoreasm_v6m.o
  .bss           0x0000000000000000        0x0 build/obj/chcoreasm_v6m.o
  .text          0x0000000000000000        0x0 build/obj/crt1.o (symbol from plugin)
- .text          0x0000000000000000        0x0 /tmp/ccpwIpvt.ltrans0.ltrans.o
- .data          0x0000000000000000        0x0 /tmp/ccpwIpvt.ltrans0.ltrans.o
- .bss           0x0000000000000000        0x0 /tmp/ccpwIpvt.ltrans0.ltrans.o
- .rodata.__func__.5275.lto_priv.62
-                0x0000000000000000        0xc /tmp/ccpwIpvt.ltrans0.ltrans.o
- .rodata.__func__.6091.lto_priv.68
-                0x0000000000000000        0xd /tmp/ccpwIpvt.ltrans0.ltrans.o
- .text          0x0000000000000000        0x0 /tmp/ccpwIpvt.ltrans1.ltrans.o
- .data          0x0000000000000000        0x0 /tmp/ccpwIpvt.ltrans1.ltrans.o
- .bss           0x0000000000000000        0x0 /tmp/ccpwIpvt.ltrans1.ltrans.o
- .text          0x0000000000000000        0x0 /tmp/ccpwIpvt.ltrans2.ltrans.o
- .data          0x0000000000000000        0x0 /tmp/ccpwIpvt.ltrans2.ltrans.o
- .bss           0x0000000000000000        0x0 /tmp/ccpwIpvt.ltrans2.ltrans.o
- .text          0x0000000000000000        0x0 /tmp/ccpwIpvt.ltrans3.ltrans.o
- .data          0x0000000000000000        0x0 /tmp/ccpwIpvt.ltrans3.ltrans.o
- .bss           0x0000000000000000        0x0 /tmp/ccpwIpvt.ltrans3.ltrans.o
- .text          0x0000000000000000        0x0 /tmp/ccpwIpvt.ltrans4.ltrans.o
- .data          0x0000000000000000        0x0 /tmp/ccpwIpvt.ltrans4.ltrans.o
- .bss           0x0000000000000000        0x0 /tmp/ccpwIpvt.ltrans4.ltrans.o
- .bss.BatLeft   0x0000000000000000        0x4 /tmp/ccpwIpvt.ltrans4.ltrans.o
- .text          0x0000000000000000        0x0 /tmp/ccpwIpvt.ltrans5.ltrans.o
- .data          0x0000000000000000        0x0 /tmp/ccpwIpvt.ltrans5.ltrans.o
- .bss           0x0000000000000000        0x0 /tmp/ccpwIpvt.ltrans5.ltrans.o
- .rodata.__func__.6869.lto_priv.47
-                0x0000000000000000        0xe /tmp/ccpwIpvt.ltrans5.ltrans.o
- .rodata.__func__.6845.lto_priv.55
-                0x0000000000000000        0xd /tmp/ccpwIpvt.ltrans5.ltrans.o
- .rodata.__func__.6873.lto_priv.54
-                0x0000000000000000        0xe /tmp/ccpwIpvt.ltrans5.ltrans.o
+ .text          0x0000000000000000        0x0 /tmp/ccrVXNcp.ltrans0.ltrans.o
+ .data          0x0000000000000000        0x0 /tmp/ccrVXNcp.ltrans0.ltrans.o
+ .bss           0x0000000000000000        0x0 /tmp/ccrVXNcp.ltrans0.ltrans.o
+ .rodata.__func__.5275.lto_priv.63
+                0x0000000000000000        0xc /tmp/ccrVXNcp.ltrans0.ltrans.o
+ .text          0x0000000000000000        0x0 /tmp/ccrVXNcp.ltrans1.ltrans.o
+ .data          0x0000000000000000        0x0 /tmp/ccrVXNcp.ltrans1.ltrans.o
+ .bss           0x0000000000000000        0x0 /tmp/ccrVXNcp.ltrans1.ltrans.o
+ .text          0x0000000000000000        0x0 /tmp/ccrVXNcp.ltrans2.ltrans.o
+ .data          0x0000000000000000        0x0 /tmp/ccrVXNcp.ltrans2.ltrans.o
+ .bss           0x0000000000000000        0x0 /tmp/ccrVXNcp.ltrans2.ltrans.o
+ .rodata.__func__.6091.lto_priv.72
+                0x0000000000000000        0xd /tmp/ccrVXNcp.ltrans2.ltrans.o
+ .text          0x0000000000000000        0x0 /tmp/ccrVXNcp.ltrans3.ltrans.o
+ .data          0x0000000000000000        0x0 /tmp/ccrVXNcp.ltrans3.ltrans.o
+ .bss           0x0000000000000000        0x0 /tmp/ccrVXNcp.ltrans3.ltrans.o
+ .text          0x0000000000000000        0x0 /tmp/ccrVXNcp.ltrans4.ltrans.o
+ .data          0x0000000000000000        0x0 /tmp/ccrVXNcp.ltrans4.ltrans.o
+ .bss           0x0000000000000000        0x0 /tmp/ccrVXNcp.ltrans4.ltrans.o
+ .text          0x0000000000000000        0x0 /tmp/ccrVXNcp.ltrans5.ltrans.o
+ .data          0x0000000000000000        0x0 /tmp/ccrVXNcp.ltrans5.ltrans.o
+ .bss           0x0000000000000000        0x0 /tmp/ccrVXNcp.ltrans5.ltrans.o
+ .rodata.__func__.6873.lto_priv.51
+                0x0000000000000000        0xe /tmp/ccrVXNcp.ltrans5.ltrans.o
+ .rodata.__func__.6845.lto_priv.52
+                0x0000000000000000        0xd /tmp/ccrVXNcp.ltrans5.ltrans.o
+ .rodata.__func__.6869.lto_priv.50
+                0x0000000000000000        0xe /tmp/ccrVXNcp.ltrans5.ltrans.o
+ .text          0x0000000000000000        0x0 /tmp/ccrVXNcp.ltrans6.ltrans.o
+ .data          0x0000000000000000        0x0 /tmp/ccrVXNcp.ltrans6.ltrans.o
+ .bss           0x0000000000000000        0x0 /tmp/ccrVXNcp.ltrans6.ltrans.o
  .text          0x0000000000000000        0x0 build/obj/hal.o (symbol from plugin)
  .text          0x0000000000000000        0x0 build/obj/hal_st.o (symbol from plugin)
  .text          0x0000000000000000        0x0 build/obj/hal_buffers.o (symbol from plugin)
@@ -83,6 +107,28 @@ Discarded input sections
  .text          0x0000000000000000        0x0 build/obj/chcore_v6m.o (symbol from plugin)
  .text          0x0000000000000000        0x0 build/obj/main.o (symbol from plugin)
  .text          0x0000000000000000        0x0 build/obj/bq76920_driver.o (symbol from plugin)
+ .data          0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/4.9.3/armv6-m/libgcc.a(divsf3.o)
+ .bss           0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/4.9.3/armv6-m/libgcc.a(divsf3.o)
+ .data          0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/4.9.3/armv6-m/libgcc.a(mulsf3.o)
+ .bss           0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/4.9.3/armv6-m/libgcc.a(mulsf3.o)
+ .data          0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/4.9.3/armv6-m/libgcc.a(divdf3.o)
+ .bss           0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/4.9.3/armv6-m/libgcc.a(divdf3.o)
+ .data          0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/4.9.3/armv6-m/libgcc.a(muldf3.o)
+ .bss           0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/4.9.3/armv6-m/libgcc.a(muldf3.o)
+ .data          0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/4.9.3/armv6-m/libgcc.a(subdf3.o)
+ .bss           0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/4.9.3/armv6-m/libgcc.a(subdf3.o)
+ .data          0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/4.9.3/armv6-m/libgcc.a(floatsidf.o)
+ .bss           0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/4.9.3/armv6-m/libgcc.a(floatsidf.o)
+ .data          0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/4.9.3/armv6-m/libgcc.a(extendsfdf2.o)
+ .bss           0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/4.9.3/armv6-m/libgcc.a(extendsfdf2.o)
+ .data          0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/4.9.3/armv6-m/libgcc.a(truncdfsf2.o)
+ .bss           0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/4.9.3/armv6-m/libgcc.a(truncdfsf2.o)
+ .data          0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/4.9.3/armv6-m/libgcc.a(_udivsi3.o)
+ .bss           0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/4.9.3/armv6-m/libgcc.a(_udivsi3.o)
+ .data          0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/4.9.3/armv6-m/libgcc.a(_dvmd_tls.o)
+ .bss           0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/4.9.3/armv6-m/libgcc.a(_dvmd_tls.o)
+ .data          0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/4.9.3/armv6-m/libgcc.a(_clzsi2.o)
+ .bss           0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/4.9.3/armv6-m/libgcc.a(_clzsi2.o)
  .text          0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv6-m/libg.a(lib_a-memset.o)
  .data          0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv6-m/libg.a(lib_a-memset.o)
  .bss           0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv6-m/libg.a(lib_a-memset.o)
@@ -114,12 +160,13 @@ LOAD build/obj/crt0_v6m.o
 LOAD build/obj/vectors.o
 LOAD build/obj/chcoreasm_v6m.o
 LOAD build/obj/crt1.o
-LOAD /tmp/ccpwIpvt.ltrans0.ltrans.o
-LOAD /tmp/ccpwIpvt.ltrans1.ltrans.o
-LOAD /tmp/ccpwIpvt.ltrans2.ltrans.o
-LOAD /tmp/ccpwIpvt.ltrans3.ltrans.o
-LOAD /tmp/ccpwIpvt.ltrans4.ltrans.o
-LOAD /tmp/ccpwIpvt.ltrans5.ltrans.o
+LOAD /tmp/ccrVXNcp.ltrans0.ltrans.o
+LOAD /tmp/ccrVXNcp.ltrans1.ltrans.o
+LOAD /tmp/ccrVXNcp.ltrans2.ltrans.o
+LOAD /tmp/ccrVXNcp.ltrans3.ltrans.o
+LOAD /tmp/ccrVXNcp.ltrans4.ltrans.o
+LOAD /tmp/ccrVXNcp.ltrans5.ltrans.o
+LOAD /tmp/ccrVXNcp.ltrans6.ltrans.o
 LOAD build/obj/hal.o
 LOAD build/obj/hal_st.o
 LOAD build/obj/hal_buffers.o
@@ -196,7 +243,7 @@ LOAD build/obj/bq76920_driver.o
  *(SORT(.fini_array.*))
                 0x00000000080000c0                __fini_array_end = .
 
-.text           0x00000000080000c0     0x3548
+.text           0x00000000080000c0     0x5564
                 0x00000000080000c0                __text_base = .
  *(.text)
  .text          0x00000000080000c0       0xd0 build/obj/crt0_v6m.o
@@ -248,325 +295,362 @@ LOAD build/obj/bq76920_driver.o
                 0x00000000080001b8                _port_thread_start
                 0x00000000080001c8                _port_switch_from_isr
                 0x00000000080001d4                _port_exit_from_isr
+ .text          0x00000000080001e4      0x270 /usr/lib/gcc/arm-none-eabi/4.9.3/armv6-m/libgcc.a(divsf3.o)
+                0x00000000080001e4                __aeabi_fdiv
+ .text          0x0000000008000454      0x264 /usr/lib/gcc/arm-none-eabi/4.9.3/armv6-m/libgcc.a(mulsf3.o)
+                0x0000000008000454                __aeabi_fmul
+ .text          0x00000000080006b8      0x648 /usr/lib/gcc/arm-none-eabi/4.9.3/armv6-m/libgcc.a(divdf3.o)
+                0x00000000080006b8                __aeabi_ddiv
+ .text          0x0000000008000d00      0x534 /usr/lib/gcc/arm-none-eabi/4.9.3/armv6-m/libgcc.a(muldf3.o)
+                0x0000000008000d00                __aeabi_dmul
+ .text          0x0000000008001234      0x6f4 /usr/lib/gcc/arm-none-eabi/4.9.3/armv6-m/libgcc.a(subdf3.o)
+                0x0000000008001234                __aeabi_dsub
+ .text          0x0000000008001928       0x78 /usr/lib/gcc/arm-none-eabi/4.9.3/armv6-m/libgcc.a(floatsidf.o)
+                0x0000000008001928                __aeabi_i2d
+ .text          0x00000000080019a0       0xa8 /usr/lib/gcc/arm-none-eabi/4.9.3/armv6-m/libgcc.a(extendsfdf2.o)
+                0x00000000080019a0                __aeabi_f2d
+ .text          0x0000000008001a48      0x120 /usr/lib/gcc/arm-none-eabi/4.9.3/armv6-m/libgcc.a(truncdfsf2.o)
+                0x0000000008001a48                __aeabi_d2f
+ .text          0x0000000008001b68      0x120 /usr/lib/gcc/arm-none-eabi/4.9.3/armv6-m/libgcc.a(_udivsi3.o)
+                0x0000000008001b68                __udivsi3
+                0x0000000008001b68                __aeabi_uidiv
+                0x0000000008001c74                __aeabi_uidivmod
+ .text          0x0000000008001c88        0x4 /usr/lib/gcc/arm-none-eabi/4.9.3/armv6-m/libgcc.a(_dvmd_tls.o)
+                0x0000000008001c88                __aeabi_ldiv0
+                0x0000000008001c88                __aeabi_idiv0
+ .text          0x0000000008001c8c       0x3c /usr/lib/gcc/arm-none-eabi/4.9.3/armv6-m/libgcc.a(_clzsi2.o)
+                0x0000000008001c8c                __clzsi2
  *(.text.*)
- *fill*         0x00000000080001e4        0xc 
+ *fill*         0x0000000008001cc8        0x8 
  .text.startup.main
-                0x00000000080001f0      0xf4c /tmp/ccpwIpvt.ltrans0.ltrans.o
-                0x00000000080001f0                main
- *fill*         0x000000000800113c        0x4 
- .text.trace_next.lto_priv.45
-                0x0000000008001140       0x2c /tmp/ccpwIpvt.ltrans1.ltrans.o
-                0x0000000008001140                trace_next.lto_priv.45
- *fill*         0x000000000800116c        0x4 
+                0x0000000008001cd0      0xc58 /tmp/ccrVXNcp.ltrans0.ltrans.o
+                0x0000000008001cd0                main
+ *fill*         0x0000000008002928        0x8 
+ .text._idle_thread.lto_priv.62
+                0x0000000008002930        0x4 /tmp/ccrVXNcp.ltrans1.ltrans.o
+                0x0000000008002930                _idle_thread.lto_priv.62
+ *fill*         0x0000000008002934        0xc 
+ .text.trace_next.lto_priv.49
+                0x0000000008002940       0x2c /tmp/ccrVXNcp.ltrans1.ltrans.o
+                0x0000000008002940                trace_next.lto_priv.49
+ *fill*         0x000000000800296c        0x4 
  .text.chSysHalt
-                0x0000000008001170       0x30 /tmp/ccpwIpvt.ltrans1.ltrans.o
-                0x0000000008001170                chSysHalt
+                0x0000000008002970       0x30 /tmp/ccrVXNcp.ltrans1.ltrans.o
+                0x0000000008002970                chSysHalt
  .text._dbg_check_unlock
-                0x00000000080011a0       0x24 /tmp/ccpwIpvt.ltrans1.ltrans.o
-                0x00000000080011a0                _dbg_check_unlock
- *fill*         0x00000000080011c4        0xc 
- .text._dbg_check_lock
-                0x00000000080011d0       0x24 /tmp/ccpwIpvt.ltrans1.ltrans.o
-                0x00000000080011d0                _dbg_check_lock
- *fill*         0x00000000080011f4        0xc 
- .text.chMtxLock
-                0x0000000008001200       0x60 /tmp/ccpwIpvt.ltrans1.ltrans.o
-                0x0000000008001200                chMtxLock
+                0x00000000080029a0       0x24 /tmp/ccrVXNcp.ltrans1.ltrans.o
+                0x00000000080029a0                _dbg_check_unlock
+ *fill*         0x00000000080029c4        0xc 
  .text.chDbgCheckClassI
-                0x0000000008001260       0x20 /tmp/ccpwIpvt.ltrans1.ltrans.o
-                0x0000000008001260                chDbgCheckClassI
- .text.chSysUnlock.lto_priv.49
-                0x0000000008001280       0x40 /tmp/ccpwIpvt.ltrans1.ltrans.o
-                0x0000000008001280                chSysUnlock.lto_priv.49
+                0x00000000080029d0       0x20 /tmp/ccrVXNcp.ltrans1.ltrans.o
+                0x00000000080029d0                chDbgCheckClassI
+ .text._dbg_check_lock
+                0x00000000080029f0       0x24 /tmp/ccrVXNcp.ltrans1.ltrans.o
+                0x00000000080029f0                _dbg_check_lock
+ *fill*         0x0000000008002a14        0xc 
+ .text.chSysUnlock.lto_priv.55
+                0x0000000008002a20       0x40 /tmp/ccrVXNcp.ltrans1.ltrans.o
+                0x0000000008002a20                chSysUnlock.lto_priv.55
  .text.chRegFindThreadByWorkingArea
-                0x00000000080012c0      0x28c /tmp/ccpwIpvt.ltrans1.ltrans.o
-                0x00000000080012c0                chRegFindThreadByWorkingArea
- *fill*         0x000000000800154c        0x4 
+                0x0000000008002a60      0x28c /tmp/ccrVXNcp.ltrans1.ltrans.o
+                0x0000000008002a60                chRegFindThreadByWorkingArea
+ *fill*         0x0000000008002cec        0x4 
  .text.chThdExit
-                0x0000000008001550      0x100 /tmp/ccpwIpvt.ltrans1.ltrans.o
-                0x0000000008001550                chThdExit
+                0x0000000008002cf0      0x100 /tmp/ccrVXNcp.ltrans1.ltrans.o
+                0x0000000008002cf0                chThdExit
  .text.chSchDoReschedule
-                0x0000000008001650       0xbc /tmp/ccpwIpvt.ltrans1.ltrans.o
-                0x0000000008001650                chSchDoReschedule
- *fill*         0x000000000800170c        0x4 
+                0x0000000008002df0       0xbc /tmp/ccrVXNcp.ltrans1.ltrans.o
+                0x0000000008002df0                chSchDoReschedule
+ *fill*         0x0000000008002eac        0x4 
  .text.chSchGoSleepTimeoutS
-                0x0000000008001710      0x2ac /tmp/ccpwIpvt.ltrans1.ltrans.o
-                0x0000000008001710                chSchGoSleepTimeoutS
- *fill*         0x00000000080019bc        0x4 
- .text.wakeup.lto_priv.56
-                0x00000000080019c0       0xbc /tmp/ccpwIpvt.ltrans1.ltrans.o
-                0x00000000080019c0                wakeup.lto_priv.56
- *fill*         0x0000000008001a7c        0x4 
- .text._idle_thread.lto_priv.61
-                0x0000000008001a80        0x4 /tmp/ccpwIpvt.ltrans2.ltrans.o
-                0x0000000008001a80                _idle_thread.lto_priv.61
- *fill*         0x0000000008001a84        0xc 
- .text.__early_init
-                0x0000000008001a90      0x150 /tmp/ccpwIpvt.ltrans2.ltrans.o
-                0x0000000008001a90                __early_init
- .text.Vector80
-                0x0000000008001be0      0x1d0 /tmp/ccpwIpvt.ltrans2.ltrans.o
-                0x0000000008001be0                Vector80
- .text.Vector9C
-                0x0000000008001db0      0x39c /tmp/ccpwIpvt.ltrans2.ltrans.o
-                0x0000000008001db0                Vector9C
- *fill*         0x000000000800214c        0x4 
- .text.dmaStreamAllocI
-                0x0000000008002150       0xc4 /tmp/ccpwIpvt.ltrans2.ltrans.o
-                0x0000000008002150                dmaStreamAllocI
- *fill*         0x0000000008002214        0xc 
- .text.Vector64
-                0x0000000008002220       0xf0 /tmp/ccpwIpvt.ltrans2.ltrans.o
-                0x0000000008002220                Vector64
- .text.chCoreAllocAlignedI.lto_priv.60
-                0x0000000008002310       0x5c /tmp/ccpwIpvt.ltrans3.ltrans.o
-                0x0000000008002310                chCoreAllocAlignedI.lto_priv.60
- *fill*         0x000000000800236c        0x4 
+                0x0000000008002eb0      0x2ac /tmp/ccrVXNcp.ltrans1.ltrans.o
+                0x0000000008002eb0                chSchGoSleepTimeoutS
+ *fill*         0x000000000800315c        0x4 
+ .text.wakeup.lto_priv.64
+                0x0000000008003160       0xbc /tmp/ccrVXNcp.ltrans1.ltrans.o
+                0x0000000008003160                wakeup.lto_priv.64
+ *fill*         0x000000000800321c        0x4 
+ .text.chCoreAllocAlignedI.lto_priv.61
+                0x0000000008003220       0x5c /tmp/ccrVXNcp.ltrans2.ltrans.o
+                0x0000000008003220                chCoreAllocAlignedI.lto_priv.61
+ *fill*         0x000000000800327c        0x4 
  .text.chCoreAllocAlignedWithOffset
-                0x0000000008002370       0x84 /tmp/ccpwIpvt.ltrans3.ltrans.o
-                0x0000000008002370                chCoreAllocAlignedWithOffset
- *fill*         0x00000000080023f4        0xc 
- .text.Thread1.lto_priv.46
-                0x0000000008002400      0x2f4 /tmp/ccpwIpvt.ltrans3.ltrans.o
-                0x0000000008002400                Thread1.lto_priv.46
- *fill*         0x00000000080026f4        0xc 
+                0x0000000008003280       0x84 /tmp/ccrVXNcp.ltrans2.ltrans.o
+                0x0000000008003280                chCoreAllocAlignedWithOffset
+ *fill*         0x0000000008003304        0xc 
+ .text.Thread1.lto_priv.53
+                0x0000000008003310      0x2e4 /tmp/ccrVXNcp.ltrans2.ltrans.o
+                0x0000000008003310                Thread1.lto_priv.53
+ *fill*         0x00000000080035f4        0xc 
  .text.NMI_Handler
-                0x0000000008002700       0x10 /tmp/ccpwIpvt.ltrans3.ltrans.o
-                0x0000000008002700                NMI_Handler
+                0x0000000008003600       0x10 /tmp/ccrVXNcp.ltrans2.ltrans.o
+                0x0000000008003600                NMI_Handler
  .text.chMtxUnlock
-                0x0000000008002710      0x174 /tmp/ccpwIpvt.ltrans3.ltrans.o
-                0x0000000008002710                chMtxUnlock
- *fill*         0x0000000008002884        0xc 
+                0x0000000008003610      0x174 /tmp/ccrVXNcp.ltrans2.ltrans.o
+                0x0000000008003610                chMtxUnlock
+ *fill*         0x0000000008003784        0xc 
  .text.chMtxLockS
-                0x0000000008002890      0x160 /tmp/ccpwIpvt.ltrans3.ltrans.o
-                0x0000000008002890                chMtxLockS
- .text.adc_lld_serve_rx_interrupt.lto_priv.59
-                0x00000000080029f0      0x1a0 /tmp/ccpwIpvt.ltrans4.ltrans.o
-                0x00000000080029f0                adc_lld_serve_rx_interrupt.lto_priv.59
+                0x0000000008003790      0x160 /tmp/ccrVXNcp.ltrans2.ltrans.o
+                0x0000000008003790                chMtxLockS
+ .text.chMtxLock
+                0x00000000080038f0       0x60 /tmp/ccrVXNcp.ltrans2.ltrans.o
+                0x00000000080038f0                chMtxLock
+ .text.__early_init
+                0x0000000008003950      0x150 /tmp/ccrVXNcp.ltrans3.ltrans.o
+                0x0000000008003950                __early_init
+ .text.Vector80
+                0x0000000008003aa0      0x1d0 /tmp/ccrVXNcp.ltrans3.ltrans.o
+                0x0000000008003aa0                Vector80
+ .text.Vector9C
+                0x0000000008003c70      0x39c /tmp/ccrVXNcp.ltrans3.ltrans.o
+                0x0000000008003c70                Vector9C
+ *fill*         0x000000000800400c        0x4 
+ .text.dmaStreamAllocI
+                0x0000000008004010       0xc4 /tmp/ccrVXNcp.ltrans3.ltrans.o
+                0x0000000008004010                dmaStreamAllocI
+ *fill*         0x00000000080040d4        0xc 
+ .text.Vector64
+                0x00000000080040e0       0xf0 /tmp/ccrVXNcp.ltrans3.ltrans.o
+                0x00000000080040e0                Vector64
+ .text.adc_lld_serve_rx_interrupt.lto_priv.60
+                0x00000000080041d0      0x1a0 /tmp/ccrVXNcp.ltrans4.ltrans.o
+                0x00000000080041d0                adc_lld_serve_rx_interrupt.lto_priv.60
  .text.Vector70
-                0x0000000008002b90      0x274 /tmp/ccpwIpvt.ltrans4.ltrans.o
-                0x0000000008002b90                Vector70
- *fill*         0x0000000008002e04        0xc 
+                0x0000000008004370      0x274 /tmp/ccrVXNcp.ltrans4.ltrans.o
+                0x0000000008004370                Vector70
+ *fill*         0x00000000080045e4        0xc 
  .text.Vector6C
-                0x0000000008002e10      0x118 /tmp/ccpwIpvt.ltrans4.ltrans.o
-                0x0000000008002e10                Vector6C
- *fill*         0x0000000008002f28        0x8 
+                0x00000000080045f0      0x118 /tmp/ccrVXNcp.ltrans4.ltrans.o
+                0x00000000080045f0                Vector6C
+ *fill*         0x0000000008004708        0x8 
  .text.Vector68
-                0x0000000008002f30      0x118 /tmp/ccpwIpvt.ltrans4.ltrans.o
-                0x0000000008002f30                Vector68
- *fill*         0x0000000008003048        0x8 
+                0x0000000008004710      0x118 /tmp/ccrVXNcp.ltrans4.ltrans.o
+                0x0000000008004710                Vector68
+ *fill*         0x0000000008004828        0x8 
  .text.nvicEnableVector
-                0x0000000008003050       0x48 /tmp/ccpwIpvt.ltrans4.ltrans.o
-                0x0000000008003050                nvicEnableVector
- *fill*         0x0000000008003098        0x8 
+                0x0000000008004830       0x48 /tmp/ccrVXNcp.ltrans4.ltrans.o
+                0x0000000008004830                nvicEnableVector
+ *fill*         0x0000000008004878        0x8 
  .text.__init_ram_areas
-                0x00000000080030a0       0x4c /tmp/ccpwIpvt.ltrans4.ltrans.o
-                0x00000000080030a0                __init_ram_areas
- *fill*         0x00000000080030ec        0x4 
+                0x0000000008004880       0x4c /tmp/ccrVXNcp.ltrans4.ltrans.o
+                0x0000000008004880                __init_ram_areas
+ *fill*         0x00000000080048cc        0x4 
  .text.__default_exit
-                0x00000000080030f0        0x4 /tmp/ccpwIpvt.ltrans4.ltrans.o
-                0x00000000080030f0                __default_exit
- *fill*         0x00000000080030f4        0xc 
+                0x00000000080048d0        0x4 /tmp/ccrVXNcp.ltrans4.ltrans.o
+                0x00000000080048d0                __default_exit
+ *fill*         0x00000000080048d4        0xc 
  .text.__late_init
-                0x0000000008003100        0x4 /tmp/ccpwIpvt.ltrans4.ltrans.o
-                0x0000000008003100                __late_init
- *fill*         0x0000000008003104        0xc 
+                0x00000000080048e0        0x4 /tmp/ccrVXNcp.ltrans4.ltrans.o
+                0x00000000080048e0                __late_init
+ *fill*         0x00000000080048e4        0xc 
  .text.__core_init
-                0x0000000008003110        0x4 /tmp/ccpwIpvt.ltrans4.ltrans.o
-                0x0000000008003110                __core_init
- *fill*         0x0000000008003114        0xc 
- .text.i2cMasterTransmitTimeout.constprop.28
-                0x0000000008003120      0x1f0 /tmp/ccpwIpvt.ltrans5.ltrans.o
-                0x0000000008003120                i2cMasterTransmitTimeout.constprop.28
- .text.chSchWakeupS.constprop.20
-                0x0000000008003310       0xf0 /tmp/ccpwIpvt.ltrans5.ltrans.o
-                0x0000000008003310                chSchWakeupS.constprop.20
- .text.I2CReadRegisterByteWithCRC.constprop.3
-                0x0000000008003400      0x17c /tmp/ccpwIpvt.ltrans5.ltrans.o
-                0x0000000008003400                I2CReadRegisterByteWithCRC.constprop.3
- .text.memset   0x000000000800357c       0x8c /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv6-m/libg.a(lib_a-memset.o)
-                0x000000000800357c                memset
+                0x00000000080048f0        0x4 /tmp/ccrVXNcp.ltrans4.ltrans.o
+                0x00000000080048f0                __core_init
+ *fill*         0x00000000080048f4        0xc 
+ .text.i2cMasterTransmitTimeout.constprop.30
+                0x0000000008004900      0x1f0 /tmp/ccrVXNcp.ltrans5.ltrans.o
+                0x0000000008004900                i2cMasterTransmitTimeout.constprop.30
+ .text.chSchWakeupS.constprop.22
+                0x0000000008004af0       0xf0 /tmp/ccrVXNcp.ltrans5.ltrans.o
+                0x0000000008004af0                chSchWakeupS.constprop.22
+ .text.I2CReadRegisterWordWithCRC.constprop.8
+                0x0000000008004be0      0x41c /tmp/ccrVXNcp.ltrans5.ltrans.o
+                0x0000000008004be0                I2CReadRegisterWordWithCRC.constprop.8
+ *fill*         0x0000000008004ffc        0x4 
+ .text.I2CReadRegisterWordWithCRC.constprop.7
+                0x0000000008005000      0x41c /tmp/ccrVXNcp.ltrans5.ltrans.o
+                0x0000000008005000                I2CReadRegisterWordWithCRC.constprop.7
+ *fill*         0x000000000800541c        0x4 
+ .text.I2CReadRegisterByteWithCRC.constprop.0
+                0x0000000008005420      0x178 /tmp/ccrVXNcp.ltrans6.ltrans.o
+                0x0000000008005420                I2CReadRegisterByteWithCRC.constprop.0
+ .text.memset   0x0000000008005598       0x8c /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv6-m/libg.a(lib_a-memset.o)
+                0x0000000008005598                memset
  *(.glue_7t)
- .glue_7t       0x0000000008003608        0x0 linker stubs
+ .glue_7t       0x0000000008005624        0x0 linker stubs
  *(.glue_7)
- .glue_7        0x0000000008003608        0x0 linker stubs
+ .glue_7        0x0000000008005624        0x0 linker stubs
  *(.gcc*)
-                0x0000000008003608                __text_end = .
+                0x0000000008005624                __text_end = .
 
-.vfp11_veneer   0x0000000008003608        0x0
- .vfp11_veneer  0x0000000008003608        0x0 linker stubs
+.vfp11_veneer   0x0000000008005624        0x0
+ .vfp11_veneer  0x0000000008005624        0x0 linker stubs
 
-.v4_bx          0x0000000008003608        0x0
- .v4_bx         0x0000000008003608        0x0 linker stubs
+.v4_bx          0x0000000008005624        0x0
+ .v4_bx         0x0000000008005624        0x0 linker stubs
 
-.iplt           0x0000000008003608        0x0
- .iplt          0x0000000008003608        0x0 build/obj/crt0_v6m.o
+.iplt           0x0000000008005624        0x0
+ .iplt          0x0000000008005624        0x0 build/obj/crt0_v6m.o
 
-.rodata         0x0000000008003608      0x3cc
-                0x0000000008003608                __rodata_base__ = .
+.rodata         0x0000000008005624      0x50c
+                0x0000000008005624                __rodata_base__ = .
  *(.rodata)
+ .rodata        0x0000000008005624       0x80 /usr/lib/gcc/arm-none-eabi/4.9.3/armv6-m/libgcc.a(divsf3.o)
+ .rodata        0x00000000080056a4       0x40 /usr/lib/gcc/arm-none-eabi/4.9.3/armv6-m/libgcc.a(mulsf3.o)
+ .rodata        0x00000000080056e4       0x40 /usr/lib/gcc/arm-none-eabi/4.9.3/armv6-m/libgcc.a(divdf3.o)
+ .rodata        0x0000000008005724       0x40 /usr/lib/gcc/arm-none-eabi/4.9.3/armv6-m/libgcc.a(muldf3.o)
  *(.rodata.*)
- .rodata.__func__.6846
-                0x0000000008003608        0xd /tmp/ccpwIpvt.ltrans0.ltrans.o
- *fill*         0x0000000008003615        0x3 
- .rodata.__func__.5086.lto_priv.52
-                0x0000000008003618        0xc /tmp/ccpwIpvt.ltrans0.ltrans.o
-                0x0000000008003618                __func__.5086.lto_priv.52
- .rodata.__func__.4221.lto_priv.65
-                0x0000000008003624        0xb /tmp/ccpwIpvt.ltrans0.ltrans.o
-                0x0000000008003624                __func__.4221.lto_priv.65
- *fill*         0x000000000800362f        0x1 
- .rodata._stm32_dma_streams
-                0x0000000008003630       0x50 /tmp/ccpwIpvt.ltrans0.ltrans.o
-                0x0000000008003630                _stm32_dma_streams
- .rodata.__func__.6853
-                0x0000000008003680        0xe /tmp/ccpwIpvt.ltrans0.ltrans.o
- *fill*         0x000000000800368e        0x2 
- .rodata.__func__.6833.lto_priv.67
-                0x0000000008003690        0xd /tmp/ccpwIpvt.ltrans0.ltrans.o
-                0x0000000008003690                __func__.6833.lto_priv.67
- *fill*         0x000000000800369d        0x3 
- .rodata.ch_debug
-                0x00000000080036a0       0x16 /tmp/ccpwIpvt.ltrans0.ltrans.o
- *fill*         0x00000000080036b6        0x2 
- .rodata.str1.4
-                0x00000000080036b8       0x3d /tmp/ccpwIpvt.ltrans0.ltrans.o
- *fill*         0x00000000080036f5        0x3 
- .rodata.__func__.5086.lto_priv.53
-                0x00000000080036f8        0xc /tmp/ccpwIpvt.ltrans0.ltrans.o
-                0x00000000080036f8                __func__.5086.lto_priv.53
- .rodata.__func__.6874
-                0x0000000008003704        0xe /tmp/ccpwIpvt.ltrans0.ltrans.o
- *fill*         0x0000000008003712        0x2 
- .rodata.__func__.6840.lto_priv.66
-                0x0000000008003714        0xb /tmp/ccpwIpvt.ltrans0.ltrans.o
-                0x0000000008003714                __func__.6840.lto_priv.66
- *fill*         0x000000000800371f        0x1 
- .rodata.__func__.6101
-                0x0000000008003720        0xc /tmp/ccpwIpvt.ltrans0.ltrans.o
- .rodata.__func__.5086.lto_priv.51
-                0x000000000800372c        0xc /tmp/ccpwIpvt.ltrans0.ltrans.o
- .rodata.__func__.6837.lto_priv.58
-                0x0000000008003738        0x9 /tmp/ccpwIpvt.ltrans0.ltrans.o
- *fill*         0x0000000008003741        0x3 
- .rodata.__func__.6110
-                0x0000000008003744       0x12 /tmp/ccpwIpvt.ltrans0.ltrans.o
- *fill*         0x0000000008003756        0x2 
- .rodata.__func__.6082.lto_priv.63
-                0x0000000008003758        0xb /tmp/ccpwIpvt.ltrans0.ltrans.o
-                0x0000000008003758                __func__.6082.lto_priv.63
- *fill*         0x0000000008003763        0x1 
- .rodata.__func__.6837.lto_priv.57
-                0x0000000008003764        0x9 /tmp/ccpwIpvt.ltrans0.ltrans.o
- *fill*         0x000000000800376d        0x3 
  .rodata.i2cfg1
-                0x0000000008003770        0xc /tmp/ccpwIpvt.ltrans0.ltrans.o
- .rodata.wakeup.lto_priv.56
-                0x000000000800377c       0x20 /tmp/ccpwIpvt.ltrans1.ltrans.o
- .rodata.__func__.6122
-                0x000000000800379c        0xd /tmp/ccpwIpvt.ltrans1.ltrans.o
- *fill*         0x00000000080037a9        0x3 
+                0x0000000008005764        0xc /tmp/ccrVXNcp.ltrans0.ltrans.o
+ .rodata.__func__.6846
+                0x0000000008005770        0xd /tmp/ccrVXNcp.ltrans0.ltrans.o
+ *fill*         0x000000000800577d        0x3 
+ .rodata._stm32_dma_streams
+                0x0000000008005780       0x50 /tmp/ccrVXNcp.ltrans0.ltrans.o
+                0x0000000008005780                _stm32_dma_streams
+ .rodata.__func__.6853
+                0x00000000080057d0        0xe /tmp/ccrVXNcp.ltrans0.ltrans.o
+ *fill*         0x00000000080057de        0x2 
+ .rodata.ch_debug
+                0x00000000080057e0       0x16 /tmp/ccrVXNcp.ltrans0.ltrans.o
+ *fill*         0x00000000080057f6        0x2 
+ .rodata.str1.4
+                0x00000000080057f8       0x1d /tmp/ccrVXNcp.ltrans0.ltrans.o
+ *fill*         0x0000000008005815        0x3 
+ .rodata.__func__.6874
+                0x0000000008005818        0xe /tmp/ccrVXNcp.ltrans0.ltrans.o
+ *fill*         0x0000000008005826        0x2 
  .rodata.__func__.6101
-                0x00000000080037ac        0xc /tmp/ccpwIpvt.ltrans1.ltrans.o
+                0x0000000008005828        0xc /tmp/ccrVXNcp.ltrans0.ltrans.o
+ .rodata.__func__.6837.lto_priv.58
+                0x0000000008005834        0x9 /tmp/ccrVXNcp.ltrans0.ltrans.o
+ *fill*         0x000000000800583d        0x3 
+ .rodata.__func__.6110
+                0x0000000008005840       0x12 /tmp/ccrVXNcp.ltrans0.ltrans.o
+ *fill*         0x0000000008005852        0x2 
+ .rodata.__func__.5086.lto_priv.56
+                0x0000000008005854        0xc /tmp/ccrVXNcp.ltrans0.ltrans.o
+ .rodata.__func__.5086.lto_priv.57
+                0x0000000008005860        0xc /tmp/ccrVXNcp.ltrans0.ltrans.o
+                0x0000000008005860                __func__.5086.lto_priv.57
+ .rodata.__func__.6837.lto_priv.59
+                0x000000000800586c        0x9 /tmp/ccrVXNcp.ltrans0.ltrans.o
+ *fill*         0x0000000008005875        0x3 
+ .rodata.wakeup.lto_priv.64
+                0x0000000008005878       0x20 /tmp/ccrVXNcp.ltrans1.ltrans.o
+ .rodata.__func__.6122
+                0x0000000008005898        0xd /tmp/ccrVXNcp.ltrans1.ltrans.o
+ *fill*         0x00000000080058a5        0x3 
+ .rodata.__func__.6101
+                0x00000000080058a8        0xc /tmp/ccrVXNcp.ltrans1.ltrans.o
  .rodata.__func__.6104
-                0x00000000080037b8        0xb /tmp/ccpwIpvt.ltrans1.ltrans.o
- *fill*         0x00000000080037c3        0x1 
+                0x00000000080058b4        0xb /tmp/ccrVXNcp.ltrans1.ltrans.o
+ *fill*         0x00000000080058bf        0x1 
  .rodata.__func__.6394
-                0x00000000080037c4       0x10 /tmp/ccpwIpvt.ltrans1.ltrans.o
+                0x00000000080058c0       0x10 /tmp/ccrVXNcp.ltrans1.ltrans.o
  .rodata.__func__.5400
-                0x00000000080037d4        0xc /tmp/ccpwIpvt.ltrans1.ltrans.o
+                0x00000000080058d0        0xc /tmp/ccrVXNcp.ltrans1.ltrans.o
  .rodata.str1.4
-                0x00000000080037e0        0xd /tmp/ccpwIpvt.ltrans1.ltrans.o
+                0x00000000080058dc       0x2d /tmp/ccrVXNcp.ltrans1.ltrans.o
                                          0x3d (size before relaxing)
- *fill*         0x00000000080037ed        0x3 
+ *fill*         0x0000000008005909        0x3 
  .rodata.__func__.5086
-                0x00000000080037f0        0xc /tmp/ccpwIpvt.ltrans1.ltrans.o
+                0x000000000800590c        0xc /tmp/ccrVXNcp.ltrans1.ltrans.o
  .rodata.__func__.6137
-                0x00000000080037fc        0xb /tmp/ccpwIpvt.ltrans1.ltrans.o
- *fill*         0x0000000008003807        0x1 
- .rodata.__func__.5172
-                0x0000000008003808        0xc /tmp/ccpwIpvt.ltrans2.ltrans.o
- .rodata.__func__.6831
-                0x0000000008003814        0x9 /tmp/ccpwIpvt.ltrans2.ltrans.o
- *fill*         0x000000000800381d        0x3 
- .rodata.__func__.6840
-                0x0000000008003820        0x9 /tmp/ccpwIpvt.ltrans2.ltrans.o
- *fill*         0x0000000008003829        0x3 
- .rodata.str1.4
-                0x000000000800382c        0xd /tmp/ccpwIpvt.ltrans2.ltrans.o
-                                         0x15 (size before relaxing)
- *fill*         0x0000000008003839        0x3 
- .rodata.__func__.6857
-                0x000000000800383c       0x10 /tmp/ccpwIpvt.ltrans2.ltrans.o
- .rodata.__func__.6182.lto_priv.75
-                0x000000000800384c        0xd /tmp/ccpwIpvt.ltrans2.ltrans.o
-                0x000000000800384c                __func__.6182.lto_priv.75
- *fill*         0x0000000008003859        0x3 
- .rodata.__func__.6866
-                0x000000000800385c        0x9 /tmp/ccpwIpvt.ltrans2.ltrans.o
- *fill*         0x0000000008003865        0x3 
+                0x0000000008005918        0xb /tmp/ccrVXNcp.ltrans1.ltrans.o
+ *fill*         0x0000000008005923        0x1 
+ .rodata.__func__.6086.lto_priv.68
+                0x0000000008005924       0x1e /tmp/ccrVXNcp.ltrans2.ltrans.o
+ *fill*         0x0000000008005942        0x2 
  .rodata.__func__.6105
-                0x0000000008003868        0xc /tmp/ccpwIpvt.ltrans3.ltrans.o
+                0x0000000008005944        0xc /tmp/ccrVXNcp.ltrans2.ltrans.o
+ .rodata.__func__.6082.lto_priv.65
+                0x0000000008005950        0xb /tmp/ccrVXNcp.ltrans2.ltrans.o
+                0x0000000008005950                __func__.6082.lto_priv.65
+ *fill*         0x000000000800595b        0x1 
+ .rodata.__func__.6840.lto_priv.74
+                0x000000000800595c        0xb /tmp/ccrVXNcp.ltrans2.ltrans.o
+                0x000000000800595c                __func__.6840.lto_priv.74
+ *fill*         0x0000000008005967        0x1 
+ .rodata.__func__.4221.lto_priv.73
+                0x0000000008005968        0xb /tmp/ccrVXNcp.ltrans2.ltrans.o
+                0x0000000008005968                __func__.4221.lto_priv.73
+ *fill*         0x0000000008005973        0x1 
  .rodata.str1.4
-                0x0000000008003874        0x8 /tmp/ccpwIpvt.ltrans3.ltrans.o
-                                         0x35 (size before relaxing)
- .rodata.__func__.6082.lto_priv.64
-                0x000000000800387c        0xb /tmp/ccpwIpvt.ltrans3.ltrans.o
- *fill*         0x0000000008003887        0x1 
+                0x0000000008005974        0x7 /tmp/ccrVXNcp.ltrans2.ltrans.o
+                                         0x37 (size before relaxing)
+ *fill*         0x000000000800597b        0x1 
+ .rodata.__func__.6833.lto_priv.75
+                0x000000000800597c        0xd /tmp/ccrVXNcp.ltrans2.ltrans.o
+                0x000000000800597c                __func__.6833.lto_priv.75
+ *fill*         0x0000000008005989        0x3 
  .rodata.__func__.5086
-                0x0000000008003888        0xc /tmp/ccpwIpvt.ltrans3.ltrans.o
- .rodata.__func__.6086.lto_priv.70
-                0x0000000008003894       0x1e /tmp/ccpwIpvt.ltrans3.ltrans.o
- *fill*         0x00000000080038b2        0x2 
+                0x000000000800598c        0xc /tmp/ccrVXNcp.ltrans2.ltrans.o
+ .rodata.__func__.6082.lto_priv.66
+                0x0000000008005998        0xb /tmp/ccrVXNcp.ltrans2.ltrans.o
+ *fill*         0x00000000080059a3        0x1 
+ .rodata.__func__.5172
+                0x00000000080059a4        0xc /tmp/ccrVXNcp.ltrans3.ltrans.o
+ .rodata.__func__.6831
+                0x00000000080059b0        0x9 /tmp/ccrVXNcp.ltrans3.ltrans.o
+ *fill*         0x00000000080059b9        0x3 
  .rodata.__func__.6840
-                0x00000000080038b4        0x9 /tmp/ccpwIpvt.ltrans4.ltrans.o
- *fill*         0x00000000080038bd        0x3 
+                0x00000000080059bc        0x9 /tmp/ccrVXNcp.ltrans3.ltrans.o
+ *fill*         0x00000000080059c5        0x3 
+ .rodata.str1.4
+                0x00000000080059c8       0x10 /tmp/ccrVXNcp.ltrans3.ltrans.o
+                                         0x15 (size before relaxing)
+ .rodata.__func__.6857
+                0x00000000080059d8       0x10 /tmp/ccrVXNcp.ltrans3.ltrans.o
+ .rodata.__func__.6866
+                0x00000000080059e8        0x9 /tmp/ccrVXNcp.ltrans3.ltrans.o
+ *fill*         0x00000000080059f1        0x3 
+ .rodata.__func__.6182.lto_priv.77
+                0x00000000080059f4        0xd /tmp/ccrVXNcp.ltrans3.ltrans.o
+                0x00000000080059f4                __func__.6182.lto_priv.77
+ *fill*         0x0000000008005a01        0x3 
+ .rodata.__func__.6840
+                0x0000000008005a04        0x9 /tmp/ccrVXNcp.ltrans4.ltrans.o
+ *fill*         0x0000000008005a0d        0x3 
  .rodata.__func__.6842
-                0x00000000080038c0        0x9 /tmp/ccpwIpvt.ltrans4.ltrans.o
+                0x0000000008005a10        0x9 /tmp/ccrVXNcp.ltrans4.ltrans.o
  .rodata.str1.4
-                0x00000000080038c9       0x15 /tmp/ccpwIpvt.ltrans4.ltrans.o
- *fill*         0x00000000080038c9        0x3 
+                0x0000000008005a19       0x15 /tmp/ccrVXNcp.ltrans4.ltrans.o
+ *fill*         0x0000000008005a19        0x3 
  .rodata.ram_areas
-                0x00000000080038cc       0x80 /tmp/ccpwIpvt.ltrans4.ltrans.o
+                0x0000000008005a1c       0x80 /tmp/ccrVXNcp.ltrans4.ltrans.o
  .rodata.__func__.6835
-                0x000000000800394c        0x9 /tmp/ccpwIpvt.ltrans4.ltrans.o
- *fill*         0x0000000008003955        0x3 
- .rodata.__func__.5086.lto_priv.44
-                0x0000000008003958        0xc /tmp/ccpwIpvt.ltrans5.ltrans.o
- .rodata.__func__.6086.lto_priv.69
-                0x0000000008003964       0x11 /tmp/ccpwIpvt.ltrans5.ltrans.o
-                0x0000000008003964                __func__.6086.lto_priv.69
- *fill*         0x0000000008003975        0x3 
- .rodata.__func__.6079.lto_priv.71
-                0x0000000008003978        0xc /tmp/ccpwIpvt.ltrans5.ltrans.o
-                0x0000000008003978                __func__.6079.lto_priv.71
+                0x0000000008005a9c        0x9 /tmp/ccrVXNcp.ltrans4.ltrans.o
+ *fill*         0x0000000008005aa5        0x3 
+ .rodata.__func__.6086.lto_priv.67
+                0x0000000008005aa8       0x11 /tmp/ccrVXNcp.ltrans5.ltrans.o
+                0x0000000008005aa8                __func__.6086.lto_priv.67
+ *fill*         0x0000000008005ab9        0x3 
+ .rodata.__func__.6079.lto_priv.69
+                0x0000000008005abc        0xc /tmp/ccrVXNcp.ltrans5.ltrans.o
+                0x0000000008005abc                __func__.6079.lto_priv.69
  .rodata.__func__.6176
-                0x0000000008003984       0x15 /tmp/ccpwIpvt.ltrans5.ltrans.o
+                0x0000000008005ac8       0x15 /tmp/ccrVXNcp.ltrans5.ltrans.o
  .rodata.str1.4
-                0x0000000008003999       0x27 /tmp/ccpwIpvt.ltrans5.ltrans.o
- *fill*         0x0000000008003999        0x3 
- .rodata.__func__.5086.lto_priv.43
-                0x000000000800399c        0xc /tmp/ccpwIpvt.ltrans5.ltrans.o
-                0x000000000800399c                __func__.5086.lto_priv.43
+                0x0000000008005add       0x27 /tmp/ccrVXNcp.ltrans5.ltrans.o
+ *fill*         0x0000000008005add        0x3 
  .rodata.__func__.6856
-                0x00000000080039a8       0x19 /tmp/ccpwIpvt.ltrans5.ltrans.o
- *fill*         0x00000000080039c1        0x3 
+                0x0000000008005ae0       0x19 /tmp/ccrVXNcp.ltrans5.ltrans.o
+ *fill*         0x0000000008005af9        0x3 
  .rodata.__func__.6115
-                0x00000000080039c4        0xd /tmp/ccpwIpvt.ltrans5.ltrans.o
-                0x00000000080039d4                . = ALIGN (0x4)
- *fill*         0x00000000080039d1        0x3 
-                0x00000000080039d4                __rodata_end__ = .
+                0x0000000008005afc        0xd /tmp/ccrVXNcp.ltrans5.ltrans.o
+ *fill*         0x0000000008005b09        0x3 
+ .rodata.__func__.5086.lto_priv.46
+                0x0000000008005b0c        0xc /tmp/ccrVXNcp.ltrans5.ltrans.o
+                0x0000000008005b0c                __func__.5086.lto_priv.46
+ .rodata.__func__.5086.lto_priv.47
+                0x0000000008005b18        0xc /tmp/ccrVXNcp.ltrans5.ltrans.o
+ .rodata.__func__.5086.lto_priv.48
+                0x0000000008005b24        0xc /tmp/ccrVXNcp.ltrans5.ltrans.o
+                0x0000000008005b24                __func__.5086.lto_priv.48
+                0x0000000008005b30                . = ALIGN (0x4)
+                0x0000000008005b30                __rodata_end__ = .
 
-.rel.dyn        0x00000000080039d4        0x0
- .rel.iplt      0x00000000080039d4        0x0 build/obj/crt0_v6m.o
+.rel.dyn        0x0000000008005b30        0x0
+ .rel.iplt      0x0000000008005b30        0x0 build/obj/crt0_v6m.o
 
 .ARM.extab
  *(.ARM.extab* .gnu.linkonce.armextab.*)
 
-.ARM.exidx      0x00000000080039d4        0x0
-                0x00000000080039d4                __exidx_start = .
+.ARM.exidx      0x0000000008005b30        0x0
+                0x0000000008005b30                __exidx_start = .
  *(.ARM.exidx* .gnu.linkonce.armexidx.*)
-                0x00000000080039d4                __exidx_end = .
+                0x0000000008005b30                __exidx_end = .
 
 .eh_frame_hdr
  *(.eh_frame_hdr)
@@ -574,10 +658,10 @@ LOAD build/obj/bq76920_driver.o
 .eh_frame
  *(.eh_frame)
 
-.data           0x0000000020000400        0x0 load address 0x00000000080039d4
-                0x00000000080039d4                PROVIDE (_textdata, LOADADDR (.data))
+.data           0x0000000020000400        0x0 load address 0x0000000008005b30
+                0x0000000008005b30                PROVIDE (_textdata, LOADADDR (.data))
                 0x0000000020000400                PROVIDE (_data, .)
-                0x00000000080039d4                _textdata_start = LOADADDR (.data)
+                0x0000000008005b30                _textdata_start = LOADADDR (.data)
                 0x0000000020000400                _data_start = .
  *(.data)
  *(.data.*)
@@ -586,40 +670,40 @@ LOAD build/obj/bq76920_driver.o
                 0x0000000020000400                PROVIDE (_edata, .)
                 0x0000000020000400                _data_end = .
 
-.igot.plt       0x0000000020000400        0x0 load address 0x00000000080039d4
+.igot.plt       0x0000000020000400        0x0 load address 0x0000000008005b30
  .igot.plt      0x0000000020000400        0x0 build/obj/crt0_v6m.o
 
-.bss            0x0000000020000400      0xbb8 load address 0x00000000080039d4
+.bss            0x0000000020000400      0xbb8 load address 0x0000000008005b30
                 0x0000000020000400                _bss_start = .
  *(.bss)
  *(.bss.*)
- .bss.ch_factory
-                0x0000000020000400       0x48 /tmp/ccpwIpvt.ltrans0.ltrans.o
  .bss.default_heap
-                0x0000000020000448       0x1c /tmp/ccpwIpvt.ltrans0.ltrans.o
+                0x0000000020000400       0x1c /tmp/ccrVXNcp.ltrans0.ltrans.o
  .bss.ch_memcore
-                0x0000000020000464        0x8 /tmp/ccpwIpvt.ltrans0.ltrans.o
-                0x0000000020000464                ch_memcore
- .bss.dma.lto_priv.74
-                0x000000002000046c       0x30 /tmp/ccpwIpvt.ltrans0.ltrans.o
-                0x000000002000046c                dma.lto_priv.74
+                0x000000002000041c        0x8 /tmp/ccrVXNcp.ltrans0.ltrans.o
+                0x000000002000041c                ch_memcore
+ .bss.dma.lto_priv.76
+                0x0000000020000424       0x30 /tmp/ccrVXNcp.ltrans0.ltrans.o
+                0x0000000020000424                dma.lto_priv.76
  .bss.ADCGAIN_value
-                0x000000002000049c        0x1 /tmp/ccpwIpvt.ltrans0.ltrans.o
- *fill*         0x000000002000049d        0x3 
- .bss.ch_idle_thread_wa
-                0x00000000200004a0       0xd8 /tmp/ccpwIpvt.ltrans0.ltrans.o
- .bss.ADCD1     0x0000000020000578       0x34 /tmp/ccpwIpvt.ltrans0.ltrans.o
-                0x0000000020000578                ADCD1
+                0x0000000020000454        0x1 /tmp/ccrVXNcp.ltrans0.ltrans.o
+ *fill*         0x0000000020000455        0x3 
+ .bss.BatLeft   0x0000000020000458        0x4 /tmp/ccrVXNcp.ltrans0.ltrans.o
+ .bss.ADCD1     0x000000002000045c       0x34 /tmp/ccrVXNcp.ltrans0.ltrans.o
+                0x000000002000045c                ADCD1
+ .bss.ch_factory
+                0x0000000020000490       0x48 /tmp/ccrVXNcp.ltrans0.ltrans.o
  .bss.ADCOFFSET_value
-                0x00000000200005ac        0x1 /tmp/ccpwIpvt.ltrans0.ltrans.o
- *fill*         0x00000000200005ad        0x3 
- .bss.GAIN      0x00000000200005b0        0x4 /tmp/ccpwIpvt.ltrans0.ltrans.o
- *fill*         0x00000000200005b4        0x4 
+                0x00000000200004d8        0x1 /tmp/ccrVXNcp.ltrans0.ltrans.o
+ *fill*         0x00000000200004d9        0x3 
+ .bss.GAIN      0x00000000200004dc        0x4 /tmp/ccrVXNcp.ltrans0.ltrans.o
  .bss.waThread1
-                0x00000000200005b8      0x148 /tmp/ccpwIpvt.ltrans0.ltrans.o
- .bss.ch        0x0000000020000700      0x884 /tmp/ccpwIpvt.ltrans5.ltrans.o
+                0x00000000200004e0      0x148 /tmp/ccrVXNcp.ltrans0.ltrans.o
+ .bss.ch_idle_thread_wa
+                0x0000000020000628       0xd8 /tmp/ccrVXNcp.ltrans0.ltrans.o
+ .bss.ch        0x0000000020000700      0x884 /tmp/ccrVXNcp.ltrans5.ltrans.o
                 0x0000000020000700                ch
- .bss.I2CD1     0x0000000020000f84       0x34 /tmp/ccpwIpvt.ltrans5.ltrans.o
+ .bss.I2CD1     0x0000000020000f84       0x34 /tmp/ccrVXNcp.ltrans5.ltrans.o
                 0x0000000020000f84                I2CD1
  *(COMMON)
                 0x0000000020000fb8                . = ALIGN (0x4)
@@ -674,14 +758,14 @@ LOAD build/obj/bq76920_driver.o
                 0x0000000000000000                __flash7_size__ = LENGTH (flash7)
                 0x0000000000000000                __flash7_end__ = (__flash7_start__ + __flash7_size__)
 
-.ram0_init      0x0000000020000fb8        0x0 load address 0x00000000080039d4
-                0x00000000080039d4                __ram0_init_text__ = LOADADDR (.ram0_init)
+.ram0_init      0x0000000020000fb8        0x0 load address 0x0000000008005b30
+                0x0000000008005b30                __ram0_init_text__ = LOADADDR (.ram0_init)
                 0x0000000020000fb8                __ram0_init__ = .
  *(.ram0_init)
  *(.ram0_init.*)
                 0x0000000020000fb8                . = ALIGN (0x4)
 
-.ram0           0x0000000020000fb8        0x0 load address 0x00000000080039d4
+.ram0           0x0000000020000fb8        0x0 load address 0x0000000008005b30
                 0x0000000020000fb8                __ram0_clear__ = .
  *(.ram0_clear)
  *(.ram0_clear.*)
@@ -692,14 +776,14 @@ LOAD build/obj/bq76920_driver.o
                 0x0000000020000fb8                . = ALIGN (0x4)
                 0x0000000020000fb8                __ram0_free__ = .
 
-.ram1_init      0x0000000000000000        0x0 load address 0x00000000080039d4
-                0x00000000080039d4                __ram1_init_text__ = LOADADDR (.ram1_init)
+.ram1_init      0x0000000000000000        0x0 load address 0x0000000008005b30
+                0x0000000008005b30                __ram1_init_text__ = LOADADDR (.ram1_init)
                 0x0000000000000000                __ram1_init__ = .
  *(.ram1_init)
  *(.ram1_init.*)
                 0x0000000000000000                . = ALIGN (0x4)
 
-.ram1           0x0000000000000000        0x0 load address 0x00000000080039d4
+.ram1           0x0000000000000000        0x0 load address 0x0000000008005b30
                 0x0000000000000000                __ram1_clear__ = .
  *(.ram1_clear)
  *(.ram1_clear.*)
@@ -710,14 +794,14 @@ LOAD build/obj/bq76920_driver.o
                 0x0000000000000000                . = ALIGN (0x4)
                 0x0000000000000000                __ram1_free__ = .
 
-.ram2_init      0x0000000000000000        0x0 load address 0x00000000080039d4
-                0x00000000080039d4                __ram2_init_text__ = LOADADDR (.ram2_init)
+.ram2_init      0x0000000000000000        0x0 load address 0x0000000008005b30
+                0x0000000008005b30                __ram2_init_text__ = LOADADDR (.ram2_init)
                 0x0000000000000000                __ram2_init__ = .
  *(.ram2_init)
  *(.ram2_init.*)
                 0x0000000000000000                . = ALIGN (0x4)
 
-.ram2           0x0000000000000000        0x0 load address 0x00000000080039d4
+.ram2           0x0000000000000000        0x0 load address 0x0000000008005b30
                 0x0000000000000000                __ram2_clear__ = .
  *(.ram2_clear)
  *(.ram2_clear.*)
@@ -728,14 +812,14 @@ LOAD build/obj/bq76920_driver.o
                 0x0000000000000000                . = ALIGN (0x4)
                 0x0000000000000000                __ram2_free__ = .
 
-.ram3_init      0x0000000000000000        0x0 load address 0x00000000080039d4
-                0x00000000080039d4                __ram3_init_text__ = LOADADDR (.ram3_init)
+.ram3_init      0x0000000000000000        0x0 load address 0x0000000008005b30
+                0x0000000008005b30                __ram3_init_text__ = LOADADDR (.ram3_init)
                 0x0000000000000000                __ram3_init__ = .
  *(.ram3_init)
  *(.ram3_init.*)
                 0x0000000000000000                . = ALIGN (0x4)
 
-.ram3           0x0000000000000000        0x0 load address 0x00000000080039d4
+.ram3           0x0000000000000000        0x0 load address 0x0000000008005b30
                 0x0000000000000000                __ram3_clear__ = .
  *(.ram3_clear)
  *(.ram3_clear.*)
@@ -746,14 +830,14 @@ LOAD build/obj/bq76920_driver.o
                 0x0000000000000000                . = ALIGN (0x4)
                 0x0000000000000000                __ram3_free__ = .
 
-.ram4_init      0x0000000000000000        0x0 load address 0x00000000080039d4
-                0x00000000080039d4                __ram4_init_text__ = LOADADDR (.ram4_init)
+.ram4_init      0x0000000000000000        0x0 load address 0x0000000008005b30
+                0x0000000008005b30                __ram4_init_text__ = LOADADDR (.ram4_init)
                 0x0000000000000000                __ram4_init__ = .
  *(.ram4_init)
  *(.ram4_init.*)
                 0x0000000000000000                . = ALIGN (0x4)
 
-.ram4           0x0000000000000000        0x0 load address 0x00000000080039d4
+.ram4           0x0000000000000000        0x0 load address 0x0000000008005b30
                 0x0000000000000000                __ram4_clear__ = .
  *(.ram4_clear)
  *(.ram4_clear.*)
@@ -764,14 +848,14 @@ LOAD build/obj/bq76920_driver.o
                 0x0000000000000000                . = ALIGN (0x4)
                 0x0000000000000000                __ram4_free__ = .
 
-.ram5_init      0x0000000000000000        0x0 load address 0x00000000080039d4
-                0x00000000080039d4                __ram5_init_text__ = LOADADDR (.ram5_init)
+.ram5_init      0x0000000000000000        0x0 load address 0x0000000008005b30
+                0x0000000008005b30                __ram5_init_text__ = LOADADDR (.ram5_init)
                 0x0000000000000000                __ram5_init__ = .
  *(.ram5_init)
  *(.ram5_init.*)
                 0x0000000000000000                . = ALIGN (0x4)
 
-.ram5           0x0000000000000000        0x0 load address 0x00000000080039d4
+.ram5           0x0000000000000000        0x0 load address 0x0000000008005b30
                 0x0000000000000000                __ram5_clear__ = .
  *(.ram5_clear)
  *(.ram5_clear.*)
@@ -782,14 +866,14 @@ LOAD build/obj/bq76920_driver.o
                 0x0000000000000000                . = ALIGN (0x4)
                 0x0000000000000000                __ram5_free__ = .
 
-.ram6_init      0x0000000000000000        0x0 load address 0x00000000080039d4
-                0x00000000080039d4                __ram6_init_text__ = LOADADDR (.ram6_init)
+.ram6_init      0x0000000000000000        0x0 load address 0x0000000008005b30
+                0x0000000008005b30                __ram6_init_text__ = LOADADDR (.ram6_init)
                 0x0000000000000000                __ram6_init__ = .
  *(.ram6_init)
  *(.ram6_init.*)
                 0x0000000000000000                . = ALIGN (0x4)
 
-.ram6           0x0000000000000000        0x0 load address 0x00000000080039d4
+.ram6           0x0000000000000000        0x0 load address 0x0000000008005b30
                 0x0000000000000000                __ram6_clear__ = .
  *(.ram6_clear)
  *(.ram6_clear.*)
@@ -800,14 +884,14 @@ LOAD build/obj/bq76920_driver.o
                 0x0000000000000000                . = ALIGN (0x4)
                 0x0000000000000000                __ram6_free__ = .
 
-.ram7_init      0x0000000000000000        0x0 load address 0x00000000080039d4
-                0x00000000080039d4                __ram7_init_text__ = LOADADDR (.ram7_init)
+.ram7_init      0x0000000000000000        0x0 load address 0x0000000008005b30
+                0x0000000008005b30                __ram7_init_text__ = LOADADDR (.ram7_init)
                 0x0000000000000000                __ram7_init__ = .
  *(.ram7_init)
  *(.ram7_init.*)
                 0x0000000000000000                . = ALIGN (0x4)
 
-.ram7           0x0000000000000000        0x0 load address 0x00000000080039d4
+.ram7           0x0000000000000000        0x0 load address 0x0000000008005b30
                 0x0000000000000000                __ram7_clear__ = .
  *(.ram7_clear)
  *(.ram7_clear.*)
@@ -818,11 +902,11 @@ LOAD build/obj/bq76920_driver.o
                 0x0000000000000000                . = ALIGN (0x4)
                 0x0000000000000000                __ram7_free__ = .
 
-.flash0         0x00000000080039d4        0x0
-                0x00000000080039d4                __flash0_init__ = .
+.flash0         0x0000000008005b30        0x0
+                0x0000000008005b30                __flash0_init__ = .
  *(.flash0_init)
  *(.flash0_init.*)
-                0x00000000080039d4                __flash0_free__ = .
+                0x0000000008005b30                __flash0_free__ = .
 
 .flash1         0x0000000000000000        0x0
                 0x0000000000000000                __flash1_init__ = .
@@ -890,68 +974,137 @@ OUTPUT(build/ch.elf elf32-littlearm)
  .ARM.attributes
                 0x0000000000000042       0x21 build/obj/chcoreasm_v6m.o
  .ARM.attributes
-                0x0000000000000063       0x2f /tmp/ccpwIpvt.ltrans0.ltrans.o
+                0x0000000000000063       0x2f /tmp/ccrVXNcp.ltrans0.ltrans.o
  .ARM.attributes
-                0x0000000000000092       0x2f /tmp/ccpwIpvt.ltrans1.ltrans.o
+                0x0000000000000092       0x2f /tmp/ccrVXNcp.ltrans1.ltrans.o
  .ARM.attributes
-                0x00000000000000c1       0x2f /tmp/ccpwIpvt.ltrans2.ltrans.o
+                0x00000000000000c1       0x2f /tmp/ccrVXNcp.ltrans2.ltrans.o
  .ARM.attributes
-                0x00000000000000f0       0x2f /tmp/ccpwIpvt.ltrans3.ltrans.o
+                0x00000000000000f0       0x2f /tmp/ccrVXNcp.ltrans3.ltrans.o
  .ARM.attributes
-                0x000000000000011f       0x2f /tmp/ccpwIpvt.ltrans4.ltrans.o
+                0x000000000000011f       0x2f /tmp/ccrVXNcp.ltrans4.ltrans.o
  .ARM.attributes
-                0x000000000000014e       0x2f /tmp/ccpwIpvt.ltrans5.ltrans.o
+                0x000000000000014e       0x2f /tmp/ccrVXNcp.ltrans5.ltrans.o
  .ARM.attributes
-                0x000000000000017d       0x2c /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv6-m/libg.a(lib_a-memset.o)
+                0x000000000000017d       0x2f /tmp/ccrVXNcp.ltrans6.ltrans.o
+ .ARM.attributes
+                0x00000000000001ac       0x2c /usr/lib/gcc/arm-none-eabi/4.9.3/armv6-m/libgcc.a(divsf3.o)
+ .ARM.attributes
+                0x00000000000001d8       0x2c /usr/lib/gcc/arm-none-eabi/4.9.3/armv6-m/libgcc.a(mulsf3.o)
+ .ARM.attributes
+                0x0000000000000204       0x2c /usr/lib/gcc/arm-none-eabi/4.9.3/armv6-m/libgcc.a(divdf3.o)
+ .ARM.attributes
+                0x0000000000000230       0x2c /usr/lib/gcc/arm-none-eabi/4.9.3/armv6-m/libgcc.a(muldf3.o)
+ .ARM.attributes
+                0x000000000000025c       0x2c /usr/lib/gcc/arm-none-eabi/4.9.3/armv6-m/libgcc.a(subdf3.o)
+ .ARM.attributes
+                0x0000000000000288       0x2c /usr/lib/gcc/arm-none-eabi/4.9.3/armv6-m/libgcc.a(floatsidf.o)
+ .ARM.attributes
+                0x00000000000002b4       0x2c /usr/lib/gcc/arm-none-eabi/4.9.3/armv6-m/libgcc.a(extendsfdf2.o)
+ .ARM.attributes
+                0x00000000000002e0       0x2c /usr/lib/gcc/arm-none-eabi/4.9.3/armv6-m/libgcc.a(truncdfsf2.o)
+ .ARM.attributes
+                0x000000000000030c       0x1e /usr/lib/gcc/arm-none-eabi/4.9.3/armv6-m/libgcc.a(_udivsi3.o)
+ .ARM.attributes
+                0x000000000000032a       0x1e /usr/lib/gcc/arm-none-eabi/4.9.3/armv6-m/libgcc.a(_dvmd_tls.o)
+ .ARM.attributes
+                0x0000000000000348       0x1e /usr/lib/gcc/arm-none-eabi/4.9.3/armv6-m/libgcc.a(_clzsi2.o)
+ .ARM.attributes
+                0x0000000000000366       0x2c /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv6-m/libg.a(lib_a-memset.o)
 
 .comment        0x0000000000000000       0x70
- .comment       0x0000000000000000       0x38 /tmp/ccpwIpvt.ltrans0.ltrans.o
+ .comment       0x0000000000000000       0x38 /tmp/ccrVXNcp.ltrans0.ltrans.o
                                          0x39 (size before relaxing)
- .comment       0x0000000000000038       0x39 /tmp/ccpwIpvt.ltrans1.ltrans.o
- .comment       0x0000000000000038       0x39 /tmp/ccpwIpvt.ltrans2.ltrans.o
- .comment       0x0000000000000038       0x39 /tmp/ccpwIpvt.ltrans3.ltrans.o
- .comment       0x0000000000000038       0x39 /tmp/ccpwIpvt.ltrans4.ltrans.o
- .comment       0x0000000000000038       0x39 /tmp/ccpwIpvt.ltrans5.ltrans.o
+ .comment       0x0000000000000038       0x39 /tmp/ccrVXNcp.ltrans1.ltrans.o
+ .comment       0x0000000000000038       0x39 /tmp/ccrVXNcp.ltrans2.ltrans.o
+ .comment       0x0000000000000038       0x39 /tmp/ccrVXNcp.ltrans3.ltrans.o
+ .comment       0x0000000000000038       0x39 /tmp/ccrVXNcp.ltrans4.ltrans.o
+ .comment       0x0000000000000038       0x39 /tmp/ccrVXNcp.ltrans5.ltrans.o
+ .comment       0x0000000000000038       0x39 /tmp/ccrVXNcp.ltrans6.ltrans.o
+ .comment       0x0000000000000038       0x39 /usr/lib/gcc/arm-none-eabi/4.9.3/armv6-m/libgcc.a(divsf3.o)
+ .comment       0x0000000000000038       0x39 /usr/lib/gcc/arm-none-eabi/4.9.3/armv6-m/libgcc.a(mulsf3.o)
+ .comment       0x0000000000000038       0x39 /usr/lib/gcc/arm-none-eabi/4.9.3/armv6-m/libgcc.a(divdf3.o)
+ .comment       0x0000000000000038       0x39 /usr/lib/gcc/arm-none-eabi/4.9.3/armv6-m/libgcc.a(muldf3.o)
+ .comment       0x0000000000000038       0x39 /usr/lib/gcc/arm-none-eabi/4.9.3/armv6-m/libgcc.a(subdf3.o)
+ .comment       0x0000000000000038       0x39 /usr/lib/gcc/arm-none-eabi/4.9.3/armv6-m/libgcc.a(floatsidf.o)
+ .comment       0x0000000000000038       0x39 /usr/lib/gcc/arm-none-eabi/4.9.3/armv6-m/libgcc.a(extendsfdf2.o)
+ .comment       0x0000000000000038       0x39 /usr/lib/gcc/arm-none-eabi/4.9.3/armv6-m/libgcc.a(truncdfsf2.o)
  .comment       0x0000000000000038       0x38 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv6-m/libg.a(lib_a-memset.o)
                                          0x39 (size before relaxing)
 
-.debug_line     0x0000000000000000     0x3a1a
+.debug_line     0x0000000000000000     0x49cd
  .debug_line    0x0000000000000000       0xcf build/obj/crt0_v6m.o
  .debug_line    0x00000000000000cf       0x72 build/obj/vectors.o
  .debug_line    0x0000000000000141       0x91 build/obj/chcoreasm_v6m.o
- .debug_line    0x00000000000001d2      0xebd /tmp/ccpwIpvt.ltrans0.ltrans.o
- .debug_line    0x000000000000108f      0x982 /tmp/ccpwIpvt.ltrans1.ltrans.o
- .debug_line    0x0000000000001a11      0x8e4 /tmp/ccpwIpvt.ltrans2.ltrans.o
- .debug_line    0x00000000000022f5      0x82e /tmp/ccpwIpvt.ltrans3.ltrans.o
- .debug_line    0x0000000000002b23      0x7bd /tmp/ccpwIpvt.ltrans4.ltrans.o
- .debug_line    0x00000000000032e0      0x62b /tmp/ccpwIpvt.ltrans5.ltrans.o
- .debug_line    0x000000000000390b      0x10f /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv6-m/libg.a(lib_a-memset.o)
+ .debug_line    0x00000000000001d2      0xc66 /tmp/ccrVXNcp.ltrans0.ltrans.o
+ .debug_line    0x0000000000000e38      0x951 /tmp/ccrVXNcp.ltrans1.ltrans.o
+ .debug_line    0x0000000000001789      0x890 /tmp/ccrVXNcp.ltrans2.ltrans.o
+ .debug_line    0x0000000000002019      0x8d2 /tmp/ccrVXNcp.ltrans3.ltrans.o
+ .debug_line    0x00000000000028eb      0x7a9 /tmp/ccrVXNcp.ltrans4.ltrans.o
+ .debug_line    0x0000000000003094      0x7a0 /tmp/ccrVXNcp.ltrans5.ltrans.o
+ .debug_line    0x0000000000003834      0x349 /tmp/ccrVXNcp.ltrans6.ltrans.o
+ .debug_line    0x0000000000003b7d      0x13f /usr/lib/gcc/arm-none-eabi/4.9.3/armv6-m/libgcc.a(divsf3.o)
+ .debug_line    0x0000000000003cbc      0x12c /usr/lib/gcc/arm-none-eabi/4.9.3/armv6-m/libgcc.a(mulsf3.o)
+ .debug_line    0x0000000000003de8      0x267 /usr/lib/gcc/arm-none-eabi/4.9.3/armv6-m/libgcc.a(divdf3.o)
+ .debug_line    0x000000000000404f      0x1a2 /usr/lib/gcc/arm-none-eabi/4.9.3/armv6-m/libgcc.a(muldf3.o)
+ .debug_line    0x00000000000041f1      0x366 /usr/lib/gcc/arm-none-eabi/4.9.3/armv6-m/libgcc.a(subdf3.o)
+ .debug_line    0x0000000000004557       0x93 /usr/lib/gcc/arm-none-eabi/4.9.3/armv6-m/libgcc.a(floatsidf.o)
+ .debug_line    0x00000000000045ea       0xb2 /usr/lib/gcc/arm-none-eabi/4.9.3/armv6-m/libgcc.a(extendsfdf2.o)
+ .debug_line    0x000000000000469c       0xe6 /usr/lib/gcc/arm-none-eabi/4.9.3/armv6-m/libgcc.a(truncdfsf2.o)
+ .debug_line    0x0000000000004782       0x6c /usr/lib/gcc/arm-none-eabi/4.9.3/armv6-m/libgcc.a(_udivsi3.o)
+ .debug_line    0x00000000000047ee       0x5e /usr/lib/gcc/arm-none-eabi/4.9.3/armv6-m/libgcc.a(_dvmd_tls.o)
+ .debug_line    0x000000000000484c       0x72 /usr/lib/gcc/arm-none-eabi/4.9.3/armv6-m/libgcc.a(_clzsi2.o)
+ .debug_line    0x00000000000048be      0x10f /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv6-m/libg.a(lib_a-memset.o)
 
-.debug_info     0x0000000000000000     0xd839
+.debug_info     0x0000000000000000     0xfb34
  .debug_info    0x0000000000000000       0x73 build/obj/crt0_v6m.o
  .debug_info    0x0000000000000073       0x72 build/obj/vectors.o
  .debug_info    0x00000000000000e5       0x76 build/obj/chcoreasm_v6m.o
- .debug_info    0x000000000000015b     0x3f3e /tmp/ccpwIpvt.ltrans0.ltrans.o
- .debug_info    0x0000000000004099     0x213e /tmp/ccpwIpvt.ltrans1.ltrans.o
- .debug_info    0x00000000000061d7     0x21c4 /tmp/ccpwIpvt.ltrans2.ltrans.o
- .debug_info    0x000000000000839b     0x1bc0 /tmp/ccpwIpvt.ltrans3.ltrans.o
- .debug_info    0x0000000000009f5b     0x1f14 /tmp/ccpwIpvt.ltrans4.ltrans.o
- .debug_info    0x000000000000be6f     0x18b3 /tmp/ccpwIpvt.ltrans5.ltrans.o
- .debug_info    0x000000000000d722      0x117 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv6-m/libg.a(lib_a-memset.o)
+ .debug_info    0x000000000000015b     0x348d /tmp/ccrVXNcp.ltrans0.ltrans.o
+ .debug_info    0x00000000000035e8     0x2067 /tmp/ccrVXNcp.ltrans1.ltrans.o
+ .debug_info    0x000000000000564f     0x1d0f /tmp/ccrVXNcp.ltrans2.ltrans.o
+ .debug_info    0x000000000000735e     0x219f /tmp/ccrVXNcp.ltrans3.ltrans.o
+ .debug_info    0x00000000000094fd     0x1ef7 /tmp/ccrVXNcp.ltrans4.ltrans.o
+ .debug_info    0x000000000000b3f4     0x1d4d /tmp/ccrVXNcp.ltrans5.ltrans.o
+ .debug_info    0x000000000000d141      0xa1e /tmp/ccrVXNcp.ltrans6.ltrans.o
+ .debug_info    0x000000000000db5f      0x2b7 /usr/lib/gcc/arm-none-eabi/4.9.3/armv6-m/libgcc.a(divsf3.o)
+ .debug_info    0x000000000000de16      0x31c /usr/lib/gcc/arm-none-eabi/4.9.3/armv6-m/libgcc.a(mulsf3.o)
+ .debug_info    0x000000000000e132      0x5c2 /usr/lib/gcc/arm-none-eabi/4.9.3/armv6-m/libgcc.a(divdf3.o)
+ .debug_info    0x000000000000e6f4      0x60a /usr/lib/gcc/arm-none-eabi/4.9.3/armv6-m/libgcc.a(muldf3.o)
+ .debug_info    0x000000000000ecfe      0x4a2 /usr/lib/gcc/arm-none-eabi/4.9.3/armv6-m/libgcc.a(subdf3.o)
+ .debug_info    0x000000000000f1a0      0x1c2 /usr/lib/gcc/arm-none-eabi/4.9.3/armv6-m/libgcc.a(floatsidf.o)
+ .debug_info    0x000000000000f362      0x250 /usr/lib/gcc/arm-none-eabi/4.9.3/armv6-m/libgcc.a(extendsfdf2.o)
+ .debug_info    0x000000000000f5b2      0x240 /usr/lib/gcc/arm-none-eabi/4.9.3/armv6-m/libgcc.a(truncdfsf2.o)
+ .debug_info    0x000000000000f7f2       0xb9 /usr/lib/gcc/arm-none-eabi/4.9.3/armv6-m/libgcc.a(_udivsi3.o)
+ .debug_info    0x000000000000f8ab       0xb9 /usr/lib/gcc/arm-none-eabi/4.9.3/armv6-m/libgcc.a(_dvmd_tls.o)
+ .debug_info    0x000000000000f964       0xb9 /usr/lib/gcc/arm-none-eabi/4.9.3/armv6-m/libgcc.a(_clzsi2.o)
+ .debug_info    0x000000000000fa1d      0x117 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv6-m/libg.a(lib_a-memset.o)
 
-.debug_abbrev   0x0000000000000000     0x1df5
+.debug_abbrev   0x0000000000000000     0x29c8
  .debug_abbrev  0x0000000000000000       0x14 build/obj/crt0_v6m.o
  .debug_abbrev  0x0000000000000014       0x14 build/obj/vectors.o
  .debug_abbrev  0x0000000000000028       0x14 build/obj/chcoreasm_v6m.o
- .debug_abbrev  0x000000000000003c      0x54b /tmp/ccpwIpvt.ltrans0.ltrans.o
- .debug_abbrev  0x0000000000000587      0x517 /tmp/ccpwIpvt.ltrans1.ltrans.o
- .debug_abbrev  0x0000000000000a9e      0x501 /tmp/ccpwIpvt.ltrans2.ltrans.o
- .debug_abbrev  0x0000000000000f9f      0x4e0 /tmp/ccpwIpvt.ltrans3.ltrans.o
- .debug_abbrev  0x000000000000147f      0x466 /tmp/ccpwIpvt.ltrans4.ltrans.o
- .debug_abbrev  0x00000000000018e5      0x471 /tmp/ccpwIpvt.ltrans5.ltrans.o
- .debug_abbrev  0x0000000000001d56       0x9f /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv6-m/libg.a(lib_a-memset.o)
+ .debug_abbrev  0x000000000000003c      0x50b /tmp/ccrVXNcp.ltrans0.ltrans.o
+ .debug_abbrev  0x0000000000000547      0x526 /tmp/ccrVXNcp.ltrans1.ltrans.o
+ .debug_abbrev  0x0000000000000a6d      0x514 /tmp/ccrVXNcp.ltrans2.ltrans.o
+ .debug_abbrev  0x0000000000000f81      0x4d6 /tmp/ccrVXNcp.ltrans3.ltrans.o
+ .debug_abbrev  0x0000000000001457      0x466 /tmp/ccrVXNcp.ltrans4.ltrans.o
+ .debug_abbrev  0x00000000000018bd      0x484 /tmp/ccrVXNcp.ltrans5.ltrans.o
+ .debug_abbrev  0x0000000000001d41      0x2a0 /tmp/ccrVXNcp.ltrans6.ltrans.o
+ .debug_abbrev  0x0000000000001fe1      0x120 /usr/lib/gcc/arm-none-eabi/4.9.3/armv6-m/libgcc.a(divsf3.o)
+ .debug_abbrev  0x0000000000002101      0x117 /usr/lib/gcc/arm-none-eabi/4.9.3/armv6-m/libgcc.a(mulsf3.o)
+ .debug_abbrev  0x0000000000002218      0x120 /usr/lib/gcc/arm-none-eabi/4.9.3/armv6-m/libgcc.a(divdf3.o)
+ .debug_abbrev  0x0000000000002338      0x132 /usr/lib/gcc/arm-none-eabi/4.9.3/armv6-m/libgcc.a(muldf3.o)
+ .debug_abbrev  0x000000000000246a      0x13a /usr/lib/gcc/arm-none-eabi/4.9.3/armv6-m/libgcc.a(subdf3.o)
+ .debug_abbrev  0x00000000000025a4      0x10a /usr/lib/gcc/arm-none-eabi/4.9.3/armv6-m/libgcc.a(floatsidf.o)
+ .debug_abbrev  0x00000000000026ae      0x124 /usr/lib/gcc/arm-none-eabi/4.9.3/armv6-m/libgcc.a(extendsfdf2.o)
+ .debug_abbrev  0x00000000000027d2      0x11b /usr/lib/gcc/arm-none-eabi/4.9.3/armv6-m/libgcc.a(truncdfsf2.o)
+ .debug_abbrev  0x00000000000028ed       0x14 /usr/lib/gcc/arm-none-eabi/4.9.3/armv6-m/libgcc.a(_udivsi3.o)
+ .debug_abbrev  0x0000000000002901       0x14 /usr/lib/gcc/arm-none-eabi/4.9.3/armv6-m/libgcc.a(_dvmd_tls.o)
+ .debug_abbrev  0x0000000000002915       0x14 /usr/lib/gcc/arm-none-eabi/4.9.3/armv6-m/libgcc.a(_clzsi2.o)
+ .debug_abbrev  0x0000000000002929       0x9f /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv6-m/libg.a(lib_a-memset.o)
 
-.debug_aranges  0x0000000000000000      0x238
+.debug_aranges  0x0000000000000000      0x3c0
  .debug_aranges
                 0x0000000000000000       0x20 build/obj/crt0_v6m.o
  .debug_aranges
@@ -959,69 +1112,139 @@ OUTPUT(build/ch.elf elf32-littlearm)
  .debug_aranges
                 0x0000000000000040       0x20 build/obj/chcoreasm_v6m.o
  .debug_aranges
-                0x0000000000000060       0x20 /tmp/ccpwIpvt.ltrans0.ltrans.o
+                0x0000000000000060       0x20 /tmp/ccrVXNcp.ltrans0.ltrans.o
  .debug_aranges
-                0x0000000000000080       0x78 /tmp/ccpwIpvt.ltrans1.ltrans.o
+                0x0000000000000080       0x78 /tmp/ccrVXNcp.ltrans1.ltrans.o
  .debug_aranges
-                0x00000000000000f8       0x48 /tmp/ccpwIpvt.ltrans2.ltrans.o
+                0x00000000000000f8       0x50 /tmp/ccrVXNcp.ltrans2.ltrans.o
  .debug_aranges
-                0x0000000000000140       0x48 /tmp/ccpwIpvt.ltrans3.ltrans.o
+                0x0000000000000148       0x40 /tmp/ccrVXNcp.ltrans3.ltrans.o
  .debug_aranges
-                0x0000000000000188       0x60 /tmp/ccpwIpvt.ltrans4.ltrans.o
+                0x0000000000000188       0x60 /tmp/ccrVXNcp.ltrans4.ltrans.o
  .debug_aranges
-                0x00000000000001e8       0x30 /tmp/ccpwIpvt.ltrans5.ltrans.o
+                0x00000000000001e8       0x38 /tmp/ccrVXNcp.ltrans5.ltrans.o
  .debug_aranges
-                0x0000000000000218       0x20 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv6-m/libg.a(lib_a-memset.o)
+                0x0000000000000220       0x20 /tmp/ccrVXNcp.ltrans6.ltrans.o
+ .debug_aranges
+                0x0000000000000240       0x20 /usr/lib/gcc/arm-none-eabi/4.9.3/armv6-m/libgcc.a(divsf3.o)
+ .debug_aranges
+                0x0000000000000260       0x20 /usr/lib/gcc/arm-none-eabi/4.9.3/armv6-m/libgcc.a(mulsf3.o)
+ .debug_aranges
+                0x0000000000000280       0x20 /usr/lib/gcc/arm-none-eabi/4.9.3/armv6-m/libgcc.a(divdf3.o)
+ .debug_aranges
+                0x00000000000002a0       0x20 /usr/lib/gcc/arm-none-eabi/4.9.3/armv6-m/libgcc.a(muldf3.o)
+ .debug_aranges
+                0x00000000000002c0       0x20 /usr/lib/gcc/arm-none-eabi/4.9.3/armv6-m/libgcc.a(subdf3.o)
+ .debug_aranges
+                0x00000000000002e0       0x20 /usr/lib/gcc/arm-none-eabi/4.9.3/armv6-m/libgcc.a(floatsidf.o)
+ .debug_aranges
+                0x0000000000000300       0x20 /usr/lib/gcc/arm-none-eabi/4.9.3/armv6-m/libgcc.a(extendsfdf2.o)
+ .debug_aranges
+                0x0000000000000320       0x20 /usr/lib/gcc/arm-none-eabi/4.9.3/armv6-m/libgcc.a(truncdfsf2.o)
+ .debug_aranges
+                0x0000000000000340       0x20 /usr/lib/gcc/arm-none-eabi/4.9.3/armv6-m/libgcc.a(_udivsi3.o)
+ .debug_aranges
+                0x0000000000000360       0x20 /usr/lib/gcc/arm-none-eabi/4.9.3/armv6-m/libgcc.a(_dvmd_tls.o)
+ .debug_aranges
+                0x0000000000000380       0x20 /usr/lib/gcc/arm-none-eabi/4.9.3/armv6-m/libgcc.a(_clzsi2.o)
+ .debug_aranges
+                0x00000000000003a0       0x20 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv6-m/libg.a(lib_a-memset.o)
 
-.debug_loc      0x0000000000000000     0x534a
- .debug_loc     0x0000000000000000     0x16d8 /tmp/ccpwIpvt.ltrans0.ltrans.o
- .debug_loc     0x00000000000016d8     0x104b /tmp/ccpwIpvt.ltrans1.ltrans.o
- .debug_loc     0x0000000000002723      0xa69 /tmp/ccpwIpvt.ltrans2.ltrans.o
- .debug_loc     0x000000000000318c     0x1024 /tmp/ccpwIpvt.ltrans3.ltrans.o
- .debug_loc     0x00000000000041b0      0x859 /tmp/ccpwIpvt.ltrans4.ltrans.o
- .debug_loc     0x0000000000004a09      0x771 /tmp/ccpwIpvt.ltrans5.ltrans.o
- .debug_loc     0x000000000000517a      0x1d0 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv6-m/libg.a(lib_a-memset.o)
+.debug_loc      0x0000000000000000     0xb9c9
+ .debug_loc     0x0000000000000000      0xf31 /tmp/ccrVXNcp.ltrans0.ltrans.o
+ .debug_loc     0x0000000000000f31     0x1011 /tmp/ccrVXNcp.ltrans1.ltrans.o
+ .debug_loc     0x0000000000001f42     0x1198 /tmp/ccrVXNcp.ltrans2.ltrans.o
+ .debug_loc     0x00000000000030da      0xa69 /tmp/ccrVXNcp.ltrans3.ltrans.o
+ .debug_loc     0x0000000000003b43      0x859 /tmp/ccrVXNcp.ltrans4.ltrans.o
+ .debug_loc     0x000000000000439c      0xde0 /tmp/ccrVXNcp.ltrans5.ltrans.o
+ .debug_loc     0x000000000000517c      0x173 /tmp/ccrVXNcp.ltrans6.ltrans.o
+ .debug_loc     0x00000000000052ef      0x85c /usr/lib/gcc/arm-none-eabi/4.9.3/armv6-m/libgcc.a(divsf3.o)
+ .debug_loc     0x0000000000005b4b      0x847 /usr/lib/gcc/arm-none-eabi/4.9.3/armv6-m/libgcc.a(mulsf3.o)
+ .debug_loc     0x0000000000006392     0x22a6 /usr/lib/gcc/arm-none-eabi/4.9.3/armv6-m/libgcc.a(divdf3.o)
+ .debug_loc     0x0000000000008638     0x123f /usr/lib/gcc/arm-none-eabi/4.9.3/armv6-m/libgcc.a(muldf3.o)
+ .debug_loc     0x0000000000009877     0x17f7 /usr/lib/gcc/arm-none-eabi/4.9.3/armv6-m/libgcc.a(subdf3.o)
+ .debug_loc     0x000000000000b06e      0x1ab /usr/lib/gcc/arm-none-eabi/4.9.3/armv6-m/libgcc.a(floatsidf.o)
+ .debug_loc     0x000000000000b219      0x2c8 /usr/lib/gcc/arm-none-eabi/4.9.3/armv6-m/libgcc.a(extendsfdf2.o)
+ .debug_loc     0x000000000000b4e1      0x318 /usr/lib/gcc/arm-none-eabi/4.9.3/armv6-m/libgcc.a(truncdfsf2.o)
+ .debug_loc     0x000000000000b7f9      0x1d0 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv6-m/libg.a(lib_a-memset.o)
 
-.debug_ranges   0x0000000000000000     0x2610
- .debug_ranges  0x0000000000000000      0xbd0 /tmp/ccpwIpvt.ltrans0.ltrans.o
- .debug_ranges  0x0000000000000bd0      0x7a0 /tmp/ccpwIpvt.ltrans1.ltrans.o
- .debug_ranges  0x0000000000001370      0x538 /tmp/ccpwIpvt.ltrans2.ltrans.o
- .debug_ranges  0x00000000000018a8      0x680 /tmp/ccpwIpvt.ltrans3.ltrans.o
- .debug_ranges  0x0000000000001f28      0x438 /tmp/ccpwIpvt.ltrans4.ltrans.o
- .debug_ranges  0x0000000000002360      0x2a0 /tmp/ccpwIpvt.ltrans5.ltrans.o
- .debug_ranges  0x0000000000002600       0x10 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv6-m/libg.a(lib_a-memset.o)
+.debug_ranges   0x0000000000000000     0x2b48
+ .debug_ranges  0x0000000000000000      0x8f0 /tmp/ccrVXNcp.ltrans0.ltrans.o
+ .debug_ranges  0x00000000000008f0      0x770 /tmp/ccrVXNcp.ltrans1.ltrans.o
+ .debug_ranges  0x0000000000001060      0x700 /tmp/ccrVXNcp.ltrans2.ltrans.o
+ .debug_ranges  0x0000000000001760      0x530 /tmp/ccrVXNcp.ltrans3.ltrans.o
+ .debug_ranges  0x0000000000001c90      0x438 /tmp/ccrVXNcp.ltrans4.ltrans.o
+ .debug_ranges  0x00000000000020c8      0x370 /tmp/ccrVXNcp.ltrans5.ltrans.o
+ .debug_ranges  0x0000000000002438       0x50 /tmp/ccrVXNcp.ltrans6.ltrans.o
+ .debug_ranges  0x0000000000002488       0x50 /usr/lib/gcc/arm-none-eabi/4.9.3/armv6-m/libgcc.a(divsf3.o)
+ .debug_ranges  0x00000000000024d8       0x48 /usr/lib/gcc/arm-none-eabi/4.9.3/armv6-m/libgcc.a(mulsf3.o)
+ .debug_ranges  0x0000000000002520      0x168 /usr/lib/gcc/arm-none-eabi/4.9.3/armv6-m/libgcc.a(divdf3.o)
+ .debug_ranges  0x0000000000002688      0x188 /usr/lib/gcc/arm-none-eabi/4.9.3/armv6-m/libgcc.a(muldf3.o)
+ .debug_ranges  0x0000000000002810      0x2a0 /usr/lib/gcc/arm-none-eabi/4.9.3/armv6-m/libgcc.a(subdf3.o)
+ .debug_ranges  0x0000000000002ab0       0x18 /usr/lib/gcc/arm-none-eabi/4.9.3/armv6-m/libgcc.a(floatsidf.o)
+ .debug_ranges  0x0000000000002ac8       0x30 /usr/lib/gcc/arm-none-eabi/4.9.3/armv6-m/libgcc.a(extendsfdf2.o)
+ .debug_ranges  0x0000000000002af8       0x40 /usr/lib/gcc/arm-none-eabi/4.9.3/armv6-m/libgcc.a(truncdfsf2.o)
+ .debug_ranges  0x0000000000002b38       0x10 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv6-m/libg.a(lib_a-memset.o)
 
-.debug_str      0x0000000000000000     0x1d2d
- .debug_str     0x0000000000000000     0x11fd /tmp/ccpwIpvt.ltrans0.ltrans.o
-                                       0x1306 (size before relaxing)
- .debug_str     0x00000000000011fd      0x2af /tmp/ccpwIpvt.ltrans1.ltrans.o
-                                        0x9c1 (size before relaxing)
- .debug_str     0x00000000000014ac      0x254 /tmp/ccpwIpvt.ltrans2.ltrans.o
-                                        0x9a8 (size before relaxing)
- .debug_str     0x0000000000001700      0x14c /tmp/ccpwIpvt.ltrans3.ltrans.o
-                                        0x900 (size before relaxing)
- .debug_str     0x000000000000184c      0x154 /tmp/ccpwIpvt.ltrans4.ltrans.o
-                                        0x94c (size before relaxing)
- .debug_str     0x00000000000019a0      0x22b /tmp/ccpwIpvt.ltrans5.ltrans.o
-                                        0x9d8 (size before relaxing)
- .debug_str     0x0000000000001bcb      0x162 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv6-m/libg.a(lib_a-memset.o)
+.debug_str      0x0000000000000000     0x21cd
+ .debug_str     0x0000000000000000     0x108d /tmp/ccrVXNcp.ltrans0.ltrans.o
+                                       0x11b6 (size before relaxing)
+ .debug_str     0x000000000000108d      0x4ef /tmp/ccrVXNcp.ltrans1.ltrans.o
+                                        0x9e7 (size before relaxing)
+ .debug_str     0x000000000000157c      0x173 /tmp/ccrVXNcp.ltrans2.ltrans.o
+                                        0x8a2 (size before relaxing)
+ .debug_str     0x00000000000016ef      0x207 /tmp/ccrVXNcp.ltrans3.ltrans.o
+                                        0x982 (size before relaxing)
+ .debug_str     0x00000000000018f6      0x146 /tmp/ccrVXNcp.ltrans4.ltrans.o
+                                        0x93e (size before relaxing)
+ .debug_str     0x0000000000001a3c      0x252 /tmp/ccrVXNcp.ltrans5.ltrans.o
+                                        0xa0a (size before relaxing)
+ .debug_str     0x0000000000001c8e       0x1b /tmp/ccrVXNcp.ltrans6.ltrans.o
+                                        0x5f7 (size before relaxing)
+ .debug_str     0x0000000000001ca9      0x1cf /usr/lib/gcc/arm-none-eabi/4.9.3/armv6-m/libgcc.a(divsf3.o)
+                                        0x217 (size before relaxing)
+ .debug_str     0x0000000000001e78       0x52 /usr/lib/gcc/arm-none-eabi/4.9.3/armv6-m/libgcc.a(mulsf3.o)
+                                        0x24d (size before relaxing)
+ .debug_str     0x0000000000001eca       0xa2 /usr/lib/gcc/arm-none-eabi/4.9.3/armv6-m/libgcc.a(divdf3.o)
+                                        0x2af (size before relaxing)
+ .debug_str     0x0000000000001f6c       0x6d /usr/lib/gcc/arm-none-eabi/4.9.3/armv6-m/libgcc.a(muldf3.o)
+                                        0x2c7 (size before relaxing)
+ .debug_str     0x0000000000001fd9       0x6a /usr/lib/gcc/arm-none-eabi/4.9.3/armv6-m/libgcc.a(subdf3.o)
+                                        0x26e (size before relaxing)
+ .debug_str     0x0000000000002043       0x2d /usr/lib/gcc/arm-none-eabi/4.9.3/armv6-m/libgcc.a(floatsidf.o)
+                                        0x21a (size before relaxing)
+ .debug_str     0x0000000000002070       0x1a /usr/lib/gcc/arm-none-eabi/4.9.3/armv6-m/libgcc.a(extendsfdf2.o)
+                                        0x223 (size before relaxing)
+ .debug_str     0x000000000000208a       0x19 /usr/lib/gcc/arm-none-eabi/4.9.3/armv6-m/libgcc.a(truncdfsf2.o)
+                                        0x23b (size before relaxing)
+ .debug_str     0x00000000000020a3      0x12a /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv6-m/libg.a(lib_a-memset.o)
                                         0x1d1 (size before relaxing)
 
-.debug_frame    0x0000000000000000      0x4cc
- .debug_frame   0x0000000000000000       0x3c /tmp/ccpwIpvt.ltrans0.ltrans.o
- .debug_frame   0x000000000000003c      0x164 /tmp/ccpwIpvt.ltrans1.ltrans.o
- .debug_frame   0x00000000000001a0       0xd4 /tmp/ccpwIpvt.ltrans2.ltrans.o
- .debug_frame   0x0000000000000274       0xc0 /tmp/ccpwIpvt.ltrans3.ltrans.o
- .debug_frame   0x0000000000000334       0xf8 /tmp/ccpwIpvt.ltrans4.ltrans.o
- .debug_frame   0x000000000000042c       0x74 /tmp/ccpwIpvt.ltrans5.ltrans.o
- .debug_frame   0x00000000000004a0       0x2c /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv6-m/libg.a(lib_a-memset.o)
+.debug_frame    0x0000000000000000      0x704
+ .debug_frame   0x0000000000000000       0x3c /tmp/ccrVXNcp.ltrans0.ltrans.o
+ .debug_frame   0x000000000000003c      0x15c /tmp/ccrVXNcp.ltrans1.ltrans.o
+ .debug_frame   0x0000000000000198       0xd8 /tmp/ccrVXNcp.ltrans2.ltrans.o
+ .debug_frame   0x0000000000000270       0xc4 /tmp/ccrVXNcp.ltrans3.ltrans.o
+ .debug_frame   0x0000000000000334       0xf8 /tmp/ccrVXNcp.ltrans4.ltrans.o
+ .debug_frame   0x000000000000042c       0xac /tmp/ccrVXNcp.ltrans5.ltrans.o
+ .debug_frame   0x00000000000004d8       0x30 /tmp/ccrVXNcp.ltrans6.ltrans.o
+ .debug_frame   0x0000000000000508       0x3c /usr/lib/gcc/arm-none-eabi/4.9.3/armv6-m/libgcc.a(divsf3.o)
+ .debug_frame   0x0000000000000544       0x3c /usr/lib/gcc/arm-none-eabi/4.9.3/armv6-m/libgcc.a(mulsf3.o)
+ .debug_frame   0x0000000000000580       0x3c /usr/lib/gcc/arm-none-eabi/4.9.3/armv6-m/libgcc.a(divdf3.o)
+ .debug_frame   0x00000000000005bc       0x3c /usr/lib/gcc/arm-none-eabi/4.9.3/armv6-m/libgcc.a(muldf3.o)
+ .debug_frame   0x00000000000005f8       0x3c /usr/lib/gcc/arm-none-eabi/4.9.3/armv6-m/libgcc.a(subdf3.o)
+ .debug_frame   0x0000000000000634       0x2c /usr/lib/gcc/arm-none-eabi/4.9.3/armv6-m/libgcc.a(floatsidf.o)
+ .debug_frame   0x0000000000000660       0x2c /usr/lib/gcc/arm-none-eabi/4.9.3/armv6-m/libgcc.a(extendsfdf2.o)
+ .debug_frame   0x000000000000068c       0x2c /usr/lib/gcc/arm-none-eabi/4.9.3/armv6-m/libgcc.a(truncdfsf2.o)
+ .debug_frame   0x00000000000006b8       0x20 /usr/lib/gcc/arm-none-eabi/4.9.3/armv6-m/libgcc.a(_udivsi3.o)
+ .debug_frame   0x00000000000006d8       0x2c /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv6-m/libg.a(lib_a-memset.o)
 
 Cross Reference Table
 
 Symbol                                            File
-ADCD1                                             /tmp/ccpwIpvt.ltrans0.ltrans.o
+ADCD1                                             /tmp/ccrVXNcp.ltrans0.ltrans.o
                                                   build/obj/hal_adc_lld.o (symbol from plugin)
-                                                  /tmp/ccpwIpvt.ltrans4.ltrans.o
+                                                  /tmp/ccrVXNcp.ltrans4.ltrans.o
                                                   build/obj/main.o (symbol from plugin)
 ADCGAIN_value                                     build/obj/bq76920_driver.o (symbol from plugin)
 ADCGAINtoDec                                      build/obj/bq76920_driver.o (symbol from plugin)
@@ -1033,26 +1256,36 @@ BatMax                                            build/obj/bq76920_driver.o (sy
 BusFault_Handler                                  build/obj/vectors.o
 CCtoVolt                                          build/obj/bq76920_driver.o (symbol from plugin)
 CRC8                                              build/obj/bq76920_driver.o (symbol from plugin)
+ChargeEN                                          build/obj/bq76920_driver.o (symbol from plugin)
 DebugMon_Handler                                  build/obj/vectors.o
+DischargeEN                                       build/obj/bq76920_driver.o (symbol from plugin)
 GAIN                                              build/obj/bq76920_driver.o (symbol from plugin)
 GetBatPercentage                                  build/obj/bq76920_driver.o (symbol from plugin)
+                                                  build/obj/main.o (symbol from plugin)
+GetCellsVolt                                      build/obj/bq76920_driver.o (symbol from plugin)
+                                                  build/obj/main.o (symbol from plugin)
+GetCurFlow_mA                                     build/obj/bq76920_driver.o (symbol from plugin)
 HardFault_Handler                                 build/obj/vectors.o
-I2CD1                                             /tmp/ccpwIpvt.ltrans5.ltrans.o
+I2CD1                                             /tmp/ccrVXNcp.ltrans5.ltrans.o
                                                   build/obj/hal_i2c_lld.o (symbol from plugin)
-                                                  /tmp/ccpwIpvt.ltrans2.ltrans.o
-                                                  /tmp/ccpwIpvt.ltrans0.ltrans.o
+                                                  /tmp/ccrVXNcp.ltrans6.ltrans.o
+                                                  /tmp/ccrVXNcp.ltrans3.ltrans.o
+                                                  /tmp/ccrVXNcp.ltrans0.ltrans.o
                                                   build/obj/bq76920_driver.o (symbol from plugin)
                                                   build/obj/main.o (symbol from plugin)
 I2CReadRegisterByteWithCRC                        build/obj/bq76920_driver.o (symbol from plugin)
-                                                  build/obj/main.o (symbol from plugin)
-I2CReadRegisterByteWithCRC.constprop.3            /tmp/ccpwIpvt.ltrans5.ltrans.o
-                                                  /tmp/ccpwIpvt.ltrans0.ltrans.o
+I2CReadRegisterByteWithCRC.constprop.0            /tmp/ccrVXNcp.ltrans6.ltrans.o
+                                                  /tmp/ccrVXNcp.ltrans0.ltrans.o
 I2CReadRegisterWordWithCRC                        build/obj/bq76920_driver.o (symbol from plugin)
                                                   build/obj/main.o (symbol from plugin)
+I2CReadRegisterWordWithCRC.constprop.7            /tmp/ccrVXNcp.ltrans5.ltrans.o
+                                                  /tmp/ccrVXNcp.ltrans0.ltrans.o
+I2CReadRegisterWordWithCRC.constprop.8            /tmp/ccrVXNcp.ltrans5.ltrans.o
+                                                  /tmp/ccrVXNcp.ltrans0.ltrans.o
 I2CWriteRegisterByteWithCRC                       build/obj/bq76920_driver.o (symbol from plugin)
                                                   build/obj/main.o (symbol from plugin)
 MemManage_Handler                                 build/obj/vectors.o
-NMI_Handler                                       /tmp/ccpwIpvt.ltrans3.ltrans.o
+NMI_Handler                                       /tmp/ccrVXNcp.ltrans2.ltrans.o
                                                   build/obj/chcore_v6m.o (symbol from plugin)
                                                   build/obj/vectors.o
 PendSV_Handler                                    build/obj/vectors.o
@@ -1060,8 +1293,9 @@ Reset_Handler                                     build/obj/vectors.o
 SVC_Handler                                       build/obj/vectors.o
 SysTick_Handler                                   build/obj/vectors.o
 SystemCoreClock                                   build/obj/hal_lld.o (symbol from plugin)
-Thread1.lto_priv.46                               /tmp/ccpwIpvt.ltrans3.ltrans.o
-                                                  /tmp/ccpwIpvt.ltrans0.ltrans.o
+Thread1.lto_priv.53                               /tmp/ccrVXNcp.ltrans2.ltrans.o
+                                                  /tmp/ccrVXNcp.ltrans0.ltrans.o
+TwoSComplement                                    build/obj/bq76920_driver.o (symbol from plugin)
 UsageFault_Handler                                build/obj/vectors.o
 Vector1C                                          build/obj/vectors.o
 Vector20                                          build/obj/vectors.o
@@ -1077,22 +1311,22 @@ Vector54                                          build/obj/vectors.o
 Vector58                                          build/obj/vectors.o
 Vector5C                                          build/obj/vectors.o
 Vector60                                          build/obj/vectors.o
-Vector64                                          /tmp/ccpwIpvt.ltrans2.ltrans.o
+Vector64                                          /tmp/ccrVXNcp.ltrans3.ltrans.o
                                                   build/obj/stm32_dma.o (symbol from plugin)
                                                   build/obj/vectors.o
-Vector68                                          /tmp/ccpwIpvt.ltrans4.ltrans.o
+Vector68                                          /tmp/ccrVXNcp.ltrans4.ltrans.o
                                                   build/obj/hal_lld.o (symbol from plugin)
                                                   build/obj/vectors.o
-Vector6C                                          /tmp/ccpwIpvt.ltrans4.ltrans.o
+Vector6C                                          /tmp/ccrVXNcp.ltrans4.ltrans.o
                                                   build/obj/hal_lld.o (symbol from plugin)
                                                   build/obj/vectors.o
-Vector70                                          /tmp/ccpwIpvt.ltrans4.ltrans.o
+Vector70                                          /tmp/ccrVXNcp.ltrans4.ltrans.o
                                                   build/obj/hal_adc_lld.o (symbol from plugin)
                                                   build/obj/vectors.o
 Vector74                                          build/obj/vectors.o
 Vector78                                          build/obj/vectors.o
 Vector7C                                          build/obj/vectors.o
-Vector80                                          /tmp/ccpwIpvt.ltrans2.ltrans.o
+Vector80                                          /tmp/ccrVXNcp.ltrans3.ltrans.o
                                                   build/obj/hal_st_lld.o (symbol from plugin)
                                                   build/obj/vectors.o
 Vector84                                          build/obj/vectors.o
@@ -1101,7 +1335,7 @@ Vector8C                                          build/obj/vectors.o
 Vector90                                          build/obj/vectors.o
 Vector94                                          build/obj/vectors.o
 Vector98                                          build/obj/vectors.o
-Vector9C                                          /tmp/ccpwIpvt.ltrans2.ltrans.o
+Vector9C                                          /tmp/ccrVXNcp.ltrans3.ltrans.o
                                                   build/obj/hal_i2c_lld.o (symbol from plugin)
                                                   build/obj/vectors.o
 VectorA0                                          build/obj/vectors.o
@@ -1112,136 +1346,165 @@ VectorB0                                          build/obj/vectors.o
 VectorB4                                          build/obj/vectors.o
 VectorB8                                          build/obj/vectors.o
 VectorBC                                          build/obj/vectors.o
-__core_init                                       /tmp/ccpwIpvt.ltrans4.ltrans.o
+__aeabi_d2f                                       /usr/lib/gcc/arm-none-eabi/4.9.3/armv6-m/libgcc.a(truncdfsf2.o)
+                                                  /tmp/ccrVXNcp.ltrans0.ltrans.o
+__aeabi_ddiv                                      /usr/lib/gcc/arm-none-eabi/4.9.3/armv6-m/libgcc.a(divdf3.o)
+                                                  /tmp/ccrVXNcp.ltrans0.ltrans.o
+__aeabi_dmul                                      /usr/lib/gcc/arm-none-eabi/4.9.3/armv6-m/libgcc.a(muldf3.o)
+                                                  /tmp/ccrVXNcp.ltrans0.ltrans.o
+__aeabi_dsub                                      /usr/lib/gcc/arm-none-eabi/4.9.3/armv6-m/libgcc.a(subdf3.o)
+                                                  /tmp/ccrVXNcp.ltrans0.ltrans.o
+__aeabi_f2d                                       /usr/lib/gcc/arm-none-eabi/4.9.3/armv6-m/libgcc.a(extendsfdf2.o)
+                                                  /tmp/ccrVXNcp.ltrans0.ltrans.o
+__aeabi_fdiv                                      /usr/lib/gcc/arm-none-eabi/4.9.3/armv6-m/libgcc.a(divsf3.o)
+                                                  /tmp/ccrVXNcp.ltrans0.ltrans.o
+__aeabi_fmul                                      /usr/lib/gcc/arm-none-eabi/4.9.3/armv6-m/libgcc.a(mulsf3.o)
+                                                  /tmp/ccrVXNcp.ltrans0.ltrans.o
+__aeabi_i2d                                       /usr/lib/gcc/arm-none-eabi/4.9.3/armv6-m/libgcc.a(floatsidf.o)
+                                                  /tmp/ccrVXNcp.ltrans0.ltrans.o
+__aeabi_idiv0                                     /usr/lib/gcc/arm-none-eabi/4.9.3/armv6-m/libgcc.a(_dvmd_tls.o)
+                                                  /usr/lib/gcc/arm-none-eabi/4.9.3/armv6-m/libgcc.a(_udivsi3.o)
+__aeabi_ldiv0                                     /usr/lib/gcc/arm-none-eabi/4.9.3/armv6-m/libgcc.a(_dvmd_tls.o)
+__aeabi_uidiv                                     /usr/lib/gcc/arm-none-eabi/4.9.3/armv6-m/libgcc.a(_udivsi3.o)
+                                                  /usr/lib/gcc/arm-none-eabi/4.9.3/armv6-m/libgcc.a(divdf3.o)
+__aeabi_uidivmod                                  /usr/lib/gcc/arm-none-eabi/4.9.3/armv6-m/libgcc.a(_udivsi3.o)
+                                                  /usr/lib/gcc/arm-none-eabi/4.9.3/armv6-m/libgcc.a(divdf3.o)
+__clzsi2                                          /usr/lib/gcc/arm-none-eabi/4.9.3/armv6-m/libgcc.a(_clzsi2.o)
+                                                  /usr/lib/gcc/arm-none-eabi/4.9.3/armv6-m/libgcc.a(extendsfdf2.o)
+                                                  /usr/lib/gcc/arm-none-eabi/4.9.3/armv6-m/libgcc.a(floatsidf.o)
+                                                  /usr/lib/gcc/arm-none-eabi/4.9.3/armv6-m/libgcc.a(subdf3.o)
+                                                  /usr/lib/gcc/arm-none-eabi/4.9.3/armv6-m/libgcc.a(muldf3.o)
+                                                  /usr/lib/gcc/arm-none-eabi/4.9.3/armv6-m/libgcc.a(divdf3.o)
+                                                  /usr/lib/gcc/arm-none-eabi/4.9.3/armv6-m/libgcc.a(mulsf3.o)
+                                                  /usr/lib/gcc/arm-none-eabi/4.9.3/armv6-m/libgcc.a(divsf3.o)
+__core_init                                       /tmp/ccrVXNcp.ltrans4.ltrans.o
                                                   build/obj/crt1.o (symbol from plugin)
                                                   build/obj/crt0_v6m.o
-__default_exit                                    /tmp/ccpwIpvt.ltrans4.ltrans.o
+__default_exit                                    /tmp/ccrVXNcp.ltrans4.ltrans.o
                                                   build/obj/crt1.o (symbol from plugin)
                                                   build/obj/crt0_v6m.o
-__early_init                                      /tmp/ccpwIpvt.ltrans2.ltrans.o
+__early_init                                      /tmp/ccrVXNcp.ltrans3.ltrans.o
                                                   build/obj/board.o (symbol from plugin)
                                                   build/obj/crt1.o (symbol from plugin)
                                                   build/obj/crt0_v6m.o
 __fini_array_end                                  build/obj/crt0_v6m.o
 __fini_array_start                                build/obj/crt0_v6m.o
-__func__.4221.lto_priv.65                         /tmp/ccpwIpvt.ltrans0.ltrans.o
-                                                  /tmp/ccpwIpvt.ltrans3.ltrans.o
-                                                  /tmp/ccpwIpvt.ltrans1.ltrans.o
-__func__.5086.lto_priv.43                         /tmp/ccpwIpvt.ltrans5.ltrans.o
-                                                  /tmp/ccpwIpvt.ltrans0.ltrans.o
-__func__.5086.lto_priv.52                         /tmp/ccpwIpvt.ltrans0.ltrans.o
-                                                  /tmp/ccpwIpvt.ltrans3.ltrans.o
-                                                  /tmp/ccpwIpvt.ltrans1.ltrans.o
-__func__.5086.lto_priv.53                         /tmp/ccpwIpvt.ltrans0.ltrans.o
-                                                  /tmp/ccpwIpvt.ltrans3.ltrans.o
-                                                  /tmp/ccpwIpvt.ltrans1.ltrans.o
-__func__.5275.lto_priv.62                         /tmp/ccpwIpvt.ltrans0.ltrans.o
-__func__.6079.lto_priv.71                         /tmp/ccpwIpvt.ltrans5.ltrans.o
-                                                  /tmp/ccpwIpvt.ltrans4.ltrans.o
-                                                  /tmp/ccpwIpvt.ltrans3.ltrans.o
-                                                  /tmp/ccpwIpvt.ltrans1.ltrans.o
-__func__.6082.lto_priv.63                         /tmp/ccpwIpvt.ltrans0.ltrans.o
-                                                  /tmp/ccpwIpvt.ltrans3.ltrans.o
-                                                  /tmp/ccpwIpvt.ltrans1.ltrans.o
-__func__.6086.lto_priv.69                         /tmp/ccpwIpvt.ltrans5.ltrans.o
-                                                  /tmp/ccpwIpvt.ltrans3.ltrans.o
-                                                  /tmp/ccpwIpvt.ltrans1.ltrans.o
-__func__.6091.lto_priv.68                         /tmp/ccpwIpvt.ltrans0.ltrans.o
-__func__.6182.lto_priv.75                         /tmp/ccpwIpvt.ltrans2.ltrans.o
-                                                  /tmp/ccpwIpvt.ltrans4.ltrans.o
-__func__.6833.lto_priv.67                         /tmp/ccpwIpvt.ltrans0.ltrans.o
-                                                  /tmp/ccpwIpvt.ltrans3.ltrans.o
-                                                  /tmp/ccpwIpvt.ltrans1.ltrans.o
-__func__.6840.lto_priv.66                         /tmp/ccpwIpvt.ltrans0.ltrans.o
-                                                  /tmp/ccpwIpvt.ltrans3.ltrans.o
-                                                  /tmp/ccpwIpvt.ltrans2.ltrans.o
-                                                  /tmp/ccpwIpvt.ltrans1.ltrans.o
-__func__.6845.lto_priv.55                         /tmp/ccpwIpvt.ltrans5.ltrans.o
-__func__.6869.lto_priv.47                         /tmp/ccpwIpvt.ltrans5.ltrans.o
-__func__.6873.lto_priv.54                         /tmp/ccpwIpvt.ltrans5.ltrans.o
-__heap_base__                                     /tmp/ccpwIpvt.ltrans0.ltrans.o
+__func__.4221.lto_priv.73                         /tmp/ccrVXNcp.ltrans2.ltrans.o
+                                                  /tmp/ccrVXNcp.ltrans1.ltrans.o
+__func__.5086.lto_priv.46                         /tmp/ccrVXNcp.ltrans5.ltrans.o
+                                                  /tmp/ccrVXNcp.ltrans0.ltrans.o
+__func__.5086.lto_priv.48                         /tmp/ccrVXNcp.ltrans5.ltrans.o
+                                                  /tmp/ccrVXNcp.ltrans2.ltrans.o
+                                                  /tmp/ccrVXNcp.ltrans1.ltrans.o
+                                                  /tmp/ccrVXNcp.ltrans0.ltrans.o
+__func__.5086.lto_priv.57                         /tmp/ccrVXNcp.ltrans0.ltrans.o
+                                                  /tmp/ccrVXNcp.ltrans2.ltrans.o
+                                                  /tmp/ccrVXNcp.ltrans1.ltrans.o
+__func__.5275.lto_priv.63                         /tmp/ccrVXNcp.ltrans0.ltrans.o
+__func__.6079.lto_priv.69                         /tmp/ccrVXNcp.ltrans5.ltrans.o
+                                                  /tmp/ccrVXNcp.ltrans4.ltrans.o
+                                                  /tmp/ccrVXNcp.ltrans2.ltrans.o
+                                                  /tmp/ccrVXNcp.ltrans1.ltrans.o
+__func__.6082.lto_priv.65                         /tmp/ccrVXNcp.ltrans2.ltrans.o
+                                                  /tmp/ccrVXNcp.ltrans1.ltrans.o
+__func__.6086.lto_priv.67                         /tmp/ccrVXNcp.ltrans5.ltrans.o
+                                                  /tmp/ccrVXNcp.ltrans2.ltrans.o
+                                                  /tmp/ccrVXNcp.ltrans1.ltrans.o
+__func__.6091.lto_priv.72                         /tmp/ccrVXNcp.ltrans2.ltrans.o
+__func__.6182.lto_priv.77                         /tmp/ccrVXNcp.ltrans3.ltrans.o
+                                                  /tmp/ccrVXNcp.ltrans4.ltrans.o
+__func__.6833.lto_priv.75                         /tmp/ccrVXNcp.ltrans2.ltrans.o
+                                                  /tmp/ccrVXNcp.ltrans1.ltrans.o
+__func__.6840.lto_priv.74                         /tmp/ccrVXNcp.ltrans2.ltrans.o
+                                                  /tmp/ccrVXNcp.ltrans3.ltrans.o
+                                                  /tmp/ccrVXNcp.ltrans1.ltrans.o
+__func__.6845.lto_priv.52                         /tmp/ccrVXNcp.ltrans5.ltrans.o
+__func__.6869.lto_priv.50                         /tmp/ccrVXNcp.ltrans5.ltrans.o
+__func__.6873.lto_priv.51                         /tmp/ccrVXNcp.ltrans5.ltrans.o
+__heap_base__                                     /tmp/ccrVXNcp.ltrans0.ltrans.o
                                                   build/obj/chmemcore.o (symbol from plugin)
-__heap_end__                                      /tmp/ccpwIpvt.ltrans0.ltrans.o
+__heap_end__                                      /tmp/ccrVXNcp.ltrans0.ltrans.o
                                                   build/obj/chmemcore.o (symbol from plugin)
 __init_array_end                                  build/obj/crt0_v6m.o
 __init_array_start                                build/obj/crt0_v6m.o
-__init_ram_areas                                  /tmp/ccpwIpvt.ltrans4.ltrans.o
+__init_ram_areas                                  /tmp/ccrVXNcp.ltrans4.ltrans.o
                                                   build/obj/crt1.o (symbol from plugin)
                                                   build/obj/crt0_v6m.o
-__late_init                                       /tmp/ccpwIpvt.ltrans4.ltrans.o
+__late_init                                       /tmp/ccrVXNcp.ltrans4.ltrans.o
                                                   build/obj/crt1.o (symbol from plugin)
                                                   build/obj/crt0_v6m.o
 __main_stack_base__                               build/obj/crt0_v6m.o
 __main_stack_end__                                build/obj/vectors.o
                                                   build/obj/crt0_v6m.o
-__main_thread_stack_base__                        /tmp/ccpwIpvt.ltrans0.ltrans.o
+__main_thread_stack_base__                        /tmp/ccrVXNcp.ltrans0.ltrans.o
                                                   build/obj/chsys.o (symbol from plugin)
 __process_stack_base__                            build/obj/crt0_v6m.o
 __process_stack_end__                             build/obj/crt0_v6m.o
-__ram0_clear__                                    /tmp/ccpwIpvt.ltrans4.ltrans.o
+__ram0_clear__                                    /tmp/ccrVXNcp.ltrans4.ltrans.o
                                                   build/obj/crt1.o (symbol from plugin)
-__ram0_init__                                     /tmp/ccpwIpvt.ltrans4.ltrans.o
+__ram0_init__                                     /tmp/ccrVXNcp.ltrans4.ltrans.o
                                                   build/obj/crt1.o (symbol from plugin)
-__ram0_init_text__                                /tmp/ccpwIpvt.ltrans4.ltrans.o
+__ram0_init_text__                                /tmp/ccrVXNcp.ltrans4.ltrans.o
                                                   build/obj/crt1.o (symbol from plugin)
-__ram0_noinit__                                   /tmp/ccpwIpvt.ltrans4.ltrans.o
+__ram0_noinit__                                   /tmp/ccrVXNcp.ltrans4.ltrans.o
                                                   build/obj/crt1.o (symbol from plugin)
-__ram1_clear__                                    /tmp/ccpwIpvt.ltrans4.ltrans.o
+__ram1_clear__                                    /tmp/ccrVXNcp.ltrans4.ltrans.o
                                                   build/obj/crt1.o (symbol from plugin)
-__ram1_init__                                     /tmp/ccpwIpvt.ltrans4.ltrans.o
+__ram1_init__                                     /tmp/ccrVXNcp.ltrans4.ltrans.o
                                                   build/obj/crt1.o (symbol from plugin)
-__ram1_init_text__                                /tmp/ccpwIpvt.ltrans4.ltrans.o
+__ram1_init_text__                                /tmp/ccrVXNcp.ltrans4.ltrans.o
                                                   build/obj/crt1.o (symbol from plugin)
-__ram1_noinit__                                   /tmp/ccpwIpvt.ltrans4.ltrans.o
+__ram1_noinit__                                   /tmp/ccrVXNcp.ltrans4.ltrans.o
                                                   build/obj/crt1.o (symbol from plugin)
-__ram2_clear__                                    /tmp/ccpwIpvt.ltrans4.ltrans.o
+__ram2_clear__                                    /tmp/ccrVXNcp.ltrans4.ltrans.o
                                                   build/obj/crt1.o (symbol from plugin)
-__ram2_init__                                     /tmp/ccpwIpvt.ltrans4.ltrans.o
+__ram2_init__                                     /tmp/ccrVXNcp.ltrans4.ltrans.o
                                                   build/obj/crt1.o (symbol from plugin)
-__ram2_init_text__                                /tmp/ccpwIpvt.ltrans4.ltrans.o
+__ram2_init_text__                                /tmp/ccrVXNcp.ltrans4.ltrans.o
                                                   build/obj/crt1.o (symbol from plugin)
-__ram2_noinit__                                   /tmp/ccpwIpvt.ltrans4.ltrans.o
+__ram2_noinit__                                   /tmp/ccrVXNcp.ltrans4.ltrans.o
                                                   build/obj/crt1.o (symbol from plugin)
-__ram3_clear__                                    /tmp/ccpwIpvt.ltrans4.ltrans.o
+__ram3_clear__                                    /tmp/ccrVXNcp.ltrans4.ltrans.o
                                                   build/obj/crt1.o (symbol from plugin)
-__ram3_init__                                     /tmp/ccpwIpvt.ltrans4.ltrans.o
+__ram3_init__                                     /tmp/ccrVXNcp.ltrans4.ltrans.o
                                                   build/obj/crt1.o (symbol from plugin)
-__ram3_init_text__                                /tmp/ccpwIpvt.ltrans4.ltrans.o
+__ram3_init_text__                                /tmp/ccrVXNcp.ltrans4.ltrans.o
                                                   build/obj/crt1.o (symbol from plugin)
-__ram3_noinit__                                   /tmp/ccpwIpvt.ltrans4.ltrans.o
+__ram3_noinit__                                   /tmp/ccrVXNcp.ltrans4.ltrans.o
                                                   build/obj/crt1.o (symbol from plugin)
-__ram4_clear__                                    /tmp/ccpwIpvt.ltrans4.ltrans.o
+__ram4_clear__                                    /tmp/ccrVXNcp.ltrans4.ltrans.o
                                                   build/obj/crt1.o (symbol from plugin)
-__ram4_init__                                     /tmp/ccpwIpvt.ltrans4.ltrans.o
+__ram4_init__                                     /tmp/ccrVXNcp.ltrans4.ltrans.o
                                                   build/obj/crt1.o (symbol from plugin)
-__ram4_init_text__                                /tmp/ccpwIpvt.ltrans4.ltrans.o
+__ram4_init_text__                                /tmp/ccrVXNcp.ltrans4.ltrans.o
                                                   build/obj/crt1.o (symbol from plugin)
-__ram4_noinit__                                   /tmp/ccpwIpvt.ltrans4.ltrans.o
+__ram4_noinit__                                   /tmp/ccrVXNcp.ltrans4.ltrans.o
                                                   build/obj/crt1.o (symbol from plugin)
-__ram5_clear__                                    /tmp/ccpwIpvt.ltrans4.ltrans.o
+__ram5_clear__                                    /tmp/ccrVXNcp.ltrans4.ltrans.o
                                                   build/obj/crt1.o (symbol from plugin)
-__ram5_init__                                     /tmp/ccpwIpvt.ltrans4.ltrans.o
+__ram5_init__                                     /tmp/ccrVXNcp.ltrans4.ltrans.o
                                                   build/obj/crt1.o (symbol from plugin)
-__ram5_init_text__                                /tmp/ccpwIpvt.ltrans4.ltrans.o
+__ram5_init_text__                                /tmp/ccrVXNcp.ltrans4.ltrans.o
                                                   build/obj/crt1.o (symbol from plugin)
-__ram5_noinit__                                   /tmp/ccpwIpvt.ltrans4.ltrans.o
+__ram5_noinit__                                   /tmp/ccrVXNcp.ltrans4.ltrans.o
                                                   build/obj/crt1.o (symbol from plugin)
-__ram6_clear__                                    /tmp/ccpwIpvt.ltrans4.ltrans.o
+__ram6_clear__                                    /tmp/ccrVXNcp.ltrans4.ltrans.o
                                                   build/obj/crt1.o (symbol from plugin)
-__ram6_init__                                     /tmp/ccpwIpvt.ltrans4.ltrans.o
+__ram6_init__                                     /tmp/ccrVXNcp.ltrans4.ltrans.o
                                                   build/obj/crt1.o (symbol from plugin)
-__ram6_init_text__                                /tmp/ccpwIpvt.ltrans4.ltrans.o
+__ram6_init_text__                                /tmp/ccrVXNcp.ltrans4.ltrans.o
                                                   build/obj/crt1.o (symbol from plugin)
-__ram6_noinit__                                   /tmp/ccpwIpvt.ltrans4.ltrans.o
+__ram6_noinit__                                   /tmp/ccrVXNcp.ltrans4.ltrans.o
                                                   build/obj/crt1.o (symbol from plugin)
-__ram7_clear__                                    /tmp/ccpwIpvt.ltrans4.ltrans.o
+__ram7_clear__                                    /tmp/ccrVXNcp.ltrans4.ltrans.o
                                                   build/obj/crt1.o (symbol from plugin)
-__ram7_init__                                     /tmp/ccpwIpvt.ltrans4.ltrans.o
+__ram7_init__                                     /tmp/ccrVXNcp.ltrans4.ltrans.o
                                                   build/obj/crt1.o (symbol from plugin)
-__ram7_init_text__                                /tmp/ccpwIpvt.ltrans4.ltrans.o
+__ram7_init_text__                                /tmp/ccrVXNcp.ltrans4.ltrans.o
                                                   build/obj/crt1.o (symbol from plugin)
-__ram7_noinit__                                   /tmp/ccpwIpvt.ltrans4.ltrans.o
+__ram7_noinit__                                   /tmp/ccrVXNcp.ltrans4.ltrans.o
                                                   build/obj/crt1.o (symbol from plugin)
+__udivsi3                                         /usr/lib/gcc/arm-none-eabi/4.9.3/armv6-m/libgcc.a(_udivsi3.o)
 _bss_end                                          build/obj/crt0_v6m.o
 _bss_start                                        build/obj/crt0_v6m.o
 _core_init                                        build/obj/chmemcore.o (symbol from plugin)
@@ -1264,9 +1527,9 @@ _dbg_check_leave_isr                              build/obj/chdebug.o (symbol fr
                                                   build/obj/stm32_dma.o (symbol from plugin)
                                                   build/obj/hal_adc_lld.o (symbol from plugin)
                                                   build/obj/hal_lld.o (symbol from plugin)
-_dbg_check_lock                                   /tmp/ccpwIpvt.ltrans1.ltrans.o
+_dbg_check_lock                                   /tmp/ccrVXNcp.ltrans1.ltrans.o
                                                   build/obj/chdebug.o (symbol from plugin)
-                                                  /tmp/ccpwIpvt.ltrans0.ltrans.o
+                                                  /tmp/ccrVXNcp.ltrans0.ltrans.o
                                                   build/obj/chpipes.o (symbol from plugin)
                                                   build/obj/chmempools.o (symbol from plugin)
                                                   build/obj/chmemcore.o (symbol from plugin)
@@ -1295,9 +1558,9 @@ _dbg_check_lock_from_isr                          build/obj/chdebug.o (symbol fr
                                                   build/obj/hal_i2c_lld.o (symbol from plugin)
                                                   build/obj/hal_adc_lld.o (symbol from plugin)
 _dbg_check_suspend                                build/obj/chdebug.o (symbol from plugin)
-_dbg_check_unlock                                 /tmp/ccpwIpvt.ltrans1.ltrans.o
+_dbg_check_unlock                                 /tmp/ccrVXNcp.ltrans1.ltrans.o
                                                   build/obj/chdebug.o (symbol from plugin)
-                                                  /tmp/ccpwIpvt.ltrans0.ltrans.o
+                                                  /tmp/ccrVXNcp.ltrans0.ltrans.o
                                                   build/obj/chpipes.o (symbol from plugin)
                                                   build/obj/chmempools.o (symbol from plugin)
                                                   build/obj/chmemcore.o (symbol from plugin)
@@ -1330,15 +1593,15 @@ _factory_init                                     build/obj/chfactory.o (symbol 
                                                   build/obj/chsys.o (symbol from plugin)
 _heap_init                                        build/obj/chmemheaps.o (symbol from plugin)
                                                   build/obj/chsys.o (symbol from plugin)
-_idle_thread.lto_priv.61                          /tmp/ccpwIpvt.ltrans2.ltrans.o
-                                                  /tmp/ccpwIpvt.ltrans0.ltrans.o
+_idle_thread.lto_priv.62                          /tmp/ccrVXNcp.ltrans1.ltrans.o
+                                                  /tmp/ccrVXNcp.ltrans0.ltrans.o
 _pal_lld_init                                     build/obj/hal_pal_lld.o (symbol from plugin)
                                                   build/obj/hal.o (symbol from plugin)
 _pal_lld_setgroupmode                             build/obj/hal_pal_lld.o (symbol from plugin)
                                                   build/obj/hal_pal.o (symbol from plugin)
 _port_exit_from_isr                               build/obj/chcoreasm_v6m.o
-                                                  /tmp/ccpwIpvt.ltrans4.ltrans.o
-                                                  /tmp/ccpwIpvt.ltrans2.ltrans.o
+                                                  /tmp/ccrVXNcp.ltrans4.ltrans.o
+                                                  /tmp/ccrVXNcp.ltrans3.ltrans.o
                                                   build/obj/chcore_v6m.o (symbol from plugin)
 _port_irq_epilogue                                build/obj/chcore_v6m.o (symbol from plugin)
                                                   build/obj/hal_st_lld.o (symbol from plugin)
@@ -1347,23 +1610,22 @@ _port_irq_epilogue                                build/obj/chcore_v6m.o (symbol
                                                   build/obj/hal_adc_lld.o (symbol from plugin)
                                                   build/obj/hal_lld.o (symbol from plugin)
 _port_switch                                      build/obj/chcoreasm_v6m.o
-                                                  /tmp/ccpwIpvt.ltrans5.ltrans.o
-                                                  /tmp/ccpwIpvt.ltrans3.ltrans.o
-                                                  /tmp/ccpwIpvt.ltrans1.ltrans.o
-                                                  /tmp/ccpwIpvt.ltrans0.ltrans.o
+                                                  /tmp/ccrVXNcp.ltrans5.ltrans.o
+                                                  /tmp/ccrVXNcp.ltrans2.ltrans.o
+                                                  /tmp/ccrVXNcp.ltrans1.ltrans.o
                                                   build/obj/chschd.o (symbol from plugin)
 _port_switch_from_isr                             build/obj/chcoreasm_v6m.o
-                                                  /tmp/ccpwIpvt.ltrans4.ltrans.o
-                                                  /tmp/ccpwIpvt.ltrans2.ltrans.o
+                                                  /tmp/ccrVXNcp.ltrans4.ltrans.o
+                                                  /tmp/ccrVXNcp.ltrans3.ltrans.o
                                                   build/obj/chcore_v6m.o (symbol from plugin)
 _port_thread_start                                build/obj/chcoreasm_v6m.o
-                                                  /tmp/ccpwIpvt.ltrans0.ltrans.o
+                                                  /tmp/ccrVXNcp.ltrans0.ltrans.o
                                                   build/obj/chthreads.o (symbol from plugin)
 _scheduler_init                                   build/obj/chschd.o (symbol from plugin)
                                                   build/obj/chsys.o (symbol from plugin)
-_stm32_dma_streams                                /tmp/ccpwIpvt.ltrans0.ltrans.o
+_stm32_dma_streams                                /tmp/ccrVXNcp.ltrans0.ltrans.o
                                                   build/obj/stm32_dma.o (symbol from plugin)
-                                                  /tmp/ccpwIpvt.ltrans2.ltrans.o
+                                                  /tmp/ccrVXNcp.ltrans3.ltrans.o
                                                   build/obj/hal_lld.o (symbol from plugin)
 _textdata                                         build/obj/crt0_v6m.o
 _thread_init                                      build/obj/chthreads.o (symbol from plugin)
@@ -1413,8 +1675,8 @@ adcStopConversionI                                build/obj/hal_adc.o (symbol fr
 adc_lld_init                                      build/obj/hal_adc_lld.o (symbol from plugin)
                                                   build/obj/hal_adc.o (symbol from plugin)
 adc_lld_serve_interrupt                           build/obj/hal_adc_lld.o (symbol from plugin)
-adc_lld_serve_rx_interrupt.lto_priv.59            /tmp/ccpwIpvt.ltrans4.ltrans.o
-                                                  /tmp/ccpwIpvt.ltrans0.ltrans.o
+adc_lld_serve_rx_interrupt.lto_priv.60            /tmp/ccrVXNcp.ltrans4.ltrans.o
+                                                  /tmp/ccrVXNcp.ltrans0.ltrans.o
 adc_lld_start                                     build/obj/hal_adc_lld.o (symbol from plugin)
                                                   build/obj/hal_adc.o (symbol from plugin)
 adc_lld_start_conversion                          build/obj/hal_adc_lld.o (symbol from plugin)
@@ -1428,13 +1690,13 @@ boardInit                                         build/obj/board.o (symbol from
                                                   build/obj/hal.o (symbol from plugin)
 bq76920_init                                      build/obj/bq76920_driver.o (symbol from plugin)
                                                   build/obj/main.o (symbol from plugin)
-ch                                                /tmp/ccpwIpvt.ltrans5.ltrans.o
+ch                                                /tmp/ccrVXNcp.ltrans5.ltrans.o
                                                   build/obj/chschd.o (symbol from plugin)
-                                                  /tmp/ccpwIpvt.ltrans4.ltrans.o
-                                                  /tmp/ccpwIpvt.ltrans3.ltrans.o
-                                                  /tmp/ccpwIpvt.ltrans2.ltrans.o
-                                                  /tmp/ccpwIpvt.ltrans1.ltrans.o
-                                                  /tmp/ccpwIpvt.ltrans0.ltrans.o
+                                                  /tmp/ccrVXNcp.ltrans4.ltrans.o
+                                                  /tmp/ccrVXNcp.ltrans3.ltrans.o
+                                                  /tmp/ccrVXNcp.ltrans2.ltrans.o
+                                                  /tmp/ccrVXNcp.ltrans1.ltrans.o
+                                                  /tmp/ccrVXNcp.ltrans0.ltrans.o
                                                   build/obj/main.o (symbol from plugin)
                                                   build/obj/chpipes.o (symbol from plugin)
                                                   build/obj/chmempools.o (symbol from plugin)
@@ -1467,19 +1729,19 @@ chCondWait                                        build/obj/chcond.o (symbol fro
 chCondWaitS                                       build/obj/chcond.o (symbol from plugin)
 chCondWaitTimeout                                 build/obj/chcond.o (symbol from plugin)
 chCondWaitTimeoutS                                build/obj/chcond.o (symbol from plugin)
-chCoreAllocAlignedI.lto_priv.60                   /tmp/ccpwIpvt.ltrans3.ltrans.o
-                                                  /tmp/ccpwIpvt.ltrans0.ltrans.o
-chCoreAllocAlignedWithOffset                      /tmp/ccpwIpvt.ltrans3.ltrans.o
+chCoreAllocAlignedI.lto_priv.61                   /tmp/ccrVXNcp.ltrans2.ltrans.o
+                                                  /tmp/ccrVXNcp.ltrans0.ltrans.o
+chCoreAllocAlignedWithOffset                      /tmp/ccrVXNcp.ltrans2.ltrans.o
                                                   build/obj/chmemcore.o (symbol from plugin)
-                                                  /tmp/ccpwIpvt.ltrans0.ltrans.o
+                                                  /tmp/ccrVXNcp.ltrans0.ltrans.o
                                                   build/obj/chmemheaps.o (symbol from plugin)
 chCoreAllocAlignedWithOffsetI                     build/obj/chmemcore.o (symbol from plugin)
                                                   build/obj/chfactory.o (symbol from plugin)
 chCoreGetStatusX                                  build/obj/chmemcore.o (symbol from plugin)
-chDbgCheckClassI                                  /tmp/ccpwIpvt.ltrans1.ltrans.o
+chDbgCheckClassI                                  /tmp/ccrVXNcp.ltrans1.ltrans.o
                                                   build/obj/chdebug.o (symbol from plugin)
-                                                  /tmp/ccpwIpvt.ltrans2.ltrans.o
-                                                  /tmp/ccpwIpvt.ltrans0.ltrans.o
+                                                  /tmp/ccrVXNcp.ltrans3.ltrans.o
+                                                  /tmp/ccrVXNcp.ltrans0.ltrans.o
                                                   build/obj/chmempools.o (symbol from plugin)
                                                   build/obj/chmemcore.o (symbol from plugin)
                                                   build/obj/chmboxes.o (symbol from plugin)
@@ -1579,19 +1841,20 @@ chMBResetI                                        build/obj/chmboxes.o (symbol f
 chMsgRelease                                      build/obj/chmsg.o (symbol from plugin)
 chMsgSend                                         build/obj/chmsg.o (symbol from plugin)
 chMsgWait                                         build/obj/chmsg.o (symbol from plugin)
-chMtxLock                                         /tmp/ccpwIpvt.ltrans1.ltrans.o
+chMtxLock                                         /tmp/ccrVXNcp.ltrans2.ltrans.o
                                                   build/obj/chmtx.o (symbol from plugin)
-                                                  /tmp/ccpwIpvt.ltrans5.ltrans.o
-                                                  /tmp/ccpwIpvt.ltrans0.ltrans.o
+                                                  /tmp/ccrVXNcp.ltrans6.ltrans.o
+                                                  /tmp/ccrVXNcp.ltrans0.ltrans.o
                                                   build/obj/chfactory.o (symbol from plugin)
                                                   build/obj/chpipes.o (symbol from plugin)
                                                   build/obj/chmemheaps.o (symbol from plugin)
                                                   build/obj/hal_i2c.o (symbol from plugin)
                                                   build/obj/hal_adc.o (symbol from plugin)
-chMtxLockS                                        /tmp/ccpwIpvt.ltrans3.ltrans.o
+chMtxLockS                                        /tmp/ccrVXNcp.ltrans2.ltrans.o
                                                   build/obj/chmtx.o (symbol from plugin)
-                                                  /tmp/ccpwIpvt.ltrans1.ltrans.o
-                                                  /tmp/ccpwIpvt.ltrans0.ltrans.o
+                                                  /tmp/ccrVXNcp.ltrans5.ltrans.o
+                                                  /tmp/ccrVXNcp.ltrans1.ltrans.o
+                                                  /tmp/ccrVXNcp.ltrans0.ltrans.o
                                                   build/obj/chcond.o (symbol from plugin)
 chMtxObjectInit                                   build/obj/chmtx.o (symbol from plugin)
                                                   build/obj/chfactory.o (symbol from plugin)
@@ -1601,11 +1864,12 @@ chMtxObjectInit                                   build/obj/chmtx.o (symbol from
                                                   build/obj/hal_adc.o (symbol from plugin)
 chMtxTryLock                                      build/obj/chmtx.o (symbol from plugin)
 chMtxTryLockS                                     build/obj/chmtx.o (symbol from plugin)
-chMtxUnlock                                       /tmp/ccpwIpvt.ltrans3.ltrans.o
+chMtxUnlock                                       /tmp/ccrVXNcp.ltrans2.ltrans.o
                                                   build/obj/chmtx.o (symbol from plugin)
-                                                  /tmp/ccpwIpvt.ltrans5.ltrans.o
-                                                  /tmp/ccpwIpvt.ltrans1.ltrans.o
-                                                  /tmp/ccpwIpvt.ltrans0.ltrans.o
+                                                  /tmp/ccrVXNcp.ltrans6.ltrans.o
+                                                  /tmp/ccrVXNcp.ltrans5.ltrans.o
+                                                  /tmp/ccrVXNcp.ltrans1.ltrans.o
+                                                  /tmp/ccrVXNcp.ltrans0.ltrans.o
                                                   build/obj/chfactory.o (symbol from plugin)
                                                   build/obj/chpipes.o (symbol from plugin)
                                                   build/obj/chmemheaps.o (symbol from plugin)
@@ -1633,13 +1897,13 @@ chPoolObjectInitAligned                           build/obj/chmempools.o (symbol
                                                   build/obj/chfactory.o (symbol from plugin)
 chRegFindThreadByName                             build/obj/chregistry.o (symbol from plugin)
 chRegFindThreadByPointer                          build/obj/chregistry.o (symbol from plugin)
-chRegFindThreadByWorkingArea                      /tmp/ccpwIpvt.ltrans1.ltrans.o
+chRegFindThreadByWorkingArea                      /tmp/ccrVXNcp.ltrans1.ltrans.o
                                                   build/obj/chregistry.o (symbol from plugin)
-                                                  /tmp/ccpwIpvt.ltrans0.ltrans.o
+                                                  /tmp/ccrVXNcp.ltrans0.ltrans.o
                                                   build/obj/chthreads.o (symbol from plugin)
 chRegFirstThread                                  build/obj/chregistry.o (symbol from plugin)
 chRegNextThread                                   build/obj/chregistry.o (symbol from plugin)
-chSchDoReschedule                                 /tmp/ccpwIpvt.ltrans1.ltrans.o
+chSchDoReschedule                                 /tmp/ccrVXNcp.ltrans1.ltrans.o
                                                   build/obj/chschd.o (symbol from plugin)
                                                   build/obj/chcoreasm_v6m.o
 chSchDoRescheduleAhead                            build/obj/chschd.o (symbol from plugin)
@@ -1652,11 +1916,11 @@ chSchGoSleepS                                     build/obj/chschd.o (symbol fro
                                                   build/obj/chmtx.o (symbol from plugin)
                                                   build/obj/chsem.o (symbol from plugin)
                                                   build/obj/chthreads.o (symbol from plugin)
-chSchGoSleepTimeoutS                              /tmp/ccpwIpvt.ltrans1.ltrans.o
+chSchGoSleepTimeoutS                              /tmp/ccrVXNcp.ltrans1.ltrans.o
                                                   build/obj/chschd.o (symbol from plugin)
-                                                  /tmp/ccpwIpvt.ltrans5.ltrans.o
-                                                  /tmp/ccpwIpvt.ltrans3.ltrans.o
-                                                  /tmp/ccpwIpvt.ltrans0.ltrans.o
+                                                  /tmp/ccrVXNcp.ltrans5.ltrans.o
+                                                  /tmp/ccrVXNcp.ltrans2.ltrans.o
+                                                  /tmp/ccrVXNcp.ltrans0.ltrans.o
                                                   build/obj/chevents.o (symbol from plugin)
                                                   build/obj/chcond.o (symbol from plugin)
                                                   build/obj/chsem.o (symbol from plugin)
@@ -1687,8 +1951,8 @@ chSchWakeupS                                      build/obj/chschd.o (symbol fro
                                                   build/obj/chcond.o (symbol from plugin)
                                                   build/obj/chsem.o (symbol from plugin)
                                                   build/obj/chthreads.o (symbol from plugin)
-chSchWakeupS.constprop.20                         /tmp/ccpwIpvt.ltrans5.ltrans.o
-                                                  /tmp/ccpwIpvt.ltrans0.ltrans.o
+chSchWakeupS.constprop.22                         /tmp/ccrVXNcp.ltrans5.ltrans.o
+                                                  /tmp/ccrVXNcp.ltrans0.ltrans.o
 chSemAddCounterI                                  build/obj/chsem.o (symbol from plugin)
 chSemObjectInit                                   build/obj/chsem.o (symbol from plugin)
                                                   build/obj/chfactory.o (symbol from plugin)
@@ -1705,13 +1969,13 @@ chSemWaitTimeout                                  build/obj/chsem.o (symbol from
 chSemWaitTimeoutS                                 build/obj/chsem.o (symbol from plugin)
                                                   build/obj/chmempools.o (symbol from plugin)
 chSysGetStatusAndLockX                            build/obj/chsys.o (symbol from plugin)
-chSysHalt                                         /tmp/ccpwIpvt.ltrans1.ltrans.o
+chSysHalt                                         /tmp/ccrVXNcp.ltrans1.ltrans.o
                                                   build/obj/chsys.o (symbol from plugin)
-                                                  /tmp/ccpwIpvt.ltrans5.ltrans.o
-                                                  /tmp/ccpwIpvt.ltrans4.ltrans.o
-                                                  /tmp/ccpwIpvt.ltrans3.ltrans.o
-                                                  /tmp/ccpwIpvt.ltrans2.ltrans.o
-                                                  /tmp/ccpwIpvt.ltrans0.ltrans.o
+                                                  /tmp/ccrVXNcp.ltrans5.ltrans.o
+                                                  /tmp/ccrVXNcp.ltrans4.ltrans.o
+                                                  /tmp/ccrVXNcp.ltrans3.ltrans.o
+                                                  /tmp/ccrVXNcp.ltrans2.ltrans.o
+                                                  /tmp/ccrVXNcp.ltrans0.ltrans.o
                                                   build/obj/chfactory.o (symbol from plugin)
                                                   build/obj/chpipes.o (symbol from plugin)
                                                   build/obj/chmempools.o (symbol from plugin)
@@ -1746,8 +2010,8 @@ chSysIntegrityCheckI                              build/obj/chsys.o (symbol from
 chSysRestoreStatusX                               build/obj/chsys.o (symbol from plugin)
 chSysTimerHandlerI                                build/obj/chsys.o (symbol from plugin)
                                                   build/obj/hal_st_lld.o (symbol from plugin)
-chSysUnlock.lto_priv.49                           /tmp/ccpwIpvt.ltrans1.ltrans.o
-                                                  /tmp/ccpwIpvt.ltrans0.ltrans.o
+chSysUnlock.lto_priv.55                           /tmp/ccrVXNcp.ltrans1.ltrans.o
+                                                  /tmp/ccrVXNcp.ltrans0.ltrans.o
 chThdAddRef                                       build/obj/chthreads.o (symbol from plugin)
 chThdCreate                                       build/obj/chthreads.o (symbol from plugin)
                                                   build/obj/chsys.o (symbol from plugin)
@@ -1771,7 +2035,7 @@ chThdEnqueueTimeoutS                              build/obj/chthreads.o (symbol 
                                                   build/obj/chmboxes.o (symbol from plugin)
                                                   build/obj/hal_queues.o (symbol from plugin)
                                                   build/obj/hal_buffers.o (symbol from plugin)
-chThdExit                                         /tmp/ccpwIpvt.ltrans1.ltrans.o
+chThdExit                                         /tmp/ccrVXNcp.ltrans1.ltrans.o
                                                   build/obj/chthreads.o (symbol from plugin)
                                                   build/obj/chcoreasm_v6m.o
 chThdExitS                                        build/obj/chthreads.o (symbol from plugin)
@@ -1808,27 +2072,26 @@ ch_debug                                          build/obj/chregistry.o (symbol
                                                   build/obj/chsys.o (symbol from plugin)
 ch_factory                                        build/obj/chfactory.o (symbol from plugin)
 ch_idle_thread_wa                                 build/obj/chsys.o (symbol from plugin)
-ch_memcore                                        /tmp/ccpwIpvt.ltrans0.ltrans.o
+ch_memcore                                        /tmp/ccrVXNcp.ltrans0.ltrans.o
                                                   build/obj/chmemcore.o (symbol from plugin)
-                                                  /tmp/ccpwIpvt.ltrans3.ltrans.o
-dma.lto_priv.74                                   /tmp/ccpwIpvt.ltrans0.ltrans.o
-                                                  /tmp/ccpwIpvt.ltrans4.ltrans.o
-                                                  /tmp/ccpwIpvt.ltrans2.ltrans.o
+                                                  /tmp/ccrVXNcp.ltrans2.ltrans.o
+dma.lto_priv.76                                   /tmp/ccrVXNcp.ltrans0.ltrans.o
+                                                  /tmp/ccrVXNcp.ltrans4.ltrans.o
+                                                  /tmp/ccrVXNcp.ltrans3.ltrans.o
 dmaInit                                           build/obj/stm32_dma.o (symbol from plugin)
                                                   build/obj/hal_lld.o (symbol from plugin)
 dmaServeInterrupt                                 build/obj/stm32_dma.o (symbol from plugin)
                                                   build/obj/hal_lld.o (symbol from plugin)
 dmaStreamAlloc                                    build/obj/stm32_dma.o (symbol from plugin)
-dmaStreamAllocI                                   /tmp/ccpwIpvt.ltrans2.ltrans.o
+dmaStreamAllocI                                   /tmp/ccrVXNcp.ltrans3.ltrans.o
                                                   build/obj/stm32_dma.o (symbol from plugin)
-                                                  /tmp/ccpwIpvt.ltrans0.ltrans.o
+                                                  /tmp/ccrVXNcp.ltrans0.ltrans.o
                                                   build/obj/hal_i2c_lld.o (symbol from plugin)
                                                   build/obj/hal_adc_lld.o (symbol from plugin)
 dmaStreamFree                                     build/obj/stm32_dma.o (symbol from plugin)
 dmaStreamFreeI                                    build/obj/stm32_dma.o (symbol from plugin)
                                                   build/obj/hal_i2c_lld.o (symbol from plugin)
                                                   build/obj/hal_adc_lld.o (symbol from plugin)
-getCellsVolt                                      build/obj/bq76920_driver.o (symbol from plugin)
 halInit                                           build/obj/hal.o (symbol from plugin)
                                                   build/obj/main.o (symbol from plugin)
 hal_lld_init                                      build/obj/hal_lld.o (symbol from plugin)
@@ -1842,8 +2105,9 @@ i2cInit                                           build/obj/hal_i2c.o (symbol fr
 i2cMasterReceiveTimeout                           build/obj/hal_i2c.o (symbol from plugin)
 i2cMasterTransmitTimeout                          build/obj/hal_i2c.o (symbol from plugin)
                                                   build/obj/bq76920_driver.o (symbol from plugin)
-i2cMasterTransmitTimeout.constprop.28             /tmp/ccpwIpvt.ltrans5.ltrans.o
-                                                  /tmp/ccpwIpvt.ltrans0.ltrans.o
+i2cMasterTransmitTimeout.constprop.30             /tmp/ccrVXNcp.ltrans5.ltrans.o
+                                                  /tmp/ccrVXNcp.ltrans6.ltrans.o
+                                                  /tmp/ccrVXNcp.ltrans0.ltrans.o
 i2cObjectInit                                     build/obj/hal_i2c.o (symbol from plugin)
                                                   build/obj/hal_i2c_lld.o (symbol from plugin)
 i2cReleaseBus                                     build/obj/hal_i2c.o (symbol from plugin)
@@ -1881,20 +2145,20 @@ iqResetI                                          build/obj/hal_queues.o (symbol
 irqDeinit                                         build/obj/stm32_isr.o (symbol from plugin)
 irqInit                                           build/obj/stm32_isr.o (symbol from plugin)
                                                   build/obj/hal_lld.o (symbol from plugin)
-main                                              /tmp/ccpwIpvt.ltrans0.ltrans.o
+main                                              /tmp/ccrVXNcp.ltrans0.ltrans.o
                                                   build/obj/main.o (symbol from plugin)
                                                   build/obj/crt0_v6m.o
 memset                                            /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/armv6-m/libg.a(lib_a-memset.o)
-                                                  /tmp/ccpwIpvt.ltrans4.ltrans.o
+                                                  /tmp/ccrVXNcp.ltrans4.ltrans.o
 nvicClearPending                                  build/obj/nvic.o (symbol from plugin)
 nvicDisableVector                                 build/obj/nvic.o (symbol from plugin)
                                                   build/obj/hal_i2c_lld.o (symbol from plugin)
                                                   build/obj/stm32_dma.o (symbol from plugin)
                                                   build/obj/stm32_isr.o (symbol from plugin)
-nvicEnableVector                                  /tmp/ccpwIpvt.ltrans4.ltrans.o
+nvicEnableVector                                  /tmp/ccrVXNcp.ltrans4.ltrans.o
                                                   build/obj/nvic.o (symbol from plugin)
-                                                  /tmp/ccpwIpvt.ltrans2.ltrans.o
-                                                  /tmp/ccpwIpvt.ltrans0.ltrans.o
+                                                  /tmp/ccrVXNcp.ltrans3.ltrans.o
+                                                  /tmp/ccrVXNcp.ltrans0.ltrans.o
                                                   build/obj/hal_st_lld.o (symbol from plugin)
                                                   build/obj/hal_i2c_lld.o (symbol from plugin)
                                                   build/obj/stm32_dma.o (symbol from plugin)
@@ -1938,12 +2202,10 @@ st_lld_init                                       build/obj/hal_st_lld.o (symbol
                                                   build/obj/hal_st.o (symbol from plugin)
 stm32_clock_init                                  build/obj/hal_lld.o (symbol from plugin)
                                                   build/obj/board.o (symbol from plugin)
-trace_next.lto_priv.45                            /tmp/ccpwIpvt.ltrans1.ltrans.o
-                                                  /tmp/ccpwIpvt.ltrans5.ltrans.o
-                                                  /tmp/ccpwIpvt.ltrans4.ltrans.o
-                                                  /tmp/ccpwIpvt.ltrans3.ltrans.o
-                                                  /tmp/ccpwIpvt.ltrans2.ltrans.o
-                                                  /tmp/ccpwIpvt.ltrans0.ltrans.o
-wakeup.lto_priv.56                                /tmp/ccpwIpvt.ltrans1.ltrans.o
-                                                  /tmp/ccpwIpvt.ltrans3.ltrans.o
-                                                  /tmp/ccpwIpvt.ltrans0.ltrans.o
+trace_next.lto_priv.49                            /tmp/ccrVXNcp.ltrans1.ltrans.o
+                                                  /tmp/ccrVXNcp.ltrans5.ltrans.o
+                                                  /tmp/ccrVXNcp.ltrans4.ltrans.o
+                                                  /tmp/ccrVXNcp.ltrans3.ltrans.o
+                                                  /tmp/ccrVXNcp.ltrans2.ltrans.o
+wakeup.lto_priv.64                                /tmp/ccrVXNcp.ltrans1.ltrans.o
+                                                  /tmp/ccrVXNcp.ltrans2.ltrans.o

@@ -1,4 +1,4 @@
-ARM GAS  /tmp/cczxzoWe.s 			page 1
+ARM GAS  /tmp/cchFdTAU.s 			page 1
 
 
    1              		.cpu cortex-m0
@@ -16,21 +16,21 @@ ARM GAS  /tmp/cczxzoWe.s 			page 1
   13              		.file	"hal.c"
   14              		.text
   15              	.Ltext0:
-  16              		.section	.gnu.lto_.profile.4690549cf1c03f22,"",%progbits
+  16              		.section	.gnu.lto_.profile.cbc4da79b3f05fb1,"",%progbits
   17 0000 789C6366 		.ascii	"x\234cf```a\200\000F\006;v\000\000\367\000N"
   17      60606061 
   17      80004606 
   17      3B760000 
   17      F7004E
   18              		.text
-  19              		.section	.gnu.lto_.jmpfuncs.4690549cf1c03f22,"",%progbits
+  19              		.section	.gnu.lto_.jmpfuncs.cbc4da79b3f05fb1,"",%progbits
   20 0000 789C6366 		.ascii	"x\234cf\300\016\270\2414#B\010\000\001\210\000\020"
   20      C00EB8A1 
   20      34234208 
   20      00018800 
   20      10
   21              		.text
-  22              		.section	.gnu.lto_.inline.4690549cf1c03f22,"",%progbits
+  22              		.section	.gnu.lto_.inline.cbc4da79b3f05fb1,"",%progbits
   23 0000 789C6366 		.ascii	"x\234cf\300\016\214\2404#\003\003\247\035#\003\023\220"
   23      C00E8CA0 
   23      34230303 
@@ -41,14 +41,14 @@ ARM GAS  /tmp/cczxzoWe.s 			page 1
   24      8F600000 
   24      3C12018A 
   25              		.text
-  26              		.section	.gnu.lto_.pureconst.4690549cf1c03f22,"",%progbits
+  26              		.section	.gnu.lto_.pureconst.cbc4da79b3f05fb1,"",%progbits
   27 0000 789C6366 		.ascii	"x\234cf```f\200\000F\006\011\000\000x\000 "
   27      60606066 
   27      80004606 
   27      09000078 
   27      0020
   28              		.text
-  29              		.section	.gnu.lto_halInit.4690549cf1c03f22,"",%progbits
+  29              		.section	.gnu.lto_halInit.cbc4da79b3f05fb1,"",%progbits
   30 0000 789C6366 		.ascii	"x\234cf\300\004R@\\\302\310\300 \017\244\031\231\031"
   30      C0045240 
   30      5CC2C8C0 
@@ -58,7 +58,7 @@ ARM GAS  /tmp/cczxzoWe.s 			page 1
   31      636068E4 
   31      60626404 
   31      31181819 
-ARM GAS  /tmp/cczxzoWe.s 			page 2
+ARM GAS  /tmp/cchFdTAU.s 			page 2
 
 
   31      EA9918
@@ -118,13 +118,13 @@ ARM GAS  /tmp/cczxzoWe.s 			page 1
   43 00ee 3F233147 		.ascii	"?#1G\277\270(\031D\353%3\000\000PA\212a"
   43      BFB82819 
   43      44EB2533 
-ARM GAS  /tmp/cczxzoWe.s 			page 3
+ARM GAS  /tmp/cchFdTAU.s 			page 3
 
 
   43      00005041 
   43      8A61
   44              		.text
-  45              		.section	.gnu.lto_.symbol_nodes.4690549cf1c03f22,"",%progbits
+  45              		.section	.gnu.lto_.symbol_nodes.cbc4da79b3f05fb1,"",%progbits
   46 0000 789C4DC8 		.ascii	"x\234M\310\315\015\202P\024D\3413\357\002\261\353aA"
   46      CD0D8250 
   46      1444E133 
@@ -153,13 +153,13 @@ ARM GAS  /tmp/cczxzoWe.s 			page 1
   51      2B1FF67D 
   51      2F69
   52              		.text
-  53              		.section	.gnu.lto_.refs.4690549cf1c03f22,"",%progbits
+  53              		.section	.gnu.lto_.refs.cbc4da79b3f05fb1,"",%progbits
   54 0000 789C6366 		.ascii	"x\234cf```d\200\002\000\000=\000\005"
   54      60606064 
   54      80020000 
   54      3D0005
   55              		.text
-  56              		.section	.gnu.lto_.decls.4690549cf1c03f22,"",%progbits
+  56              		.section	.gnu.lto_.decls.cbc4da79b3f05fb1,"",%progbits
   57 0000 789C8DD2 		.ascii	"x\234\215\322Oh\323P\034\007\360\367\232\320\260.k="
   57      4F68D350 
   57      1C07F0F7 
@@ -178,7 +178,7 @@ ARM GAS  /tmp/cczxzoWe.s 			page 1
   60      9475EDB6 
   60      2EDBFA77 
   60      532CA2D8 
-ARM GAS  /tmp/cczxzoWe.s 			page 4
+ARM GAS  /tmp/cchFdTAU.s 			page 4
 
 
   60      8313
@@ -238,7 +238,7 @@ ARM GAS  /tmp/cczxzoWe.s 			page 1
   72      54A4FAB7 
   72      8DEB7C5C 
   72      BA3B2CFD 
-ARM GAS  /tmp/cczxzoWe.s 			page 5
+ARM GAS  /tmp/cchFdTAU.s 			page 5
 
 
   72      5114AC
@@ -298,7 +298,7 @@ ARM GAS  /tmp/cczxzoWe.s 			page 1
   84 01f4 BA4FC83F 		.ascii	"\272O\310?\340\011\014z/\223\336\025\211\012>\324r)"
   84      E0090C7A 
   84      2F93DE15 
-ARM GAS  /tmp/cczxzoWe.s 			page 6
+ARM GAS  /tmp/cchFdTAU.s 			page 6
 
 
   84      890A3ED4 
@@ -329,7 +329,7 @@ ARM GAS  /tmp/cczxzoWe.s 			page 1
   90 0259 01392D49 		.ascii	"\0019-I="
   90      3D
   91              		.text
-  92              		.section	.gnu.lto_.symtab.4690549cf1c03f22,"",%progbits
+  92              		.section	.gnu.lto_.symtab.cbc4da79b3f05fb1,"",%progbits
   93 0000 68616C49 		.ascii	"halInit\000\000\000\000\000\000\000\000\000\000\000"
   93      6E697400 
   93      00000000 
@@ -358,7 +358,7 @@ ARM GAS  /tmp/cczxzoWe.s 			page 1
   98      00006164 
   98      63496E69 
   98      74000002 
-ARM GAS  /tmp/cczxzoWe.s 			page 7
+ARM GAS  /tmp/cchFdTAU.s 			page 7
 
 
   98      0000
@@ -404,7 +404,7 @@ ARM GAS  /tmp/cczxzoWe.s 			page 1
  110              		.comm	__gnu_lto_v1,1,1
  111              		.comm	__gnu_lto_slim,1,1
  112              		.ident	"GCC: (15:4.9.3+svn231177-1) 4.9.3 20150529 (prerelease)"
-ARM GAS  /tmp/cczxzoWe.s 			page 8
+ARM GAS  /tmp/cchFdTAU.s 			page 8
 
 
 DEFINED SYMBOLS
