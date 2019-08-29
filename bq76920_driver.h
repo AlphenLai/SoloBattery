@@ -115,7 +115,8 @@ extern "C" {
   float GetCurFlow_mA(float RcurrSense);
   float GetBatPercentage(int deltaT);
   void GetCellsVolt(float cellsVolt[]);
-  unsigned char CRC8(unsigned char *ptr, unsigned char len, unsigned char key);
+  uint8_t GetSysStat();
+  uint8_t CRC8(unsigned char *ptr, unsigned char len, unsigned char key);
   msg_t I2CWriteRegisterByteWithCRC(I2CDriver *i2cp, uint8_t dev_address, uint8_t reg_address, uint8_t data);
   msg_t I2CReadRegisterByteWithCRC(I2CDriver *i2cp, uint8_t dev_address, uint8_t reg_address, uint8_t *data);
   msg_t I2CReadRegisterWordWithCRC(I2CDriver *i2cp, uint8_t dev_address, uint8_t reg_address, uint16_t *data);

@@ -77,6 +77,22 @@ void GetCellsVolt(float cellsVolt[]) {
   cellsVolt[4] = ADCtoVolt(cell_adc[4]);
 }
 
+/*
+bit 7 CC_READY        fresh coulomb counter reading is available 
+bit 6 RSVD            Reserved. Do not use
+bit 5 DEVICE_XREADY   Internal chip fault indicator
+bit 4 OVRD_ALERT      External pull-up on the ALERT pin indicator
+bit 3 UV              Undervoltage fault event indicator
+bit 2 OV              Overvoltage fault event indicator
+bit 1 SCD             Short circuit in discharge fault event indicator
+bit 0 OCD             Over current in discharge fault event indicator
+*/
+uint8_t GetSysStat() {
+  uint8_t SysStatReg;
+  I2CReadRegisterByteWithCRC(&I2CD1, addr_bq76920, SYS_STAT, SysStatReg);
+  return SysStatReg;
+}
+
 uint8_t CRC8(uint8_t *ptr, uint8_t len, uint8_t key) {
 	uint8_t i;
 	uint8_t crc=0;
