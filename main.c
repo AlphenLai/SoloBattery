@@ -157,21 +157,18 @@ int main(void) {
     chThdSleepMilliseconds(100);
 
     //read data
-    // volatile uint16_t TS1;
-    // volatile uint16_t adcvalue;
-    // volatile uint16_t vc[5];
-    // volatile float cell[5];
-    // volatile uint16_t battery_adc;
-    // volatile float cellsVolt[5];
-    // volatile float battery_percentage;
+    volatile uint16_t TS1;
+    volatile uint16_t adcvalue;
+    volatile uint16_t battery_adc;
+    volatile float cellsVolt[5];
+    volatile float battery_percentage;
 
     volatile uint16_t ucc_adc;
-    volatile int16_t battery_adc;
+    volatile int16_t test_battery_adc;
     volatile bool cc_ok = false;
-    //msg = I2CReadRegisterWordWithCRC(&I2CD1, addr_bq76920, TS1_HI, &TS1);
+    msg = I2CReadRegisterWordWithCRC(&I2CD1, addr_bq76920, TS1_HI, &TS1);
 
-    //GetCellsVolt(cellsVolt);
-    //print testcellfunction
+    GetCellsVolt(cellsVolt);
 
     uint8_t enableCCincontinuous = 0|(1<<CC_EN);
     enableCCincontinuous|=(1<<DSG_ON);
@@ -186,13 +183,11 @@ int main(void) {
     if(cc_ok)
     {
       msg = I2CReadRegisterWordWithCRC(&I2CD1, addr_bq76920, CC_HI, &ucc_adc);
-      battery_adc = ucc_adc;
+      test_battery_adc = ucc_adc;
       I2CWriteRegisterByteWithCRC(&I2CD1, addr_bq76920, SYS_STAT, 0b00010000);
       cc_ok = false;
+      battery_percentage = GetBatPercentage(100);
     }
-    
-
-    battery_percentage = GetBatPercentage(battery_adc, 0.25, 100);
     
 
     //the hotter temperature, the smaller the value
