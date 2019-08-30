@@ -143,7 +143,7 @@ int main(void) {
 
   //initialize bq76920
   bq76920_init();
-  //battery_init(battery_mAh);
+  battery_init(battery_mAh);
   chThdSleepMilliseconds(100);
   
 
@@ -170,22 +170,11 @@ int main(void) {
 
     GetCellsVolt(cellsVolt);
 
-    uint8_t enableCCincontinuous = 0|(1<<CC_EN);
-    enableCCincontinuous|=(1<<DSG_ON);
-    enableCCincontinuous&=0xff|(0<<CHG_ON);
-    I2CWriteRegisterByteWithCRC(&I2CD1, addr_bq76920, SYS_CTRL2, enableCCincontinuous);
+    DischargeEN();
 
     if (palReadPad(GPIOA, GPIOA_ALERT))
-      cc_ok = true;
-    else
-      cc_ok = false;
-
-    if(cc_ok)
     {
-      msg = I2CReadRegisterWordWithCRC(&I2CD1, addr_bq76920, CC_HI, &ucc_adc);
-      test_battery_adc = ucc_adc;
-      I2CWriteRegisterByteWithCRC(&I2CD1, addr_bq76920, SYS_STAT, 0b00010000);
-      cc_ok = false;
+      ResetAlert();
       battery_percentage = GetBatPercentage(100);
     }
     
