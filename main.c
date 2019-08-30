@@ -26,7 +26,12 @@
 #define ADC1_NUM_CHANNELS   1
 #define ADC1_BUF_DEPTH      8
 
-static adcsample_t RT2_temp[ADC1_NUM_CHANNELS * ADC1_BUF_DEPTH];  //12bit
+uint16_t TS1;
+uint16_t RT2_FLT;
+float cellsVolt[5];
+volatile float battery_percentage;
+
+static adcsample_t RT2_adc[ADC1_NUM_CHANNELS * ADC1_BUF_DEPTH];  //12bit
 
 /*
  * ADC streaming callback.
@@ -152,20 +157,11 @@ int main(void) {
    */
   while (true) {
     msg_t msg;
-    i2cflags_t err;
+    //i2cflags_t err;
 
     chThdSleepMilliseconds(100);
 
     //read data
-    volatile uint16_t TS1;
-    volatile uint16_t adcvalue;
-    volatile uint16_t battery_adc;
-    volatile float cellsVolt[5];
-    volatile float battery_percentage;
-
-    volatile uint16_t ucc_adc;
-    volatile int16_t test_battery_adc;
-    volatile bool cc_ok = false;
     msg = I2CReadRegisterWordWithCRC(&I2CD1, addr_bq76920, TS1_HI, &TS1);
 
     GetCellsVolt(cellsVolt);
@@ -180,8 +176,8 @@ int main(void) {
     
 
     //the hotter temperature, the smaller the value
-    //adcStartConversion(&ADCD1, &adccfg1, RT2_temp, ADC1_BUF_DEPTH);
-    //adcvalue = RT2_temp[0];
+    //adcStartConversion(&ADCD1, &adccfg1, RT2_adc, ADC1_BUF_DEPTH);
+    //RT2_FLT = RT2_adc[0];
     
     // if (palReadPad(GPIOA, GPIOA_WKUP1)) {
     //   palClearPad(GPIOA, GPIOA_LED1);
