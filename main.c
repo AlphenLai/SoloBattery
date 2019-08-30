@@ -40,10 +40,7 @@ static adcsample_t RT2_adc[ADC1_NUM_CHANNELS * ADC1_BUF_DEPTH];  //12bit
 static void adccallback(ADCDriver *adcp) {
 
   if (adcIsBufferComplete(adcp)) {
-  }
-  else {
-  }
-    
+  }    
 }
 
 static void adcerrorcallback(ADCDriver *adcp, adcerror_t err) {
@@ -53,7 +50,6 @@ static void adcerrorcallback(ADCDriver *adcp, adcerror_t err) {
 }
 
 /*
- * 
  * input clock = 24MHz.
  */
 static const I2CConfig i2cfg1 = {
@@ -176,8 +172,8 @@ int main(void) {
     
 
     //the hotter temperature, the smaller the value
-    //adcStartConversion(&ADCD1, &adccfg1, RT2_adc, ADC1_BUF_DEPTH);
-    //RT2_FLT = RT2_adc[0];
+    adcStartConversion(&ADCD1, &adccfg1, RT2_adc, ADC1_BUF_DEPTH);
+    RT2_FLT = RT2_adc[0];
     
     // if (palReadPad(GPIOA, GPIOA_WKUP1)) {
     //   palClearPad(GPIOA, GPIOA_LED1);

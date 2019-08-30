@@ -134,7 +134,7 @@ msg_t I2CWriteRegisterByteWithCRC(I2CDriver *i2cp, uint8_t dev_address, uint8_t 
 
   //write data to i2c bus
   i2cAcquireBus(i2cp);
-  msg = i2cMasterTransmitTimeout(i2cp, addr_bq76920, tx_buffer, sizeof(tx_buffer),
+  msg = i2cMasterTransmitTimeout(i2cp, dev_address, tx_buffer, sizeof(tx_buffer),
                                   NULL, 0, TIME_MS2I(4));
   i2cReleaseBus(i2cp);
   if (msg != MSG_OK)
@@ -152,7 +152,7 @@ msg_t I2CReadRegisterByteWithCRC(I2CDriver *i2cp, uint8_t dev_address, uint8_t r
 
   //read data from i2c bus
   i2cAcquireBus(i2cp);
-  msg = i2cMasterTransmitTimeout(i2cp, addr_bq76920, tx_buffer, 1,
+  msg = i2cMasterTransmitTimeout(i2cp, dev_address, tx_buffer, 1,
                                 rx_buffer, 2, TIME_MS2I(4));
   i2cReleaseBus(i2cp);
   if (msg != MSG_OK)
@@ -174,12 +174,12 @@ msg_t I2CReadRegisterWordWithCRC(I2CDriver *i2cp, uint8_t dev_address, uint8_t r
   i2cflags_t err;
   uint8_t tx_buffer[1] = {reg_address};
   uint8_t rx_buffer[4];
-  volatile uint8_t CRCInput[2];
-  volatile uint8_t crc[2];
+  uint8_t CRCInput[2];
+  uint8_t crc[2];
 
   //read data from i2c bus
   i2cAcquireBus(i2cp);
-  msg = i2cMasterTransmitTimeout(&I2CD1, addr_bq76920, tx_buffer, 1,
+  msg = i2cMasterTransmitTimeout(&I2CD1, dev_address, tx_buffer, 1,
                                   rx_buffer, 4, TIME_MS2I(4));
   i2cReleaseBus(i2cp);
   if (msg != MSG_OK)
