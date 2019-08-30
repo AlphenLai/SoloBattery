@@ -124,6 +124,7 @@ extern "C" {
   void bq76920_init(void);
   void ChargeEN(void);
   void DischargeEN(void);
+  void ResetAlert(void);
 #ifdef __cplusplus
 }
 #endif

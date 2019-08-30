@@ -239,3 +239,7 @@ void DischargeEN(void) {
   uint8_t newSysCtrl2 = 0b01000010;
   I2CWriteRegisterByteWithCRC(&I2CD1, addr_bq76920, SYS_CTRL2, newSysCtrl2);
 }
+
+void ResetAlert(void) {
+  I2CWriteRegisterByteWithCRC(&I2CD1, addr_bq76920, SYS_STAT, 0b00010000);
+}
