@@ -112,10 +112,12 @@ extern "C" {
   float CCtoVolt(int16_t ADC_cc);
   float BATtoVolt(uint16_t ADC_bat, int numOfCell);
   float ADCtoVolt(uint16_t ADC_cell);
+  uint16_t VolttoADC(float volt);
   float GetCurFlow_mA(float RcurrSense);
-  float GetBatPercentage(int deltaT);
+  float GetBatPercentage(systime_t BatMon_thisEntry);
   void GetCellsVolt(float cellsVolt[]);
-  uint8_t GetSysStat();
+  void SysFaultHandler(void);
+  uint8_t GetSysStat(void);
   uint8_t CRC8(unsigned char *ptr, unsigned char len, unsigned char key);
   msg_t I2CWriteRegisterByteWithCRC(I2CDriver *i2cp, uint8_t dev_address, uint8_t reg_address, uint8_t data);
   msg_t I2CReadRegisterByteWithCRC(I2CDriver *i2cp, uint8_t dev_address, uint8_t reg_address, uint8_t *data);
@@ -125,6 +127,7 @@ extern "C" {
   void ChargeEN(void);
   void DischargeEN(void);
   void ResetAlert(void);
+  void SetProtection(uint8_t RSNS, float OV, uint8_t OV_delay, float UV, uint8_t UV_delay, uint8_t SCD, uint8_t SCD_delay, uint8_t OCD, uint8_t OCD_delay);
 #ifdef __cplusplus
 }
 #endif

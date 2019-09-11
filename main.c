@@ -18,6 +18,7 @@
 #include "hal.h"
 
 #include "bq76920_driver.h"
+#include "LED.h"
 
 #include <math.h>
 
@@ -86,10 +87,8 @@ static THD_FUNCTION(Thread1, arg) {
   chRegSetThreadName("batLED");
   while (true) {
     chThdSleepMilliseconds(500);
-    palSetPad(GPIOA, GPIOA_LED1);
     palSetPad(GPIOB, GPIOB_LED5);
     chThdSleepMilliseconds(500);
-    palClearPad(GPIOA, GPIOA_LED1);
     palClearPad(GPIOB, GPIOB_LED5);
   }
 }
@@ -146,7 +145,6 @@ int main(void) {
   bq76920_init();
   battery_init(battery_mAh);
   chThdSleepMilliseconds(100);
-  
 
   /*
    * Normal main() thread activity, in this demo it does nothing.
@@ -154,26 +152,56 @@ int main(void) {
   while (true) {
     msg_t msg;
     //i2cflags_t err;
-
-    chThdSleepMilliseconds(100);
-
-    //read data
+    DischargeEN();
+    
+    //the hotter temperature, the smaller the value
     msg = I2CReadRegisterWordWithCRC(&I2CD1, addr_bq76920, TS1_HI, &TS1);
+    adcStartConversion(&ADCD1, &adccfg1, RT2_adc, ADC1_BUF_DEPTH);
+    RT2_FLT = RT2_adc[0];
 
     GetCellsVolt(cellsVolt);
-
-    DischargeEN();
 
     if (palReadPad(GPIOA, GPIOA_ALERT))
     {
       ResetAlert();
-      battery_percentage = GetBatPercentage(100);
+      volatile systime_t now = chVTGetSystemTime();
+      battery_percentage = GetBatPercentage(now);
     }
-    
 
-    //the hotter temperature, the smaller the value
-    adcStartConversion(&ADCD1, &adccfg1, RT2_adc, ADC1_BUF_DEPTH);
-    RT2_FLT = RT2_adc[0];
+    chThdSleepMilliseconds(500);
+    if (battery_percentage >= 99) {
+      //100-99.1
+      palClearPad(GPIOA, GPIOA_LED1);
+      palClearPad(GPIOA, GPIOA_LED2);
+      palClearPad(GPIOA, GPIOA_LED3);
+      palClearPad(GPIOB, GPIOB_LED4);
+    } else if (battery_percentage >= 95) {
+      //99-95
+      palSetPad(GPIOA, GPIOA_LED1);
+      palClearPad(GPIOA, GPIOA_LED2);
+      palClearPad(GPIOA, GPIOA_LED3);
+      palClearPad(GPIOB, GPIOB_LED4);
+    } else if (battery_percentage >= 90) {
+      //94-90
+      palSetPad(GPIOA, GPIOA_LED1);
+      palSetPad(GPIOA, GPIOA_LED2);
+      palClearPad(GPIOA, GPIOA_LED3);
+      palClearPad(GPIOB, GPIOB_LED4);
+    } else if (battery_percentage >= 80) {
+      //89-80
+      palSetPad(GPIOA, GPIOA_LED1);
+      palSetPad(GPIOA, GPIOA_LED2);
+      palSetPad(GPIOA, GPIOA_LED3);
+      palClearPad(GPIOB, GPIOB_LED4);
+    } else if (battery_percentage >= 70) {
+      //79-70
+      palSetPad(GPIOA, GPIOA_LED1);
+      palSetPad(GPIOA, GPIOA_LED2);
+      palSetPad(GPIOA, GPIOA_LED3);
+      palSetPad(GPIOB, GPIOB_LED4);
+      ChargeEN();
+    }
+    chThdSleepMilliseconds(500);
     
     // if (palReadPad(GPIOA, GPIOA_WKUP1)) {
     //   palClearPad(GPIOA, GPIOA_LED1);
@@ -182,17 +210,33 @@ int main(void) {
     //   palClearPad(GPIOB, GPIOB_LED4);
     //   palClearPad(GPIOB, GPIOB_LED5);
     //   chThdSleepMilliseconds(500);
-    //   palSetPad(GPIOA, GPIOA_LED1);
-    //   chThdSleepMilliseconds(500);
-    //   palSetPad(GPIOA, GPIOA_LED2);
-    //   chThdSleepMilliseconds(500);
-    //   palSetPad(GPIOA, GPIOA_LED3);
-    //   chThdSleepMilliseconds(500);
-    //   palSetPad(GPIOB, GPIOB_LED4);
-    //   chThdSleepMilliseconds(500);
-    //   palSetPad(GPIOB, GPIOB_LED5);
-    // }
 
-
+    //   if(battery_percentage < 98) {
+    //     palSetPad(GPIOA, GPIOA_LED1);
+    //   }
+    //   chThdSleepMilliseconds(500);
+    //   if(battery_percentage < 96) {
+    //     palSetPad(GPIOA, GPIOA_LED2);
+    //   }
+    //   chThdSleepMilliseconds(500);
+    //   if(battery_percentage < 94) {
+    //     palSetPad(GPIOA, GPIOA_LED3);
+    //   }
+    //   chThdSleepMilliseconds(500);
+    //   if(battery_percentage < 40) {
+    //     palSetPad(GPIOB, GPIOB_LED4);
+    //   }
+    //   chThdSleepMilliseconds(500);
+    //   if(battery_percentage < 20) {
+    //     palSetPad(GPIOB, GPIOB_LED5);
+    //   }
+    //   chThdSleepMilliseconds(500);
+      
+      palSetPad(GPIOA, GPIOA_LED1);
+      palSetPad(GPIOA, GPIOA_LED2);
+      palSetPad(GPIOA, GPIOA_LED3);
+      palSetPad(GPIOB, GPIOB_LED4);
+      palSetPad(GPIOB, GPIOB_LED5);
+    //}
   }
 }

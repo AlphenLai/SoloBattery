@@ -8,11 +8,14 @@
 
 #include "bq76920_driver.h"
 
+#define ST2MS(n) (((((n) - 1UL) * 1000UL) / CH_CFG_ST_FREQUENCY) + 1UL)
+
 int GAIN;               /* GAIN = 365 μV/LSB + (ADCGAIN<4:0>in decimal) × (1 μV/LSB) */
 uint8_t ADCGAIN_value;
 int8_t ADCOFFSET_value;
 volatile float BatLeft;
 float BatMax;
+systime_t BatMon_lastEntry;
 
 int TwoSComplement(uint16_t raw) {
   if(raw>>7)
@@ -34,13 +37,16 @@ float CCtoVolt(int16_t ADC_cc) {
 
 // Sum of all cells
 float BATtoVolt(uint16_t ADC_bat, int numOfCell) {
-  float ret = ((4 * GAIN * ADC_bat) + (numOfCell * ADCOFFSET_value) * 1000.0) / 1000000.0;
   return ((4 * GAIN * ADC_bat) + (numOfCell * ADCOFFSET_value) * 1000.0) / 1000000.0;
 }
 
 float ADCtoVolt(uint16_t ADC_cell) {
   //V(cell) = (GAIN[μV/LSB] x ADC(cell) + OFFSET[mV] * 1000) / 1000000
   return (GAIN * ADC_cell + ADCOFFSET_value * 1000.0) / 1000000.0;
+}
+
+uint16_t VolttoADC(float volt) {
+  return (volt * 1000000.0 - ADCOFFSET_value * 1000.0) / GAIN;
 }
 
 // @ RcurrSense    current sense resister (mOhm)
@@ -52,12 +58,16 @@ float GetCurFlow_mA(float RcurrSense) {
   return (CCtoVolt(cc_adc) / (RcurrSense/1000.0)) * 1000.0;
 }
 
-// @ BatMax        maximum capacity of battery (mAh)
-// @ deltaT        time interval from last call (ms)
-float GetBatPercentage(int deltaT) {
+float GetBatPercentage(systime_t BatMon_thisEntry) {
+  //volatile systime_t timeElapsed_t = BatMon_thisEntry - BatMon_lastEntry;
+  volatile sysinterval_t timeElapsed_t = chVTTimeElapsedSinceX(BatMon_lastEntry);
+  //volatile uint32_t timeElapsed_ms = ST2MS(timeElapsed_t);
+  uint32_t timeElapsed_ms = TIME_I2MS(timeElapsed_t);
   volatile float mA = GetCurFlow_mA(0.25);
-  BatLeft -= mA * (deltaT / 3600000.0);
+  BatLeft -= mA * (timeElapsed_ms / 3600000.0);
   volatile float BatPercentage = (BatLeft / BatMax) * 100.0;
+  
+  BatMon_lastEntry = BatMon_thisEntry;
   return BatPercentage;
 }
 
@@ -77,6 +87,15 @@ void GetCellsVolt(float cellsVolt[]) {
   cellsVolt[4] = ADCtoVolt(cell_adc[4]);
 }
 
+void SysFaultHandler(void) {
+  msg_t msg;
+  uint8_t fault_mask = GetSysStat();
+  if((fault_mask >> 5) && 0x01) {
+    chThdSleepMilliseconds(3000);
+    msg = I2CWriteRegisterByteWithCRC(&I2CD1, addr_bq76920, SYS_STAT, 0b00100000);  
+  }  
+}
+
 /*
 bit 7 CC_READY        fresh coulomb counter reading is available 
 bit 6 RSVD            Reserved. Do not use
@@ -87,8 +106,8 @@ bit 2 OV              Overvoltage fault event indicator
 bit 1 SCD             Short circuit in discharge fault event indicator
 bit 0 OCD             Over current in discharge fault event indicator
 */
-uint8_t GetSysStat() {
-  uint8_t SysStatReg;
+uint8_t GetSysStat(void) {
+  uint8_t SysStatReg = 0;
   I2CReadRegisterByteWithCRC(&I2CD1, addr_bq76920, SYS_STAT, SysStatReg);
   return SysStatReg;
 }
@@ -134,7 +153,7 @@ msg_t I2CWriteRegisterByteWithCRC(I2CDriver *i2cp, uint8_t dev_address, uint8_t 
 
   //write data to i2c bus
   i2cAcquireBus(i2cp);
-  msg = i2cMasterTransmitTimeout(i2cp, dev_address, tx_buffer, sizeof(tx_buffer),
+  msg = i2cMasterTransmitTimeout(i2cp, addr_bq76920, tx_buffer, sizeof(tx_buffer),
                                   NULL, 0, TIME_MS2I(4));
   i2cReleaseBus(i2cp);
   if (msg != MSG_OK)
@@ -152,7 +171,7 @@ msg_t I2CReadRegisterByteWithCRC(I2CDriver *i2cp, uint8_t dev_address, uint8_t r
 
   //read data from i2c bus
   i2cAcquireBus(i2cp);
-  msg = i2cMasterTransmitTimeout(i2cp, dev_address, tx_buffer, 1,
+  msg = i2cMasterTransmitTimeout(i2cp, addr_bq76920, tx_buffer, 1,
                                 rx_buffer, 2, TIME_MS2I(4));
   i2cReleaseBus(i2cp);
   if (msg != MSG_OK)
@@ -179,7 +198,7 @@ msg_t I2CReadRegisterWordWithCRC(I2CDriver *i2cp, uint8_t dev_address, uint8_t r
 
   //read data from i2c bus
   i2cAcquireBus(i2cp);
-  msg = i2cMasterTransmitTimeout(&I2CD1, dev_address, tx_buffer, 1,
+  msg = i2cMasterTransmitTimeout(&I2CD1, addr_bq76920, tx_buffer, 1,
                                   rx_buffer, 4, TIME_MS2I(4));
   i2cReleaseBus(i2cp);
   if (msg != MSG_OK)
@@ -218,6 +237,8 @@ void bq76920_init(void) {
   //Set CC_CFG to 0x19 as mentioned in datasheet
   msg = I2CWriteRegisterByteWithCRC(&I2CD1, addr_bq76920, CC_CFG, 0x19);
 
+  SetProtection(1, 4.2, 0x01, 3, 0x01, 0x02, 0x01, 0x07, 0x05);
+
   //get gain for ADC-to-voltage conversion
   msg = I2CReadRegisterByteWithCRC(&I2CD1, addr_bq76920, ADCGAIN1, &GAIN_buffer);
   ADCGAIN_value = (GAIN_buffer &= 0b00001100) << 1;
@@ -233,13 +254,40 @@ void ChargeEN(void) {
   //(1<<CC_EN)|(0<<DSG_ON)|(1<<CHG_ON)
   uint8_t newSysCtrl2 = 0b01000001;
   I2CWriteRegisterByteWithCRC(&I2CD1, addr_bq76920, SYS_CTRL2, newSysCtrl2);
+  chThdSleepMilliseconds(1);
 }
 void DischargeEN(void) {
   //(1<<CC_EN)|(1<<DSG_ON)|(0<<CHG_ON)
   uint8_t newSysCtrl2 = 0b01000010;
   I2CWriteRegisterByteWithCRC(&I2CD1, addr_bq76920, SYS_CTRL2, newSysCtrl2);
+  chThdSleepMilliseconds(1);
 }
 
 void ResetAlert(void) {
   I2CWriteRegisterByteWithCRC(&I2CD1, addr_bq76920, SYS_STAT, 0b00010000);
+}
+
+//Please be noticed that delay values are lookup from datasheet
+//unit of delay and current parameters are *not time*
+void SetProtection(uint8_t RSNS, float OV, uint8_t OV_delay, float UV, uint8_t UV_delay, uint8_t SCD, uint8_t SCD_delay, uint8_t OCD, uint8_t OCD_delay) {
+  //PROTECT1
+  //Set RSNS, SCD_D, SCD_T
+  uint8_t PROTECT1_value = (RSNS << 7)|(SCD_delay << 3)|(SCD << 0);
+  I2CWriteRegisterByteWithCRC(&I2CD1, addr_bq76920, PROTECT1, PROTECT1_value);
+
+  //PROTECT2
+  //Set OCD_D, OCD_T
+  uint8_t PROTECT2_value = (OCD_delay << 4)|(OCD << 0);
+  I2CWriteRegisterByteWithCRC(&I2CD1, addr_bq76920, PROTECT1, PROTECT2_value);
+
+  //PROTECT3
+  //Set UV_D, OV_D
+  uint8_t PROTECT3_value = (UV_delay << 6)|(OV_delay << 4);
+  I2CWriteRegisterByteWithCRC(&I2CD1, addr_bq76920, PROTECT3, PROTECT3_value);
+
+  //Set OV_TRIP and UV_TRIP
+  uint8_t OV_TRIP_value = VolttoADC(OV) >> 4;
+  I2CWriteRegisterByteWithCRC(&I2CD1, addr_bq76920, OV_TRIP, OV_TRIP_value);
+  uint8_t UV_TRIP_value = VolttoADC(UV) >> 4;
+  I2CWriteRegisterByteWithCRC(&I2CD1, addr_bq76920, UV_TRIP, UV_TRIP_value);
 }
