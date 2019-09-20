@@ -1,19 +1,3 @@
-/*
-    ChibiOS - Copyright (C) 2006..2018 Giovanni Di Sirio
-
-    Licensed under the Apache License, Version 2.0 (the "License");
-    you may not use this file except in compliance with the License.
-    You may obtain a copy of the License at
-
-        http://www.apache.org/licenses/LICENSE-2.0
-
-    Unless required by applicable law or agreed to in writing, software
-    distributed under the License is distributed on an "AS IS" BASIS,
-    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-    See the License for the specific language governing permissions and
-    limitations under the License.
-*/
-
 #ifndef BQ76920_DRIVER_H_
 #define BQ76920_DRIVER_H_
 
@@ -113,8 +97,8 @@ extern "C" {
   float BATtoVolt(uint16_t ADC_bat, int numOfCell);
   float ADCtoVolt(uint16_t ADC_cell);
   uint16_t VolttoADC(float volt);
-  float GetCurFlow_mA(float RcurrSense);
-  float GetBatPercentage(systime_t BatMon_thisEntry);
+  double GetCurFlow_mA(float RcurrSense);
+  double GetBatPercentage();
   void GetCellsVolt(float cellsVolt[]);
   void SysFaultHandler(void);
   uint8_t GetSysStat(void);

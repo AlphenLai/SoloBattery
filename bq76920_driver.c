@@ -50,7 +50,7 @@ uint16_t VolttoADC(float volt) {
 }
 
 // @ RcurrSense    current sense resister (mOhm)
-float GetCurFlow_mA(float RcurrSense) {
+double GetCurFlow_mA(float RcurrSense) {
   msg_t msg;
   int16_t cc_adc;
   msg = I2CReadRegisterWordWithCRC(&I2CD1, addr_bq76920, CC_HI, &cc_adc);
@@ -58,14 +58,15 @@ float GetCurFlow_mA(float RcurrSense) {
   return (CCtoVolt(cc_adc) / (RcurrSense/1000.0)) * 1000.0;
 }
 
-float GetBatPercentage(systime_t BatMon_thisEntry) {
+double GetBatPercentage() {
   //volatile systime_t timeElapsed_t = BatMon_thisEntry - BatMon_lastEntry;
+  systime_t BatMon_thisEntry = chVTGetSystemTime();
   volatile sysinterval_t timeElapsed_t = chVTTimeElapsedSinceX(BatMon_lastEntry);
   //volatile uint32_t timeElapsed_ms = ST2MS(timeElapsed_t);
   uint32_t timeElapsed_ms = TIME_I2MS(timeElapsed_t);
-  volatile float mA = GetCurFlow_mA(0.25);
+  volatile double mA = GetCurFlow_mA(0.25);
   BatLeft -= mA * (timeElapsed_ms / 3600000.0);
-  volatile float BatPercentage = (BatLeft / BatMax) * 100.0;
+  volatile double BatPercentage = (BatLeft / BatMax) * 100.0;
   
   BatMon_lastEntry = BatMon_thisEntry;
   return BatPercentage;

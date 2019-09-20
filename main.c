@@ -30,7 +30,7 @@
 uint16_t TS1;
 uint16_t RT2_FLT;
 float cellsVolt[5];
-volatile float battery_percentage;
+volatile double battery_percentage;
 
 static adcsample_t RT2_adc[ADC1_NUM_CHANNELS * ADC1_BUF_DEPTH];  //12bit
 
@@ -164,8 +164,7 @@ int main(void) {
     if (palReadPad(GPIOA, GPIOA_ALERT))
     {
       ResetAlert();
-      volatile systime_t now = chVTGetSystemTime();
-      battery_percentage = GetBatPercentage(now);
+      battery_percentage = GetBatPercentage();
     }
 
     chThdSleepMilliseconds(500);
