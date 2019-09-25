@@ -108,7 +108,9 @@ LDSCRIPT= $(STARTUPLD)/STM32F030x6.ld
 CSRC = $(ALLCSRC) \
        $(TESTSRC) \
        main.c \
-       bq76920_driver.c
+       bq76920_driver.c \
+       LED.c \
+       i2c_slave_interface.c
 
 # C++ sources that can be compiled in ARM or THUMB mode depending on the global
 # setting.
