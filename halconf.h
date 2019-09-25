@@ -83,6 +83,20 @@
 #endif
 
 /**
+ * @brief   Enables the I2C master.
+ */
+#if !defined(HAL_USE_I2C_MASTER) || defined(__DOXYGEN__)
+#define HAL_USE_I2C_MASTER                  TRUE
+#endif
+
+/**
+ * @brief   Enables the I2C slave.
+ */
+#if !defined(HAL_USE_I2C_SLAVE) || defined(__DOXYGEN__)
+#define HAL_USE_I2C_SLAVE                   FALSE
+#endif
+
+/**
  * @brief   Enables the I2S subsystem.
  */
 #if !defined(HAL_USE_I2S) || defined(__DOXYGEN__)
