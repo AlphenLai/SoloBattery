@@ -18,6 +18,7 @@
 #include "hal.h"
 
 #include "bq76920_driver.h"
+#include "i2c_slave_interface.h"
 #include "LED.h"
 
 #include <math.h>
@@ -30,7 +31,7 @@
 uint16_t TS1;
 uint16_t RT2_FLT;
 float cellsVolt[5];
-volatile double battery_percentage;
+double battery_percentage;
 
 static adcsample_t RT2_adc[ADC1_NUM_CHANNELS * ADC1_BUF_DEPTH];  //12bit
 
@@ -112,6 +113,7 @@ int main(void) {
    * Starting the I2C driver 1.
    */
   i2cStart(&I2CD1, &i2cfg1);
+  //startComms();
   
   /*
    * Creates the batLED thread.
@@ -126,20 +128,7 @@ int main(void) {
 
   chThdSleepMilliseconds(1000);
 
-  //turn on all LEDs
-  palClearPad(GPIOA, GPIOA_LED1);
-  palClearPad(GPIOA, GPIOA_LED2);
-  palClearPad(GPIOA, GPIOA_LED3);
-  palClearPad(GPIOB, GPIOB_LED4);
-  palClearPad(GPIOB, GPIOB_LED5);
-
-  chThdSleepMilliseconds(1000);
-  //turn off all LEDs
-  palSetPad(GPIOA, GPIOA_LED1);
-  palSetPad(GPIOA, GPIOA_LED2);
-  palSetPad(GPIOA, GPIOA_LED3);
-  palSetPad(GPIOB, GPIOB_LED4);
-  palSetPad(GPIOB, GPIOB_LED5);
+  LED_init();
 
   //initialize bq76920
   bq76920_init();
@@ -150,12 +139,12 @@ int main(void) {
    * Normal main() thread activity, in this demo it does nothing.
    */
   while (true) {
-    msg_t msg;
+    //msg_t msg;
     //i2cflags_t err;
     DischargeEN();
     
     //the hotter temperature, the smaller the value
-    msg = I2CReadRegisterWordWithCRC(&I2CD1, addr_bq76920, TS1_HI, &TS1);
+    I2CReadRegisterWordWithCRC(&I2CD1, addr_bq76920, TS1_HI, &TS1);
     adcStartConversion(&ADCD1, &adccfg1, RT2_adc, ADC1_BUF_DEPTH);
     RT2_FLT = RT2_adc[0];
 
@@ -166,6 +155,14 @@ int main(void) {
       ResetAlert();
       battery_percentage = GetBatPercentage();
     }
+
+    // //i2c slave codes
+    // if (palReadPad(GPIOA, GPIOA_ALERT));
+    // SetDebugLED(0x10);
+    // Set_LED(0x07);
+    // chThdSleepMilliseconds(500);
+    // Set_LED(0);
+    // chThdSleepMilliseconds(500);
 
     chThdSleepMilliseconds(500);
     if (battery_percentage >= 99) {
@@ -203,39 +200,7 @@ int main(void) {
     chThdSleepMilliseconds(500);
     
     // if (palReadPad(GPIOA, GPIOA_WKUP1)) {
-    //   palClearPad(GPIOA, GPIOA_LED1);
-    //   palClearPad(GPIOA, GPIOA_LED2);
-    //   palClearPad(GPIOA, GPIOA_LED3);
-    //   palClearPad(GPIOB, GPIOB_LED4);
-    //   palClearPad(GPIOB, GPIOB_LED5);
-    //   chThdSleepMilliseconds(500);
-
-    //   if(battery_percentage < 98) {
-    //     palSetPad(GPIOA, GPIOA_LED1);
-    //   }
-    //   chThdSleepMilliseconds(500);
-    //   if(battery_percentage < 96) {
-    //     palSetPad(GPIOA, GPIOA_LED2);
-    //   }
-    //   chThdSleepMilliseconds(500);
-    //   if(battery_percentage < 94) {
-    //     palSetPad(GPIOA, GPIOA_LED3);
-    //   }
-    //   chThdSleepMilliseconds(500);
-    //   if(battery_percentage < 40) {
-    //     palSetPad(GPIOB, GPIOB_LED4);
-    //   }
-    //   chThdSleepMilliseconds(500);
-    //   if(battery_percentage < 20) {
-    //     palSetPad(GPIOB, GPIOB_LED5);
-    //   }
-    //   chThdSleepMilliseconds(500);
-      
-      palSetPad(GPIOA, GPIOA_LED1);
-      palSetPad(GPIOA, GPIOA_LED2);
-      palSetPad(GPIOA, GPIOA_LED3);
-      palSetPad(GPIOB, GPIOB_LED4);
-      palSetPad(GPIOB, GPIOB_LED5);
+    //   //do something when the button is being pressed
     //}
   }
 }
