@@ -7,10 +7,12 @@
 /* slave specific addresses */
 #define SYS_STAT     0x00
 
-/* SYS_STAT bit*/
-/* @ 0 = Fresh CC reading not yet available or bit is cleared by host microcontroller. */
-/* @ 1 = Fresh CC reading is available. Remains latched high until cleared by host. */
-/* Bits in SYS_STAT may be cleared by writing a "1" to the corresponding bit. */
+/* 
+SYS_STAT bit
+@ 0 = Fresh CC reading not yet available or bit is cleared by host microcontroller.
+@ 1 = Fresh CC reading is available. Remains latched high until cleared by host.
+Bits in SYS_STAT may be cleared by writing a "1" to the corresponding bit. 
+*/
 #define CC_READY    7
 
 #define CELLBAL1     0x01     /* set to 0b00011111 to enable cell balancing on cell 1-5 */
@@ -18,26 +20,34 @@
 #define CELLBAL3     0x03
 #define SYS_CTRL1    0x04
 
-/* SYS_CTRL1 bit */
-/* @ 0 = Disable voltage and temperature ADC readings (also disables OV protection) */
-/* @ 1 = Enable voltage and temperature ADC readings (also enables OV protection) */
+/* 
+SYS_CTRL1 bit
+@ 0 = Disable voltage and temperature ADC readings (also disables OV protection)
+@ 1 = Enable voltage and temperature ADC readings (also enables OV protection)
+*/
 #define ADC_EN       4
 
-/* SYS_CTRL1 bit */
-/* @ 0 = Store internal die temperature voltage reading in TSx_HI and TSx_LO */
-/* @ 1 = Store thermistor reading in TSx_HI and TSx_LO (all thermistor ports) */
+/* 
+SYS_CTRL1 bit
+@ 0 = Store internal die temperature voltage reading in TSx_HI and TSx_LO
+@ 1 = Store thermistor reading in TSx_HI and TSx_LO (all thermistor ports) 
+*/
 #define TEMP_SEL     3
 
 #define SYS_CTRL2    0x05
 
-/* SYS_CTRL2 bit */
-/* @ 0 = Disable CC continuous readings */
-/* @ 1 = Enable CC continuous readings and ignore [CC_ONESHOT] state */
+/* 
+SYS_CTRL2 bit
+@ 0 = Disable CC continuous readings
+@ 1 = Enable CC continuous readings and ignore [CC_ONESHOT] state 
+*/
 #define CC_EN        6
 
-/* SYS_CTRL2 bit */
-/* 0 = No action
-/* 1 = Enable single CC reading (only valid if [CC_EN] = 0), and [CC_READY] = 0) */
+/* 
+SYS_CTRL2 bit
+0 = No action
+1 = Enable single CC reading (only valid if [CC_EN] = 0), and [CC_READY] = 0) 
+*/
 #define CC_ONESHOT   5
 
 #define DSG_ON       1
@@ -91,14 +101,13 @@
 #ifdef __cplusplus
 extern "C" {
 #endif
-  int TwoSComplement(uint16_t raw);
-  int ADCGAINtoDec(uint8_t ADCGAIN_hex);
+  int ADCGAINtoGain_uV(uint8_t ADCGAIN_hex);
   float CCtoVolt(int16_t ADC_cc);
   float BATtoVolt(uint16_t ADC_bat, int numOfCell);
   float ADCtoVolt(uint16_t ADC_cell);
   uint16_t VolttoADC(float volt);
   double GetCurFlow_mA(float RcurrSense);
-  double GetBatPercentage();
+  double GetBatPercentage(void);
   void GetCellsVolt(float cellsVolt[]);
   void SysFaultHandler(void);
   uint8_t GetSysStat(void);

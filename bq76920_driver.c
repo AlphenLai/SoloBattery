@@ -8,78 +8,84 @@
 
 #include "bq76920_driver.h"
 
-#define ST2MS(n) (((((n) - 1UL) * 1000UL) / CH_CFG_ST_FREQUENCY) + 1UL)
-
 int GAIN;               /* GAIN = 365 μV/LSB + (ADCGAIN<4:0>in decimal) × (1 μV/LSB) */
 uint8_t ADCGAIN_value;
 int8_t ADCOFFSET_value;
-volatile float BatLeft;
+float BatLeft;
 float BatMax;
 systime_t BatMon_lastEntry;
+volatile double mA;
 
-int TwoSComplement(uint16_t raw) {
-  if(raw>>7)
-    return -(~raw + 1);
-  else
-    return raw;
-}
+// int TwoSComplement(uint16_t raw) {
+//   if(raw>>7)
+//     return -(~raw + 1);
+//   else
+//     return raw;
+// }
 
-int ADCGAINtoDec(uint8_t ADCGAIN_hex) {
+//convert ADC gain from register value to approproate uV as mentioned in datasheet (uV)
+int ADCGAINtoGain_uV(uint8_t ADCGAIN_hex) {
   if (ADCGAIN_hex > 0x1F)
     return 396;
   else
     return ADCGAIN_hex + 365;
 }
 
+//get voltage from coulomb counter
 float CCtoVolt(int16_t ADC_cc) {
   return ADC_cc * (8.44 / 1000000.0);
 }
 
-// Sum of all cells
+// get voltage sum of all cells
 float BATtoVolt(uint16_t ADC_bat, int numOfCell) {
   return ((4 * GAIN * ADC_bat) + (numOfCell * ADCOFFSET_value) * 1000.0) / 1000000.0;
 }
 
+//convert adc value to voltage 
 float ADCtoVolt(uint16_t ADC_cell) {
   //V(cell) = (GAIN[μV/LSB] x ADC(cell) + OFFSET[mV] * 1000) / 1000000
   return (GAIN * ADC_cell + ADCOFFSET_value * 1000.0) / 1000000.0;
 }
 
+//convert voltage to adc value
 uint16_t VolttoADC(float volt) {
   return (volt * 1000000.0 - ADCOFFSET_value * 1000.0) / GAIN;
 }
 
+//get the current flow from the bq769
 // @ RcurrSense    current sense resister (mOhm)
 double GetCurFlow_mA(float RcurrSense) {
-  msg_t msg;
+  //msg_t msg;
   int16_t cc_adc;
-  msg = I2CReadRegisterWordWithCRC(&I2CD1, addr_bq76920, CC_HI, &cc_adc);
+  I2CReadRegisterWordWithCRC(&I2CD1, addr_bq76920, CC_HI, &cc_adc);
   // (((CC reading[V] / (RSNS[mohm] / 1000)[ohm]))[A] * 1000)[mA]
   return (CCtoVolt(cc_adc) / (RcurrSense/1000.0)) * 1000.0;
 }
 
-double GetBatPercentage() {
+//get the battery percentage
+double GetBatPercentage(void) {
   //volatile systime_t timeElapsed_t = BatMon_thisEntry - BatMon_lastEntry;
   systime_t BatMon_thisEntry = chVTGetSystemTime();
-  volatile sysinterval_t timeElapsed_t = chVTTimeElapsedSinceX(BatMon_lastEntry);
+  sysinterval_t timeElapsed_t = chVTTimeElapsedSinceX(BatMon_lastEntry);
   //volatile uint32_t timeElapsed_ms = ST2MS(timeElapsed_t);
   uint32_t timeElapsed_ms = TIME_I2MS(timeElapsed_t);
-  volatile double mA = GetCurFlow_mA(0.25);
+  mA = GetCurFlow_mA(0.25);
   BatLeft -= mA * (timeElapsed_ms / 3600000.0);
-  volatile double BatPercentage = (BatLeft / BatMax) * 100.0;
+  /*volatile */double BatPercentage = (BatLeft / BatMax) * 100.0;
   
   BatMon_lastEntry = BatMon_thisEntry;
   return BatPercentage;
 }
 
+//get voltage of each cells in the battery
 void GetCellsVolt(float cellsVolt[]) {
-  msg_t msg;
+  //msg_t msg;
   uint16_t cell_adc[5];
-  msg = I2CReadRegisterWordWithCRC(&I2CD1, addr_bq76920, VC1_HI, &cell_adc[0]);
-  msg = I2CReadRegisterWordWithCRC(&I2CD1, addr_bq76920, VC2_HI, &cell_adc[1]);
-  msg = I2CReadRegisterWordWithCRC(&I2CD1, addr_bq76920, VC3_HI, &cell_adc[2]);
-  msg = I2CReadRegisterWordWithCRC(&I2CD1, addr_bq76920, VC4_HI, &cell_adc[3]);
-  msg = I2CReadRegisterWordWithCRC(&I2CD1, addr_bq76920, VC5_HI, &cell_adc[4]);
+  I2CReadRegisterWordWithCRC(&I2CD1, addr_bq76920, VC1_HI, &cell_adc[0]);
+  I2CReadRegisterWordWithCRC(&I2CD1, addr_bq76920, VC2_HI, &cell_adc[1]);
+  I2CReadRegisterWordWithCRC(&I2CD1, addr_bq76920, VC3_HI, &cell_adc[2]);
+  I2CReadRegisterWordWithCRC(&I2CD1, addr_bq76920, VC4_HI, &cell_adc[3]);
+  I2CReadRegisterWordWithCRC(&I2CD1, addr_bq76920, VC5_HI, &cell_adc[4]);
 
   cellsVolt[0] = ADCtoVolt(cell_adc[0]);
   cellsVolt[1] = ADCtoVolt(cell_adc[1]);
@@ -88,12 +94,13 @@ void GetCellsVolt(float cellsVolt[]) {
   cellsVolt[4] = ADCtoVolt(cell_adc[4]);
 }
 
+//handle system fault when they appear
 void SysFaultHandler(void) {
-  msg_t msg;
+  //msg_t msg;
   uint8_t fault_mask = GetSysStat();
   if((fault_mask >> 5) && 0x01) {
     chThdSleepMilliseconds(3000);
-    msg = I2CWriteRegisterByteWithCRC(&I2CD1, addr_bq76920, SYS_STAT, 0b00100000);  
+    I2CWriteRegisterByteWithCRC(&I2CD1, addr_bq76920, SYS_STAT, 0b00100000);  
   }  
 }
 
@@ -113,6 +120,7 @@ uint8_t GetSysStat(void) {
   return SysStatReg;
 }
 
+//calculate CRC for bq769
 uint8_t CRC8(uint8_t *ptr, uint8_t len, uint8_t key) {
 	uint8_t i;
 	uint8_t crc=0;
@@ -219,11 +227,12 @@ msg_t I2CReadRegisterWordWithCRC(I2CDriver *i2cp, uint8_t dev_address, uint8_t r
   return msg;
 }
 
+//initialize battery by writing all necessary register settings
 void battery_init(int max_capacity) {
-  uint8_t enableADCandTS1 = 0|(1<<ADC_EN)|(1<<TEMP_SEL);
+  uint8_t enableADCandTS1 = (1<<ADC_EN)|(1<<TEMP_SEL);
   uint8_t enableCellBalOnAllCells = 0b00011111;
-  uint8_t enableCCinOneShot = (0xFF&(0<<CC_EN))|(1<<CC_ONESHOT);
-  uint8_t enableCCincontinuous = 0|(1<<CC_EN);
+  //uint8_t enableCCinOneShot = (0xFF&(0<<CC_EN))|(1<<CC_ONESHOT);
+  uint8_t enableCCincontinuous = (1<<CC_EN);
   I2CWriteRegisterByteWithCRC(&I2CD1, addr_bq76920, SYS_CTRL1, enableADCandTS1);  
   I2CWriteRegisterByteWithCRC(&I2CD1, addr_bq76920, SYS_CTRL2, enableCCincontinuous);
   I2CWriteRegisterByteWithCRC(&I2CD1, addr_bq76920, CELLBAL1, enableCellBalOnAllCells);
@@ -231,13 +240,15 @@ void battery_init(int max_capacity) {
   BatMax = max_capacity;
 }
 
+//initialize bq769
 void bq76920_init(void) {
   msg_t msg;
   uint8_t GAIN_buffer;
   
   //Set CC_CFG to 0x19 as mentioned in datasheet
-  msg = I2CWriteRegisterByteWithCRC(&I2CD1, addr_bq76920, CC_CFG, 0x19);
+  I2CWriteRegisterByteWithCRC(&I2CD1, addr_bq76920, CC_CFG, 0x19);
 
+  //Set current and voltage protections for the bq769. Check datasheet for the table
   SetProtection(1, 4.2, 0x01, 3, 0x01, 0x02, 0x01, 0x07, 0x05);
 
   //get gain for ADC-to-voltage conversion
@@ -245,18 +256,21 @@ void bq76920_init(void) {
   ADCGAIN_value = (GAIN_buffer &= 0b00001100) << 1;
   msg = I2CReadRegisterByteWithCRC(&I2CD1, addr_bq76920, ADCGAIN2, &GAIN_buffer);
   ADCGAIN_value |= (GAIN_buffer &= 0b00011111);
-  GAIN = ADCGAINtoDec(ADCGAIN_value);
+  GAIN = ADCGAINtoGain_uV(ADCGAIN_value);
 
   //get offet for ADC-to-voltage conversion
   msg = I2CReadRegisterByteWithCRC(&I2CD1, addr_bq76920, ADCOFFSET, &ADCOFFSET_value);
 }
 
+//enable to charge the battery
 void ChargeEN(void) {
   //(1<<CC_EN)|(0<<DSG_ON)|(1<<CHG_ON)
   uint8_t newSysCtrl2 = 0b01000001;
   I2CWriteRegisterByteWithCRC(&I2CD1, addr_bq76920, SYS_CTRL2, newSysCtrl2);
   chThdSleepMilliseconds(1);
 }
+
+//enable to discharge the battery
 void DischargeEN(void) {
   //(1<<CC_EN)|(1<<DSG_ON)|(0<<CHG_ON)
   uint8_t newSysCtrl2 = 0b01000010;
@@ -264,6 +278,7 @@ void DischargeEN(void) {
   chThdSleepMilliseconds(1);
 }
 
+//reset alert pin
 void ResetAlert(void) {
   I2CWriteRegisterByteWithCRC(&I2CD1, addr_bq76920, SYS_STAT, 0b00010000);
 }
