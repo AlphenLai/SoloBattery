@@ -8,20 +8,18 @@
 
 #include "bq76920_driver.h"
 
-int GAIN;               /* GAIN = 365 μV/LSB + (ADCGAIN<4:0>in decimal) × (1 μV/LSB) */
-uint8_t ADCGAIN_value;
-int8_t ADCOFFSET_value;
-float BatLeft;
-float BatMax;
-systime_t BatMon_lastEntry;
-volatile double mA;
-
-// int TwoSComplement(uint16_t raw) {
-//   if(raw>>7)
-//     return -(~raw + 1);
-//   else
-//     return raw;
-// }
+int GAIN;                     //GAIN = 365 μV/LSB + (ADCGAIN<4:0>in decimal) × (1 μV/LSB)
+uint8_t ADCGAIN_value;        //gain value get from bq769 register
+int8_t ADCOFFSET_value;       //ADC offset get from bq769 register
+float batLeft;
+float batMax;
+double BatPercentage;
+systime_t BatMon_thisEntry;   //beginning of mA average period
+//systime_t BatMon_lastEntry;   //end of mA average period
+double mA;                    //mA measurement from bq769
+double avgmA;                 //average of measured mA within a period
+double totalmA;               //sum of measured mA within a period
+int mA_ctr;                   //number of measured mA within a period
 
 //convert ADC gain from register value to approproate uV as mentioned in datasheet (uV)
 int ADCGAINtoGain_uV(uint8_t ADCGAIN_hex) {
@@ -64,16 +62,34 @@ double GetCurFlow_mA(float RcurrSense) {
 
 //get the battery percentage
 double GetBatPercentage(void) {
-  //volatile systime_t timeElapsed_t = BatMon_thisEntry - BatMon_lastEntry;
-  systime_t BatMon_thisEntry = chVTGetSystemTime();
-  sysinterval_t timeElapsed_t = chVTTimeElapsedSinceX(BatMon_lastEntry);
-  //volatile uint32_t timeElapsed_ms = ST2MS(timeElapsed_t);
-  uint32_t timeElapsed_ms = TIME_I2MS(timeElapsed_t);
+  //the program enters this function when the bq769 alert is set, which means a new measurement has arrived and it must be handled.
+  if(mA_ctr<=0) {
+    //start of this average period
+    BatMon_thisEntry = chVTGetSystemTime();
+  }
+
+  //get measured mA
   mA = GetCurFlow_mA(0.25);
-  BatLeft -= mA * (timeElapsed_ms / 3600000.0);
-  /*volatile */double BatPercentage = (BatLeft / BatMax) * 100.0;
+
+  //sum mA
+  totalmA += mA;
+  mA_ctr++;
   
-  BatMon_lastEntry = BatMon_thisEntry;
+  if(mA_ctr>=10) {
+    //calculate time interval of whole period
+    sysinterval_t timeElapsed_t = chVTTimeElapsedSinceX(BatMon_thisEntry);
+    uint32_t timeElapsed_ms = TIME_I2MS(timeElapsed_t);
+
+    avgmA = totalmA / mA_ctr;
+
+    batLeft -= avgmA * (timeElapsed_ms / 3600000.0);
+    BatPercentage = (batLeft / batMax) * 100.0;
+    
+    //reset
+    totalmA = 0;
+    mA_ctr = 0;
+    avgmA = 0;
+  } 
   return BatPercentage;
 }
 
@@ -236,8 +252,8 @@ void battery_init(int max_capacity) {
   I2CWriteRegisterByteWithCRC(&I2CD1, addr_bq76920, SYS_CTRL1, enableADCandTS1);  
   I2CWriteRegisterByteWithCRC(&I2CD1, addr_bq76920, SYS_CTRL2, enableCCincontinuous);
   I2CWriteRegisterByteWithCRC(&I2CD1, addr_bq76920, CELLBAL1, enableCellBalOnAllCells);
-  BatLeft = max_capacity;
-  BatMax = max_capacity;
+  batLeft = max_capacity;
+  batMax = max_capacity;
 }
 
 //initialize bq769
