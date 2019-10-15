@@ -98,6 +98,10 @@ SYS_CTRL2 bit
 #define ADCGAIN2     0x59
 #define ADCOFFSET    0x51
 
+#define Charge         0
+#define Discharge      1
+#define Calibrate      2
+
 #ifdef __cplusplus
 extern "C" {
 #endif
@@ -117,8 +121,7 @@ extern "C" {
   msg_t I2CReadRegisterWordWithCRC(I2CDriver *i2cp, uint8_t dev_address, uint8_t reg_address, uint16_t *data);
   void battery_init(int max_capacity);
   void bq76920_init(void);
-  void ChargeEN(void);
-  void DischargeEN(void);
+  void ChangeBatteryStatus(char EN);
   void ResetAlert(void);
   void SetProtection(uint8_t RSNS, float OV, uint8_t OV_delay, float UV, uint8_t UV_delay, uint8_t SCD, uint8_t SCD_delay, uint8_t OCD, uint8_t OCD_delay);
 #ifdef __cplusplus

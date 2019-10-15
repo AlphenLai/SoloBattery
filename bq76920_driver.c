@@ -20,6 +20,7 @@ double mA;                    //mA measurement from bq769
 double avgmA;                 //average of measured mA within a period
 double totalmA;               //sum of measured mA within a period
 int mA_ctr;                   //number of measured mA within a period
+double mA_offset;
 
 //convert ADC gain from register value to approproate uV as mentioned in datasheet (uV)
 int ADCGAINtoGain_uV(uint8_t ADCGAIN_hex) {
@@ -44,8 +45,7 @@ float ADCtoVolt(uint16_t ADC_cell) {
   //V(cell) = (GAIN[μV/LSB] x ADC(cell) + OFFSET[mV] * 1000) / 1000000
   return (GAIN * ADC_cell + ADCOFFSET_value * 1000.0) / 1000000.0;
 }
-
-//convert voltage to adc value
+   
 uint16_t VolttoADC(float volt) {
   return (volt * 1000000.0 - ADCOFFSET_value * 1000.0) / GAIN;
 }
@@ -276,22 +276,34 @@ void bq76920_init(void) {
 
   //get offet for ADC-to-voltage conversion
   msg = I2CReadRegisterByteWithCRC(&I2CD1, addr_bq76920, ADCOFFSET, &ADCOFFSET_value);
+
+  //get offset for current flow measurement
+  ChangeBatteryStatus(Calibrate);
 }
 
-//enable to charge the battery
-void ChargeEN(void) {
-  //(1<<CC_EN)|(0<<DSG_ON)|(1<<CHG_ON)
-  uint8_t newSysCtrl2 = 0b01000001;
-  I2CWriteRegisterByteWithCRC(&I2CD1, addr_bq76920, SYS_CTRL2, newSysCtrl2);
-  chThdSleepMilliseconds(1);
-}
-
-//enable to discharge the battery
-void DischargeEN(void) {
-  //(1<<CC_EN)|(1<<DSG_ON)|(0<<CHG_ON)
-  uint8_t newSysCtrl2 = 0b01000010;
-  I2CWriteRegisterByteWithCRC(&I2CD1, addr_bq76920, SYS_CTRL2, newSysCtrl2);
-  chThdSleepMilliseconds(1);
+void ChangeBatteryStatus(char EN) {
+  uint8_t newSysCtrl2;
+  switch(EN) {
+    case 0:
+      //enable battery charge; disable battery discharge
+      newSysCtrl2 = (1<<CC_EN)|(0<<DSG_ON)|(1<<CHG_ON);
+      I2CWriteRegisterByteWithCRC(&I2CD1, addr_bq76920, SYS_CTRL2, newSysCtrl2);
+      chThdSleepMilliseconds(1);
+      break;
+    case 1:
+      //enable battery discharge; disable battery charge
+      newSysCtrl2 = (1<<CC_EN)|(1<<DSG_ON)|(0<<CHG_ON);
+      I2CWriteRegisterByteWithCRC(&I2CD1, addr_bq76920, SYS_CTRL2, newSysCtrl2);
+      chThdSleepMilliseconds(1);
+      break;
+    case 2:
+      //enable battery discharge; disable battery charge
+      newSysCtrl2 = (1<<CC_EN)|(0<<DSG_ON)|(0<<CHG_ON);
+      I2CWriteRegisterByteWithCRC(&I2CD1, addr_bq76920, SYS_CTRL2, newSysCtrl2);
+      chThdSleepMilliseconds(1);
+      mA_offset = GetCurFlow_mA(0.25);
+      break;
+  }
 }
 
 //reset alert pin
