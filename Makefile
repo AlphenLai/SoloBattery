@@ -110,7 +110,8 @@ CSRC = $(ALLCSRC) \
        main.c \
        bq76920_driver.c \
        LED.c \
-       i2c_slave_interface.c
+       i2c_slave_interface.c \
+       adc.c
 
 # C++ sources that can be compiled in ARM or THUMB mode depending on the global
 # setting.
