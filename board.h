@@ -251,11 +251,11 @@
                                      PIN_OSPEED_HIGH(GPIOA_SWDIO) |         \
                                      PIN_OSPEED_HIGH(GPIOA_SWCLK) |         \
                                      PIN_OSPEED_HIGH(GPIOA_PIN15))
-#define VAL_GPIOA_PUPDR             (PIN_PUPDR_PULLUP(GPIOA_WKUP1) |       \
+#define VAL_GPIOA_PUPDR             (PIN_PUPDR_PULLDOWN(GPIOA_WKUP1) |       \
                                      PIN_PUPDR_PULLUP(GPIOA_ADC1) |       \
                                      PIN_PUPDR_PULLUP(GPIOA_USART1_TX) |     \
                                      PIN_PUPDR_PULLUP(GPIOA_USART1_RX) |     \
-                                     PIN_PUPDR_PULLUP(GPIOA_ALERT) |       \
+                                     PIN_PUPDR_PULLDOWN(GPIOA_ALERT) |       \
                                      PIN_PUPDR_PULLUP(GPIOA_LED1) |  \
                                      PIN_PUPDR_PULLUP(GPIOA_LED2) |      \
                                      PIN_PUPDR_PULLUP(GPIOA_LED3) |      \
