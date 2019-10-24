@@ -13,7 +13,14 @@ SYS_STAT bit
 @ 1 = Fresh CC reading is available. Remains latched high until cleared by host.
 Bits in SYS_STAT may be cleared by writing a "1" to the corresponding bit. 
 */
-#define CC_READY    7
+#define CC_READY_flag   7
+#define RSVD_flag       6
+#define DEVICE_XREADY_flag 5
+#define OVRD_ALERT_flag 4
+#define UV_flag         3
+#define OV_flag         2
+#define SCD_flag        1
+#define OCD_flag        0
 
 #define CELLBAL1     0x01     /* set to 0b00011111 to enable cell balancing on cell 1-5 */
 #define CELLBAL2     0x02
@@ -98,9 +105,9 @@ SYS_CTRL2 bit
 #define ADCGAIN2     0x59
 #define ADCOFFSET    0x51
 
-#define Charge         0
-#define Discharge      1
-#define Calibrate      2
+#define Calibrate      0
+#define Charge         1
+#define Discharge      2
 
 #ifdef __cplusplus
 extern "C" {
@@ -122,7 +129,8 @@ extern "C" {
   void battery_init(int max_capacity);
   void bq76920_init(void);
   void ChangeBatteryStatus(char EN);
-  void ResetAlert(void);
+  bool CheckLoadPresent(void);
+  void ResetFlag(uint8_t bit);
   void SetProtection(uint8_t RSNS, float OV, uint8_t OV_delay, float UV, uint8_t UV_delay, uint8_t SCD, uint8_t SCD_delay, uint8_t OCD, uint8_t OCD_delay);
 #ifdef __cplusplus
 }

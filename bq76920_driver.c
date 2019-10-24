@@ -21,6 +21,7 @@ double avgmA;                 //average of measured mA within a period
 double totalmA;               //sum of measured mA within a period
 int mA_ctr;                   //number of measured mA within a period
 double mA_offset;
+float mA_mulitpler = 1.674153846;
 
 //convert ADC gain from register value to approproate uV as mentioned in datasheet (uV)
 int ADCGAINtoGain_uV(uint8_t ADCGAIN_hex) {
@@ -75,12 +76,12 @@ double GetBatPercentage(void) {
   totalmA += mA;
   mA_ctr++;
   
-  if(mA_ctr>=10) {
+  if(mA_ctr>=5) {
     //calculate time interval of whole period
     sysinterval_t timeElapsed_t = chVTTimeElapsedSinceX(BatMon_thisEntry);
     uint32_t timeElapsed_ms = TIME_I2MS(timeElapsed_t);
 
-    avgmA = totalmA / mA_ctr;
+    avgmA = (totalmA / mA_ctr) * mA_mulitpler;
 
     batLeft -= avgmA * (timeElapsed_ms / 3600000.0);
     BatPercentage = (batLeft / batMax) * 100.0;
@@ -88,7 +89,6 @@ double GetBatPercentage(void) {
     //reset
     totalmA = 0;
     mA_ctr = 0;
-    avgmA = 0;
   } 
   return BatPercentage;
 }
@@ -132,7 +132,7 @@ bit 0 OCD             Over current in discharge fault event indicator
 */
 uint8_t GetSysStat(void) {
   uint8_t SysStatReg = 0;
-  I2CReadRegisterByteWithCRC(&I2CD1, addr_bq76920, SYS_STAT, SysStatReg);
+  I2CReadRegisterByteWithCRC(&I2CD1, addr_bq76920, SYS_STAT, &SysStatReg);
   return SysStatReg;
 }
 
@@ -249,7 +249,7 @@ void battery_init(int max_capacity) {
   uint8_t enableCellBalOnAllCells = 0b00011111;
   //uint8_t enableCCinOneShot = (0xFF&(0<<CC_EN))|(1<<CC_ONESHOT);
   uint8_t enableCCincontinuous = (1<<CC_EN);
-  I2CWriteRegisterByteWithCRC(&I2CD1, addr_bq76920, SYS_CTRL1, enableADCandTS1);  
+  I2CWriteRegisterByteWithCRC(&I2CD1, addr_bq76920, SYS_CTRL1, enableADCandTS1);
   I2CWriteRegisterByteWithCRC(&I2CD1, addr_bq76920, SYS_CTRL2, enableCCincontinuous);
   I2CWriteRegisterByteWithCRC(&I2CD1, addr_bq76920, CELLBAL1, enableCellBalOnAllCells);
   batLeft = max_capacity;
@@ -285,30 +285,53 @@ void ChangeBatteryStatus(char EN) {
   uint8_t newSysCtrl2;
   switch(EN) {
     case 0:
-      //enable battery charge; disable battery discharge
-      newSysCtrl2 = (1<<CC_EN)|(0<<DSG_ON)|(1<<CHG_ON);
-      I2CWriteRegisterByteWithCRC(&I2CD1, addr_bq76920, SYS_CTRL2, newSysCtrl2);
-      chThdSleepMilliseconds(1);
-      break;
-    case 1:
-      //enable battery discharge; disable battery charge
-      newSysCtrl2 = (1<<CC_EN)|(1<<DSG_ON)|(0<<CHG_ON);
-      I2CWriteRegisterByteWithCRC(&I2CD1, addr_bq76920, SYS_CTRL2, newSysCtrl2);
-      chThdSleepMilliseconds(1);
-      break;
-    case 2:
       //enable battery discharge; disable battery charge
       newSysCtrl2 = (1<<CC_EN)|(0<<DSG_ON)|(0<<CHG_ON);
       I2CWriteRegisterByteWithCRC(&I2CD1, addr_bq76920, SYS_CTRL2, newSysCtrl2);
       chThdSleepMilliseconds(1);
       mA_offset = GetCurFlow_mA(0.25);
       break;
+    case 1:
+      //enable battery charge; disable battery discharge
+      newSysCtrl2 = (1<<CC_EN)|(0<<DSG_ON)|(1<<CHG_ON);
+      I2CWriteRegisterByteWithCRC(&I2CD1, addr_bq76920, SYS_CTRL2, newSysCtrl2);
+      chThdSleepMilliseconds(1);
+      break;
+    case 2:
+      //enable battery discharge; disable battery charge
+      newSysCtrl2 = (1<<CC_EN)|(1<<DSG_ON)|(0<<CHG_ON);
+      I2CWriteRegisterByteWithCRC(&I2CD1, addr_bq76920, SYS_CTRL2, newSysCtrl2);
+      chThdSleepMilliseconds(1);
+      break;
+    default:
+      break;
   }
 }
 
+//Please be noticed that the CHG and DSG will be disabled then switch back to original status
+bool CheckLoadPresent(void) {
+  uint8_t orignalChargeStatus;
+  uint8_t loadDetected;
+
+  //Save original charge status
+  I2CReadRegisterByteWithCRC(&I2CD1, addr_bq76920, SYS_CTRL2, &orignalChargeStatus);
+  orignalChargeStatus &= 0b00000011;
+  
+  //read LOAD_PRESENT bit
+  ChangeBatteryStatus(Calibrate);
+  I2CReadRegisterByteWithCRC(&I2CD1, addr_bq76920, SYS_CTRL1, &loadDetected);
+  loadDetected = loadDetected >> 7;
+
+  //change back to orignal charge status
+  ChangeBatteryStatus(orignalChargeStatus);
+
+  return loadDetected;
+}
+
 //reset alert pin
-void ResetAlert(void) {
-  I2CWriteRegisterByteWithCRC(&I2CD1, addr_bq76920, SYS_STAT, 0b00010000);
+void ResetFlag(uint8_t bit) {
+  uint8_t flagReset = 1 << bit;
+  I2CWriteRegisterByteWithCRC(&I2CD1, addr_bq76920, SYS_STAT, flagReset);
 }
 
 //Please be noticed that delay values are lookup from datasheet
@@ -334,4 +357,7 @@ void SetProtection(uint8_t RSNS, float OV, uint8_t OV_delay, float UV, uint8_t U
   I2CWriteRegisterByteWithCRC(&I2CD1, addr_bq76920, OV_TRIP, OV_TRIP_value);
   uint8_t UV_TRIP_value = VolttoADC(UV) >> 4;
   I2CWriteRegisterByteWithCRC(&I2CD1, addr_bq76920, UV_TRIP, UV_TRIP_value);
+
+  //reset flags
+  I2CWriteRegisterByteWithCRC(&I2CD1, addr_bq76920, SYS_STAT, 0xFF);
 }

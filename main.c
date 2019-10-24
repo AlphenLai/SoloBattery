@@ -29,13 +29,15 @@
 #define ADC1_NUM_CHANNELS   1
 #define ADC1_BUF_DEPTH      8
 
+#define discharging         0
+#define charging            1
+
 uint16_t TS1;
 uint16_t RT2_FLT;
 float cellsVolt[5];
 double battery_percentage;
 bool charging_status;
-#define discharging         0
-#define charging            1
+
 
 // static adcsample_t RT2_adc[ADC1_NUM_CHANNELS * ADC1_BUF_DEPTH];  //12bit
 
@@ -147,10 +149,10 @@ int main(void) {
   battery_init(battery_mAh);
   chThdSleepMilliseconds(100);
 
-  // DischargeEN();
+  // ChangeBatteryStatus(Discharge);
   // charging_status = discharging;
-  ChangeBatteryStatus(Charge);
-  charging_status = charging;
+ ChangeBatteryStatus(Charge);
+ charging_status = charging;
 
   /*
    * Normal main() thread activity, in this demo it does nothing.
@@ -164,15 +166,19 @@ int main(void) {
     // adcStartConversion(&ADCD1, &adccfg1, RT2_adc, ADC1_BUF_DEPTH);
     // RT2_FLT = RT2_adc[0];
 
+    if(TS1 != 0) {
+      palClearPad(GPIOA, GPIOA_LED1);
+    }
+    
     GetCellsVolt(cellsVolt);
     chThdSleepMilliseconds(100);
 
     if (palReadPad(GPIOA, GPIOA_ALERT))
     {
-      ResetAlert();
       battery_percentage = GetBatPercentage();
+      ResetFlag(CC_READY_flag);
     }
-
+    
     // //i2c slave codes
     // if (palReadPad(GPIOA, GPIOA_ALERT));
     // SetDebugLED(0x10);
@@ -211,7 +217,7 @@ int main(void) {
       palSetPad(GPIOA, GPIOA_LED2);
       palSetPad(GPIOA, GPIOA_LED3);
       palSetPad(GPIOB, GPIOB_LED4);
-      ChangeBatteryStatus(Charge);
+      ChangeBatteryStatus(Calibrate);
     }
     
     if (palReadPad(GPIOA, GPIOA_WKUP1)) {
